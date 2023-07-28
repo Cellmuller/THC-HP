@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="男性の活力と自信をサポート 活力をサポートするテストフェンと国産の酵素分解マカを配合した「活力支援サプリ」です。">
+    <title>活力支援サプリメント ｜ TENGAヘルスケア プロダクトサイト</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/tls-fv.png" class="second-fv-img">
+            <img src="../images/tls-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/katsuryoku.html">活力</a>
+            <a>></a>
+            <a href="#" class="current">活力支援サプリメント</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>
+                    男性の活力と自信をサポート<br>
+                    日本初・国産酵素分解マカを<br class="sp">配合した「活力支援サプリ」
+                </h2>
+                <div>
+                    <p class="desc-text-1">
+                        30代の6割以上、40代・50代の7割以上の方が活力の低下を感じています。
+                    </p>
+                    <p class="desc-text-2">
+                        30代～50代の男性300名を対象に行った調査（TENGAヘルスケア調べ, 2018）では、<br class="sp">30代の6割以上、40代・50代<br class="pc">
+                        の7割以上の方が「活力の低下を感じている」と答えています。年齢を重ねるにつれて、<br class="sp">心も体も元気を保つのが難しくなるのは<br class="sp">自然なことですが、いざ衰えを実感すると<br class="sp">切ない気持ちになりますよね。<br class="sp">活力の低下は、性生活に<br class="sp">前向きになれないだけでなく、<br class="sp">自信喪失にも繋がりやすいです。<br><br>
+                        医師監修のもと「最近なんだか疲れやすい」、「元気が出ない」と感じている男性のための<br class="sp"><span class="m-0">活力支援サプリメント</span>を開発しました。
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">夜まで元気や気力を保てない</li>
+                    <li><img src="../images/worries2.png">以前のような元気と自信を取り戻したい</li>
+                    <li><img src="../images/worries2.png">エネルギーに満ちた元気な毎日を送りたい</li>
+                    <li><img src="../images/worries2.png">パートナーとの性生活・妊活に積極的になれない</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>活力を取り戻すことで男性たちの自信を取り戻したい</h3>
+                                <p>
+                                    活力の低下をそのまま放置してしまうと、パートナーとの不和や、不妊にも繋がりかねません。30代～50代の男性300名を対象に行った調査(※TENGAヘルスケア調べ, 2018年)では、30代の6割以上、40代・50代の7割以上の方が「活力の低下を感じている」と答えています。<br>
+                                    活力支援サプリメントは、こんな思いを抱えている男性たちの力になるべく、「たしかな効果を実感できること」を最重視してつくられています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>こだわりの3つのポイント</h3>
+                            <ul>
+                                <li>
+                                    マメ科の植物由来テストフェンを450mg配合（1日分）
+                                </li>
+                                <li>
+                                    高品質の日本産酵素分解マカ125mg配合（1日分）
+                                </li>
+                                <li>
+                                    各成分ごとに原料メーカーの推奨量をしっかり配合<br>
+                                    (※検査をクリアした成分しか使用しておりません)
+                                </li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TLS_howtouse.png" class="how-use-img">
+                            </div>
+                            <div>
+                                1日4~5粒を目安に水またはぬるま湯で服用してください<br>
+                                <br>
+                                サプリメントは健康食品であり、医師から処方される薬とは異なります。医薬品のように数日で劇的な変化をもたらす成分は含まれていません。3ヶ月以上継続し、体の状態を確かめてみましょう。
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/634/">
+                        <div>
+                            <h3>男性サプリの決定版！TENGAヘルスケアから男の『元気』や『欲求』をサポートする「活力支援サプリメント」が発売！</h3>
+                            <p>
+                                30代～50代の男性300人に調査をしたところ、なんと30代で6割以上、40代50代では7割以上の方が活力の衰えを感じていたのです。
+                            </p>
+                        </div>
+                        <img src="../images/tls_column.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="13355">
+                    <div>
+                        <img src="../images/TLS_threeset.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">活力支援サプリメント3個セット</div>
+                        <p class="explain">
+                            セットで10％OFF！
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥13,355</span>(税込)<span class="normal-price">通常 ¥14,838(税込)</span>
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-STH-010">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="4946">
+                    <div>
+                        <img src="../images/TLS.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">活力支援サプリメント</div>
+                        <p class="explain">
+                            男性の活力と自信をサポート 活力をサポートするテストフェンと国産の酵素分解マカを配合した「活力支援サプリ」 120粒入り　約30日分
+                        </p>
+                        <!--<div class="free-text">送料無料</div>-->
+                        <div class="price price-margin">
+                            単品価格<span class="font-red">¥4,946</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-TLS-01T">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="detail-btn">
+                <p>他の商品ラインナップ</p>
+                <button class="more"></button>
+            </div>
+            <div class="txt-hide">
+                
+                <section class="product-area">
+                    <div class="product-item" data-price="4451">
+                        <div>
+                            <img src="../images/TLS.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">【定期購入 10%OFF】</div>
+                            <p class="explain">
+                                活力支援サプリの定期購入
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                定期購入価格<span class="font-red">¥4,451</span>(税込)<span class="normal-price">通常 ¥4,946(税込)</span>
+                            </div>
+                            <div class="field">                 
+                                <a href="https://shop.tengahealthcare.com/product/TTH-001" class="cartIn-button">定期購入する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="8782">
+                        <div>
+                            <img src="../images/TLS_TSS.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">活力・精育サプリメントセット</div>
+                            <p class="explain">
+                                活力も精子力も気になる方にセットで5%OFF！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥8,782</span>(税込)<span class="normal-price">通常 ¥9,244(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-STH-009">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="540">
+                        <div>
+                            <img src="../images/TLS_3days.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">活力支援サプリメント 12粒入り</div>
+                            <p class="explain">
+                                まずは気軽に試してみたい方のための12粒入り 約3日分
+                            </p>
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥540</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-TLS-02">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="column-area">
+                <h2>活力について学ぶ</h2>
+                <!-- <p>関連コラム</p> -->
+                <section class="carousel-box">
+                    <div class="carousel-area2">
+                        <a href="https://tengahealthcare.com/column/655/">
+                            <img src="../images/tls_column1.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/2060/">
+                            <img src="../images/tls_column3.jpeg" class="carousel-img">
+                        </a>                   
+                    </div>
+                </section>
+            </section>
+            <section class="faq-area">
+                <h2 class="faq-titile">よくある質問</h2>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>賞味期限はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>賞味期限は、製造日から3年です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>製造場所はどちらですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>日本国内のいくつかの工場にて製造しています。ロットにより製造場所は異なることがありますが、品質基準はどれもGMP認定工場として統一されています。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>副作用はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>先月から活力サプリを飲んでいます。1日4～5粒と書いてありますが、サプリの粒が大きく飲みにくいため2粒しか飲めない日もあります。2粒では効果がないのでしょうか？また、飲み残した分をまとめて4粒以上飲んでも問題はありませんか？
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>錠剤のサイズはどのくらいですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>直径9mm、厚み4mmの円形です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>TENGAヘルスケアの精育支援サプリメントと一緒に飲んでも大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>1日目安量の範囲であれば、問題ありません。処方薬を飲まれている場合は、医師または薬剤師に相談のうえ服用してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>購入を検討しているのですが、現在デュタステリドを服用しています。活力サプリと同時に服用は可能ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>大変申し訳ございませんが、お客様がどのような理由で該当の薬を飲んでいらっしゃるのか分からないため、判断できかねます。お手数をおかけいたしますが、一度かかりつけの医師または薬剤師に相談のうえ服用してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>他社のサプリと一緒に飲んでも大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>弊社では判断しかねますので、該当するサプリメーカーへお問合せをお願いいたします
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>保管場所についての注意はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>35度までは試験をしておりますが、それ以上ですと錠剤が溶けてしまう可能性があります。夏場の車の中や、直射日光のあたる場所は避けて保管してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>葉酸は含まれていますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>葉酸は含まれておりません。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>海外に持っていけますか？(成分的に)
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>個人で持っていかれるのであれば、問題ありません。
+                        </p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="detail-desc-area">
+                <h3>【製品詳細】</h3>
+                <ul>
+                    <li>製品名：活力支援サプリメント</li>
+                    <li>名称：フェヌグリーク種子含有加工食品</li>
+                    <li>価格：4,946円（税込）</li>
+                    <li>内容量：42g（350mg×120粒）</li>
+                    <li>商品サイズ：（幅×奥行×高さ）99×27×188 mm</li>
+                    <li>
+                        原材料・成分：名フェヌグリーク種子抽出物（インド製造）、還元麦芽糖水飴、デキストリン、酵母分解マカ粉末（国産）、セルロース、ステアリン酸Ca、微粒酸化ケイ素、シェラック
+                    </li>
+                    <li>用量の目安：1日4〜5粒</li>
+                    <li>取扱場所：公式オンラインストア、ほかWEBストア、一部医療機関、ドラッグストア等</li>
+                </ul>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

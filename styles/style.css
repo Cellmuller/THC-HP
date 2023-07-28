@@ -1,0 +1,534 @@
+.none {
+    background-color: #FCFCFC !important;
+    box-shadow: none !important;
+}
+.sp {
+    display: none;
+}
+main {
+    background-color: #FCFCFC;
+}
+.message-area{
+    /* background-image: url(../images/message-area-bg-img.png); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.message-area .text{
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.message-area .text img {
+    width: 100%;
+}
+.message-area .text h2{
+    text-align: center;
+    color: #28A5A0;
+    margin-top: 25px;
+}
+.message-area > .text > div{
+    text-align: center;
+    margin: 25px 0;
+    color: #28A5A0;
+    font-size: 36px;
+    font-weight: bold;
+}
+.message-area .text p{
+    color: #686868;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    line-height: 2;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.container h2 {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 4px;
+    margin: 89px 0 35px;
+}
+.container h3 {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 62px;
+}
+.column {
+    margin-bottom: 20px !important;
+}
+.container p {
+    color: #28A5A0;
+    text-align: center;
+    margin-bottom: 62px;
+}
+/* カテゴリー */
+.category-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 30px auto 0;
+    
+}
+.category-item{
+    flex: calc(100%/3);
+    margin: 25px 25px 73px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    max-width: 649px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    height: 441px;
+    background-size: 100%;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.category-area a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #6d8fb4;
+}
+.category-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px;
+    transform: scale(1.05) translateY(-8px);
+}
+
+
+.sourou {
+    background-image: url(../images/category_sourou.png);
+}
+.chirou {
+    background-image: url(../images/category_chirou.png);
+}
+.katsuryoku {
+    background-image: url(../images/category_katsuryoku.png);
+}
+.seikoutsu {
+    background-image: url(../images/category_seikoutsu.png);
+}
+.ninkatsu {
+    background-image: url(../images/category_ninkatsu.png);
+}
+.kotsubantei {
+    background-image: url(../images/category_kotsubantei.png);
+}
+.chitsunaiflora {
+    background-image: url(../images/category_chitsunaiflora.png);
+}
+.category-item:hover {
+    transform: scale(1.2);
+}
+.category-item > div:nth-child(2){
+    padding: 20px;
+}
+/* .category-item img{
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+    object-fit: cover;
+} */
+.category-item .title div{
+    color: #fff;
+    padding: 90px 25px;
+    font-size: 45px;
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+}
+.category-item .text{
+    color: #fff;
+    padding: 25px;
+    font-size: 17px;
+    line-height: 30px;
+}
+.gender-icon-wrapper {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.gender-icon {
+    margin-left: auto;
+    display: block;
+    width: 45px !important;
+    z-index: 5;
+    margin-left: 7px;
+}
+.text-sp {
+    display: none;
+}
+.detail-button{
+    background-color: #01BBB4;
+    text-decoration: none;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 10px 0 10px auto;
+    padding: 10px;
+    color: #fff;
+    border-radius: 25px;
+    transition: all .2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.detail-button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #B5B5B5;
+}
+/* カルーセル */
+.carousel-area{
+    width: 90%;
+    margin: 0 auto;
+}
+.carousel-box h2{
+    margin-bottom: 20px;
+}
+.carousel-img{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s;
+    border-radius: 10px;
+}
+.carousel-area a {
+    text-decoration: none;
+}
+.carousel-area p {
+    text-align: center;
+    margin: 10px 0;
+}
+.slick-slide {
+    margin: 0 20px;
+}
+.carousel-area a:hover{
+    opacity: 0.8;
+}
+.slick-prev:before, .slick-next:before {
+    color: #000 !important;
+    font-size: 30px !important;
+}
+.slick-prev {
+    top: 50%;
+    left: -60px !important;
+    transform: translateY(-50%);
+}
+.slick-next {
+    top: 50%;
+    right: -60px !important;
+    transform: translateY(-50%);
+}
+.slick-prev:before, .slick-next:before {
+    color: #28A5A0!important;
+    font-size: 30px !important;
+}
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #28A5A0 !important;
+}
+@media screen and (max-width:1800px) {
+    .category-item {
+        max-width: 615px;
+    }
+}
+@media screen and (max-width:1600px) {
+    .category-item {
+        max-width: 530px;
+        height: 378px;
+    }
+    .category-item .title div {
+        padding: 0px 25px;
+    }
+    .category-item .text {
+        height: 200px;
+        display: flex;
+        align-items: end;
+    }
+}
+@media screen and (max-width:1279px) {
+    .sp {
+        display: none;
+    }
+    .category-item {
+        max-width: 468px;
+    }
+}
+@media screen and (max-width:959px) {
+    .sp {
+        display: flex !important;
+    }
+    .fv-area {
+        height: 450px;
+    }
+    .fv-img {
+        top: 73%;
+    }
+    .message-area{
+        margin-top: 88px;
+        background-size: 0;
+        background-color: #FDFAF3;
+        padding: 0 0 30px;
+    }
+    .message-area .text {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .message-area > .text > div {
+        font-size: 30px;
+    }
+
+    .message-area .text p {
+        padding: 0 3%;
+        width: 100%;
+        font-size: 13px;
+    }
+    .category-area{
+        width: 62%;
+        justify-content: center;
+    }
+    .sourou {
+        background-image: url(../images/category_sourou-sp.png);
+    }
+    .chirou {
+        background-image: url(../images/category_chirou-sp.png);
+    }
+    .katsuryoku {
+        background-image: url(../images/category_katsuryoku-sp.png);
+    }
+    .seikoutsu {
+        background-image: url(../images/category_seikoutsu-sp.png);
+    }
+    .ninkatsu {
+        background-image: url(../images/category_ninkatsu-sp.png);
+    }
+    .kotsubantei {
+        background-image: url(../images/category_kotsubantei-sp.png);
+    }
+    .chitsunaiflora {
+        background-image: url(../images/category_chitsunaiflora-sp.png);
+    }
+    .category-item {
+        width: 100%;
+        margin: 0;
+        flex: calc(100%/1);
+        height: 158px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .category-area a {
+        background-size: cover;
+        background-position: right;
+    }
+    .none {
+        display: none !important;
+    }
+    .category-item div {
+        width: 85%;
+    }
+    .category-item .title {
+        margin-bottom: 30px;
+    }
+    .category-item .title div {
+        font-size: 35px;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        width: 100%;
+    }
+    .category-item .title span {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .category-item > div:nth-child(2){
+        padding: 5px;
+    }
+    .category-item .title{
+        padding: 0;
+    }
+    .category-item img {
+        width: 15%;
+        margin-left: 10px;
+    }
+
+    .category-item .text {
+        display: none;
+    }
+    .gender-icon {
+        width: 20px !important;
+    }
+    .text-sp {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        padding: 0 25px;
+    }
+    .carousel-area {
+        margin: 0 auto;
+    }
+
+    .carousel-area p{
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width:599px) {
+    .none {
+        display: none !important;
+    }
+    .sp {
+        display: flex !important;
+    }
+    .fv-area {
+        height: 350px;
+    }
+    .message-area{
+        margin-top: -26px;
+        background-size: 0;
+        background-color: #FDFAF3;
+        padding: 0 0 30px;
+    }
+    .message-area .text {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .message-area > .text > div {
+        font-size: 30px;
+    }
+
+    .message-area .text p {
+        padding: 0 3%;
+        width: 100%;
+        font-size: 13px;
+    }
+    .category-area{
+        width: 100%;
+    }
+    .sourou {
+        background-image: url(../images/category_sourou-sp.png);
+    }
+    .chirou {
+        background-image: url(../images/category_chirou-sp.png);
+    }
+    .katsuryoku {
+        background-image: url(../images/category_katsuryoku-sp.png);
+    }
+    .seikoutsu {
+        background-image: url(../images/category_seikoutsu-sp.png);
+    }
+    .ninkatsu {
+        background-image: url(../images/category_ninkatsu-sp.png);
+    }
+    .kotsubantei {
+        background-image: url(../images/category_kotsubantei-sp.png);
+    }
+    .chitsunaiflora {
+        background-image: url(../images/category_chitsunaiflora-sp.png);
+    }
+    .category-item {
+        width: 100%;
+        margin: 0;
+        flex: calc(100%/1);
+        height: 158px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .category-area a {
+        background-size: cover;
+        background-position: right;
+    }
+    .category-item div {
+        width: 85%;
+    }
+    .category-item .title {
+        margin-bottom: 30px;
+    }
+    .category-item .title div {
+        font-size: 35px;
+        display: flex;
+        justify-content: left;
+        align-items: start;
+        width: 100%;
+    }
+    .category-item .title span {
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    .category-item > div:nth-child(2){
+        padding: 5px;
+    }
+    .category-item .title{
+        padding: 0;
+    }
+    .category-item img {
+        width: 15%;
+        margin-left: 10px;
+    }
+
+    .category-item .text {
+        display: none;
+    }
+    .gender-icon {
+        width: 20px !important;
+    }
+    .text-sp {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        padding: 0 25px;
+    }
+    .carousel-area {
+        margin: 0 auto;
+    }
+
+    .carousel-area p{
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .sp {
+        display: block;
+    }
+    .category-item .title div {
+        font-size: 18px;
+    }
+    .text-sp {
+        font-size: 10px;
+    }
+    .container h2 {
+        margin: 68px 0 20px;
+        font-size: 35px;
+    }
+    
+    .slick-slide {
+        margin: 0 10px;
+    }
+    .slick-dots {
+        bottom: -44px !important;
+    }
+    .slick-dots li {
+        width: 16px !important;
+    }
+}

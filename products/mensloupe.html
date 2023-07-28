@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="自分の精子の状態が気になったことはありませんか？スマートフォン用精子観察キット「TENGA MEN’S LOUPE（テンガメンズルーペ）」なら、自宅で簡単に精子の観察ができます。彼女ができる前に、結婚する前に、今から妊活する前に、自分のカラダを知る第一歩としてTENGAメンズルーペをお試しください。">
+    <title>TENGA メンズルーペ  | TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“../favicon.ico”>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/mensloupe-fv.png" class="second-fv-img">
+            <img src="../images/mensloupe-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/ninkatsu.html">妊活</a>
+            <a>></a>
+            <a href="#" class="current">メンズルーペ</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>男性の皆さん、<br class="sp">自分の体の状態を<br class="sp">ちゃんと把握できていますか?<br> スマホ用精子観察キット「TENGA MEN’S LOUPE」</h2>
+                <div>
+                    <p class="desc-text-1">
+                        妊活・不妊に悩む前に、<br class="sp">自分の体を知る一歩として
+                    </p>
+                    <p class="desc-text-2">
+                        体の重さや倦怠感、痛みなどの<br class="sp">わかりやすい症状がなければ、<br class="sp">自分の体とはいえ変化に<br class="sp">気付きにくいものです。精子も同様で、<br class="sp">男性42,935名の精子を調査した<br class="sp">とある研究では、約40年間で世界的に見て、<br class="sp">男性の精子の濃度が約70%まで減少している<br class="sp">ことが報告されました[1]。<br class="sp"> 精子力低下の原因の一つは加齢による<br class="sp">精子の老化ですが、「若ければ問題はない」<br class="sp">とは決して言い切れません。<br><br>
+                        自分やパートナーの精子に心配や<br class="sp">興味があれば、<span>TENGA MEN’S LOUPE (メンズルーペ)</span>を使って好奇心のままに<br class="sp">精子を観察してみてください。
+                    </p>
+                    <a href="https://academic.oup.com/humupd/article/23/6/646/4035689?login=true" class="desc-text-4">
+                        (1]Levine, Hagai, et al. “Temporal trends in sperm count: a systematic review and meta-regression analysis.” Human reproduction update 23.6 (2017): 646-659.)
+                    </a>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんな方におすすめ</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">精子を「ちょっと見てみたい」という好奇心がある方</li>
+                    <li><img src="../images/worries2.png">不妊は女性だけの問題ではありません。不妊にお悩みのカップルに</li>
+                    <li><img src="../images/worries2.png">精力に不安はあるけれど、病院で検査してもらうことには抵抗がある方</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>自分の精子を知ることは、「男の妊活」はじめの一歩</h3>
+                                <p>
+                                    「妊活」という言葉を聞くと、まだ女性主体であるイメージが強いように思いますが、　妊活は女性だけの問題ではありません。しかし、いざ妊活の当事者になった時に、「何をして良いかわからない」と感じる男性も多いでしょう。<br><br>
+                                    そうした男性に妊活の第一歩目として提案したいのがこのメンズルーペです。妊活成功の鍵は、精子濃度や運動率が高い、健康な精子にあると言えます。まずは興味本位でも良いので、自分の精子が実際にどんな状態なのかを見ることから始めてみましょう。お互いの体に興味を持ち、何が足りていて、何が足りていないのかを2人で知ることが大切です。<br><br>
+                                    もちろん、妊活の予定がない男性にも「自分の精子はどんな状態なんだろう」という好奇心のままに使用してもらいたいと思っています。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>4つのポイント</h3>
+                            <ul>
+                                <li>
+                                    550倍の高性能ボールレンズで精子を観察できる<br>
+                                    （※観察環境で見え方に差があります）
+                                </li>
+                                <li>
+                                    サンプル動画との比較で自分の精子の状態を把握できる<br>
+                                    (※iPhone限定)
+                                </li>
+                                <li>
+                                    4回分の観察シート(透明シール)付き
+                                </li>
+                                <li>
+                                    撮影した動画を医師に送りオンライン診療も可能<br>
+                                    (医療機関による別サービスになります)
+                                </li>
+                            </ul>
+                            <span>※早漏には疾病に該当するものがあります。その場合医師の診断、治療が必要となりますので、医師にご相談ください。</span>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse01.png" class="how-use-img">
+                            </div>
+                            <div><span>01</span>精液を専用の採取計量カップに採取する</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse02.png" class="how-use-img">
+                            </div>
+                            <div><span>02</span>15分ほど放置し、精液が液化したら精液量を計測</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse03.png" class="how-use-img">
+                            </div>
+                            <div><span>03</span>プレートに裏側から観察用透明シールを貼る</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse04.png" class="how-use-img">
+                            </div>
+                            <div><span>04</span>カメラを起動し、スマートフォンにルーペ本体をセットする</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse05.png" class="how-use-img">
+                            </div>
+                            <div><span>05</span>採取ピックで精液をすくいプレートに貼った透明シール上に薄く塗布する</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/loupe_howtouse06.png" class="how-use-img">
+                            </div>
+                            <div><span>06</span>プレートをルーペ本体に載せ精子を観察する
+                            </div>
+                        </div>
+                        <p>（※本製品は簡易的な観察キットです。医学的判断をするものではありません）</p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/808/">
+                        <div>
+                            <h3>精子観察キットはどれが良い？
+                                「TENGA MEN’S LOUPE（メンズルーペ）」がおすすめな3つの理由</h3>
+                            <p>TENGA MEN’S LOUPEを使うことの魅力を３つご紹介いたします。</p>
+                        </div>
+                        <img src="../images/loupe_column.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="1650">
+                    <div>
+                        <img src="../images/loupe.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">TENGA MEN’S LOUPE メンズルーペ</div>
+                        <p class="explain">
+                        </p>
+                        <div class="price price-margin">
+                            単品価格<span class="font-red">¥1,650</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-EC-TML-001">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="column-area">
+                <h2>妊活について学ぶ</h2>
+                <!-- <p>関連コラム</p> -->
+                <section class="carousel-box">
+                    <div class="carousel-area2">
+                        <a href="https://tengahealthcare.com/column/post-2380/">
+                            <img src="../images/mensloupe_column2.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/post-991/">
+                            <img src="../images/mensloupe_column3.jpeg" class="carousel-img">
+                        </a>            
+                    </div>
+                </section>
+            </section>
+            <section class="detail-desc-area">
+                <h3>【製品詳細】</h3>
+                <ul>
+                    <li>製品名：メンズルーペ</li>
+                    <li>参考価格: 1,650円(税込)</li>
+                    <li>拡大倍率: 550倍<br>
+                        ※レンズ自体は光学約550倍の性能ですが、 実際の見え方はご使用のスマートフォンのカメラ性能および液晶の性能により異なります。
+                    </li>
+                    <li>
+                        販売元: 株式会社TENGAヘルスケア
+                    </li>
+                    <li>商品サイズ: (幅×奥行×高さ)113×21×127 mm</li>
+                    <li>重量: 40g</li>
+                    <li>取扱場所: 公式オンラインストア、ほかWEBストア、一部医療機関、ドラッグストア</li>
+                </ul>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

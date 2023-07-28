@@ -1,0 +1,402 @@
+*{
+    color: #3c3c3c;
+}
+
+/* 都道府県プルダウン非表示 */
+.map-sp {
+    display: none;
+}
+h3 {
+    text-align: center;
+}
+.category-btn {
+    width: 85%;
+    margin: 44px auto;
+    text-align: center;
+}
+.category-btn button {
+    background-color: #FFFFFF;
+    border: solid 1px#65c6ba;
+    border-radius: 25px;
+    width: 94px;
+    margin: 7px 2px;
+    color: #65c6ba;
+}
+/* 店舗リスト */
+.tab-content{
+  width: 90%;
+  margin: 30px auto 0;
+}
+.tab-items{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 !important;
+    list-style: none;
+}
+.tab__item {
+    flex: 1;
+    flex-basis: 120px;
+    margin: 0 6px;
+}
+.tab__link {
+    display: block;
+    text-decoration: none;
+    color: #3c3c3c;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px;
+}
+.tab__link.on {
+    background-color: #01BBB4;
+    color: #fff;
+}
+.tab-body__item {
+    margin: 30px 15px;
+    display: none;
+    text-align: center;
+}
+.tab-body__item.on {
+    display: block;
+}
+.tab-body__item ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.tab-body__item ul li{
+    text-align: left;
+    position: relative;
+}
+.tab-body__item ul li:first-child{
+    flex: 30%;
+}
+.tab-body__item ul li:first-child a{
+    width: 60%;
+    margin: 0 auto;
+}
+.tab-body__item ul li:nth-child(2){
+    flex: 40%;
+}
+.tab-body__item ul li:nth-child(2) a{
+    width: 60%;
+    margin: 0 auto;
+}
+.tab-body__item ul li:nth-child(3){
+    flex: 30%;
+}
+.tab-body__item ul li:nth-child(3) a{
+    width: 60%;
+    margin: 0 auto;
+}
+/* .tab-body__item ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 2px;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    border-top: 2px solid #65c6ba;
+    border-right: 2px solid #65c6ba;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+} */
+.tab-body__item ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.tab-body__item ul li a:hover{
+    cursor: pointer;
+}
+.tab-body__item ul li button {
+    background-color: #FFFFFF;
+    border: solid 1px#65c6ba;
+    border-radius: 25px;
+    width: 77px;
+    margin: 7px 2px;
+    color: #65c6ba;
+}
+.card > li > div {
+    text-align: center;
+}
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル枠の指定*/
+  .modal-body{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 500px;
+    width: 90%;
+  }
+  /*モーダルを閉じるボタンの指定*/
+  .modal-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: -20px;
+    left: -12px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #65c6ba;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 2px 5px 5px #bebebe;
+    
+  }
+  /*モーダル内のコンテンツの指定*/
+  .modal-content{
+    background: #fff;
+    text-align: left;
+    padding: 30px;
+  }
+  .genre h3 {
+      color: #65c6ba;
+      text-align: left;
+  }
+  .genre li {
+      font-size: 12px;
+      line-height: 30px;
+   }
+   .genre li a:hover {
+       opacity: 0.7;
+   }
+/* サブタブ */
+.sub-tab-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    list-style: none;
+    width: 50%;
+    margin: 0 auto;
+}
+.sub-tab__item {
+    flex: 1;
+    margin: 0 20px;
+}
+.sub-tab__link {
+    display: block;
+    text-decoration: none;
+    color: #3c3c3c;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 125px;
+}
+.sub-tab__link.on {
+    background-color: #01BBB4;
+    color: #fff;
+}
+.tab-body h2 {
+    text-align-last: left;
+}
+.sub-tab-body h2 {
+    text-align: left;
+}
+.sub-tab-body__item {
+    margin: 66px 15px;
+    display: none;
+    text-align: center;
+}
+.sub-tab-body__item.on {
+    display: block;
+}
+.card-icon{
+    width: 6%;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+@media screen and (max-width:599px) {
+    .tab-items {
+        flex-wrap: wrap;
+    }
+    .tab__item {
+        margin: 10px 6px;
+        max-width: 150px;
+    }
+    .tab-body__item ul li {
+        flex: 100% !important;
+        padding: 10px 0;
+    }
+    .tab-body__item ul li a {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:479px) {
+    .category-btn {
+        display: none;
+    }
+    h3 {
+        font-size: 12px;
+        width: 60%;
+        margin: 15px auto 0;
+    }
+    .map-sp {
+        display: none;
+        background-color: rgb(255, 248, 234);
+        text-align: center;
+        padding: 10% 0;
+    }
+    .map-sp p {
+        color: #65c6ba;
+    }
+
+    .map-pull {
+        margin-bottom: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .selectbox{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        width: 42%;
+        margin: 0 2%;
+    }
+    
+    .selectbox::after {
+        position: absolute;
+        right: 15px;
+        width: 10px;
+        height: 7px;
+        background-color: #65c6ba;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        content: '';
+        pointer-events: none;
+    }
+    
+    .selectbox select {
+        appearance: none;
+        width: 170px;
+        height: 2.8em;
+        padding: .4em calc(.8em + 30px) .4em .8em;
+        border: 1px solid #65c6ba;
+        border-radius: 25px;
+        background-color: #fff;
+        color: #65c6ba;
+        font-size: 1em;
+        cursor: pointer;
+        margin: 5% 0;
+    }
+    .tab-content {
+        width: 100%;
+        margin-top: 0;
+    }
+    .tab-items {
+        flex-wrap: wrap;
+    }
+    .tab__item {
+        flex: calc(100%/3);
+        margin: 5px;
+    }
+    .tab-body__item {
+        margin: 25px 0 0;
+    }
+    .tab-body__item ul {
+        padding: 10px 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tab-body__item ul li{
+        text-align: left;
+        margin: 10px 0;
+    }
+    .tab-body__item ul li::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -9px;
+        bottom: 0;
+        width: 9px;
+        height: 9px;
+        margin: auto;
+        border-top: 2px solid #65c6ba;
+        border-right: 2px solid #65c6ba;
+        transform: rotate(45deg);
+    box-sizing: border-box;
+    }
+    .genre h3 {
+        margin: 10px 0;
+        font-size: 15px;
+        width: 100%;
+    }
+    .tab-body__item ul{
+        display: block;
+        font-size: 12px;
+        margin: 15px auto;
+    }
+    .tab-body__item ul li a{
+        font-size: 16px;
+    }
+    .tab-body__item ul li:nth-child(2) a{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sub-tab-items {
+        width: 100%;
+    }
+    .sub-tab__item {
+        margin: 0 5px;
+    }
+    .sub-tab-body__item {
+        margin: 30px 0px;
+    }
+    .tab-body__item ul li:first-child a, .tab-body__item ul li:nth-child(3) a {
+        width: 100%;
+        font-size: 14px;
+    }
+    .card-icon{
+        width: 6%;
+        margin-right: 15px;
+    }
+    
+}

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="二人のタイミングが合わない、性交渉が義務的になってしまう、など妊活中の性交渉には様々なストレスが付き物です。Seed inは自宅で使える精液注入用のシリンジ法キットで、性交渉の代わりにこれでタイミングを合せれば、きっと減らせるストレスもあるはずです。ふたりのペースで、妊活をもっと自由なものにしてみませんか。">
+    <title>Seed in (シードイン) | TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“../favicon.ico”>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/seedin-fv.png" class="second-fv-img">
+            <img src="../images/seedin-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/ninkatsu.html">妊活</a>
+            <a>></a>
+            <a href="#" class="current">Seed in</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>
+                    シリンジ法で妊活をもっと自由に<br>
+                    『Seed in』でお互いの負担を<br class="sp">減らすセルフ妊活の選択肢を
+                </h2>
+                <div>
+                    <p class="desc-text-1">
+                        妊活の負担を減らし、2人の関係を守ります
+                    </p>
+                    <p class="desc-text-2">
+                        自然妊娠をするためには排卵日周辺で<br class="sp">3日以上タイミングを取るのが<br class="sp">理想とされていますが、疲れていたり、<br class="sp">忙しかったりと2人の都合が合わせづらく<br class="sp">3日もタイミングが取れないという方も<br class="sp">少なくないでしょう。<br class="sp">
+                        また、膣内射精障害やEDで妊活がうまくいかず悩んでいる方もいらっしゃるかと思います。<br>
+                        「シリンジ法」は精液をシリコン製の<br class="sp">カテーテルで吸い上げ、<br class="sp">女性の膣内に注入する方法です。
+                        <br>
+                        <span>Seed in(シードイン)</span>
+                        は<br class="sp">シリンジ法による妊活アイテムで、<br class="sp">精液注入用のシリンジと<br class="sp">カテーテルのセットです。
+                    </p>
+                    
+                    <p class="desc-text-3">
+                        <span>忙しい日でも手軽に妊活ができるよう、<br class="sp">衛生的で身体への負担が少ない設計に<br class="sp">こだわりました。</span>
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">義務的なセックスが辛い</li>
+                    <li><img src="../images/worries2.png">仕事などで2人のタイミングが合わせづらい</li>
+                    <li><img src="../images/worries2.png">膣内射精障害やEDで妊活がうまくいかず悩んでいる</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>
+                                    心と体への負担を最小限に抑える設計を追求<br>
+                                    「セックスしない妊活」の選択肢を、もっと広めていきたい
+                                </h3>
+                                <p>
+                                    Seed inをつくるうえで、体への負担を最小限に抑えることを徹底しました。シリンジ法の認知度から考えて、Seed inが初めて使用するシリンジ法キットになる可能性も高いでしょう。タンポンや月経カップの使用に慣れている女性でも、膣内に入れたことのない異物を入れるのは怖いものだと思います。だからこそ、違和感や痛みを極限まで無くすために、使用試験を何度も重ねました。カテーテルは柔らかすぎると挿入が難しく、固すぎると異物感が強くなってしまう......<br>
+                                    <br>
+                                    妊活のストレスを軽減するためのSeed inが、継続して使いたいと思われるものでなければ「サポート」とは言えません。試験と改良を重ねた結果、スッと簡単に挿入でき、膣内で注入しやすい現在のSeed inが完成しました。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="improvement">
+                            <div>
+                                <h3>安心安全なシリンジ法キット</h3>
+                                <p>
+                                    販売されているシリンジ法キットのほとんどは、体内に入るカテーテルとシリンジ（注射器）が別々に梱包されています。一方、Seed inは清潔で簡単に使用できるよう、組み立て不要の仕様になっています。封を開けたら、そのまま使用していただけます。製造時にしっかりと組み合わせているので、膣内でカテーテルが外れてしまう、という心配もありません。
+                                </p>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/seedin_howtouse01.png" class="how-use-img">
+                            </div>
+                            <div><span>01</span>開封し、本体と採精容器を取り出します</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/seedin_howtouse02.png" class="how-use-img">
+                            </div>
+                            <div><span>02</span>付属の採精容器を広げて、精液を採取します</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/seedin_howtouse03.png" class="how-use-img">
+                            </div>
+                            <div><span>03</span>採取した精液をカテーテル先端の開口部から押子を引いて吸引します</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/seedin_howtouse04.png" class="how-use-img">
+                            </div>
+                            <div><span>04</span>横になった姿勢で腟にカテーテルを挿入し、精液を注入します。注入後は5分程度横になって安静にしてください</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/seedin_howtouse05.png" class="how-use-img">
+                            </div>
+                            <div>
+                                <span>05</span>使用済みの採精容器と本体は包装袋に入れて封をし、廃棄してください<br>
+                                <br>
+                            </div>
+                        </div>
+                        <p>(※潤滑剤には精子の運動を妨げてしまうものがあるので使わないことをお勧めします)</p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/1319/">
+                        <div>
+                            <h3>シリンジ法まるわかり講座</h3>
+                            <p>TENGAヘルスケアからの妊活用シリンジ法キット「Seed in」発売を記念し、シリンジ法に関する基礎的な知識や具体的な使い方、リスクについて、泌尿器科医によるQ&Aをお届けします。</p>
+                        </div>
+                        <img src="../images/seedin_column.jpeg">
+                    </a>
+                </div>
+
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="6270">
+                    <div>
+                        <img src="../images/seedin_six.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">Seed in 3個入り x 2セット</div>
+                        <p class="explain">
+                            Seed in 3個入り x 2セット　合計6本のセットです。<br>
+                            1本あたり1045円（税込）で3個セット単品よりも5%お得です。
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥6,270</span>(税込)<span class="normal-price">通常 ¥6,600(税込)</span>
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="STH-022">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="3300">
+                    <div>
+                        <img src="../images/seedin_threepic.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">Seed in3個セット</div>
+                        <p class="explain">
+                            シリンジ法を知れば、妊活はもっと自由になる 「Seed in」でセルフ妊活の選択肢を お得な3個セット
+                        </p>
+                        <!--<div class="free-text">送料無料</div>-->
+                        <div class="price">
+                            セット価格<span class="font-red">¥3,300</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-SYR-01-03">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="detail-btn">
+                <p>他の商品ラインナップ</p>
+                <button class="more"></button>
+            </div>
+            <div class="txt-hide">
+                <section class="product-area">
+                    <div class="product-item" data-price="2970">
+                        <div>
+                            <img src="../images/seedin_threepic.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">Seed in 3個セット定期コース</div>
+                            <p class="explain">
+                                定期購入初回に、スマホで精子観察ができるキット「メンズルーペ」をプレゼント！<br>
+                                生理周期に合わせて配送頻度を選べます、〇か月縛りなどもございませんのでご安心ください。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥2,970</span>(税込)<span class="normal-price">通常 ¥3,300(税込)</span>
+                            </div>
+                            <div class="field">                       
+                                <a href="https://shop.tengahealthcare.com/product/CL-SYR-01-03S" class="cartIn-button">定期購入する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="8910">
+                        <div>
+                            <img src="../images/seedin_nine.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">Seed in 3個入り x 3セット</div>
+                            <p class="explain">
+                                Seed in 3個入り x 3セット 合計9本のセットです。<br>
+                                1本あたり990円（税込）で3個セット単品よりも10%お得です。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥8,910</span>(税込)<span class="normal-price">通常 ¥9,900(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="STH-023">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="7294">
+                        <div>
+                            <img src="../images/TSS_seedin.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">精育・Seed inセット</div>
+                            <p class="explain">
+                                精育アプリとセットで5％OFF！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥7,294</span>(税込)<span class="normal-price">通常 ¥7,598(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-STH-019">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="1430">
+                        <div>
+                            <img src="../images/seedin.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">Seed in1個</div>
+                            <p class="explain">
+                                シリンジ法お試しキャンペーン中。1個でも送料無料！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                単品価格<span class="font-red">¥1,430</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-SYR-01">カートに追加する</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="column-area">
+                <h2>妊活について学ぶ</h2>
+                <!-- <p>関連コラム</p> -->
+                <section class="carousel-box">
+                    <div class="carousel-area2">
+                        <a href="https://tengahealthcare.com/column/1225/">
+                            <img src="../images/seedin_column2.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/1446/">
+                            <img src="../images/seedin_column3.jpeg" class="carousel-img">
+                        </a>                 
+                    </div>
+                </section>
+            </section>
+            <section class="faq-area">
+                <h2 class="faq-titile">よくある質問</h2>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>カテーテル挿入部分のサイズはどのくらいですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>カテーテル先端からツバまでの長さは約8cm、先端の一番膨らんだ部分の直径は約1㎝です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>挿入時に、潤滑ゼリーやローションを使っても良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>潤滑ゼリーの中には、精子の運動を妨げてしまうものがあります。使用しないことをお勧めします。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>捨てる時はどうしたら良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>外装袋に戻しチャックを閉じて、燃えるゴミとして廃棄してください（各自治体の指示に従って廃棄してください）。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>一度使った物を洗って再使用しても良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>衛生上の観点から、再使用はお止めください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>使用前に準備する事はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>細菌の混入をなるべく防ぐため、男女ともに手洗い、できればシャワーを浴びてから、清潔な環境で実施される事をお勧めします。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>何ヶ月間くらいを目安に使用すればいいですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>6ヶ月間を目安に実施し、妊娠に至らなければ医療機関を受診してください（通常のタイミングをとってのセックスを1年続けても妊娠に至らない場合、不妊とされています）。35歳以上の方や、器質性の不妊の疑いがある場合は、上記に関わらず早めに医療機関に相談されることをお勧めします。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>一周期で何日実施するのが良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>排卵予定日5日前～排卵予定日1日後＝7日間に3回以上タイミングをとることを推奨しています。通常のセックスとSeed inを組み合わせ、なるべく多く実施してみましょう。まずは3日（1set）を目標に、余裕があれば2set実施してみましょう。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>排卵日が良く分かりません。
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>排卵検査薬や、基礎体温測定、妊活アプリなどを活用してみてください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>受精する可能性があるのは、排卵日の前後何日ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>産婦人科学会によると、排卵日4日前～排卵日当日と言われています。ただし排卵日の特定は個人では難しいため、排卵予定日を割り出し、その前5日と後１日を含めた７日間に、できるだけ多くタイミングをとりましょう。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>妊娠する可能性は、普通のセックスと変わらないですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>通常のセックスとシリンジ法での妊娠確率については様々な報告がありますが、妊娠率に大きな差はありません。シリンジ法を活用し、タイミングをとる回数を増やすことで結果的に確率が上がることになります。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>そもそも精子の状態を知りたいのですがどうしたら良いでしょうか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>精液検査をお勧めします。病院へ行きづらい、時間が取れないという方は、一度自宅でできる精子観察キットで確認してみましょう。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>射精直後の精液を使わないとダメでしょうか？射精後何時間以内の精液なら大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>できるだけ早い方が良いですが、難しい場合は2時間以内を目安に注入してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>採取する精液は、数日間禁欲（射精を控える）した方が良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>禁欲は不要です。期間中はなるべく毎日おこなってください（普段から精液量が少ない方の場合、初日の注入のみ、2日間程度禁欲してから実施してみてください）。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>採精容器の中の精液を、全量うまく吸えません。
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>禁欲は不要です。期間中はなるべく毎日おこなってください（普段から精液量が少ない方の場合、初日の注入のみ、2日間程度禁欲してから実施してみてください）。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>精液が容器のあちこちに付いて吸いづらいのですが、どうしたら良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>採精容器の隅に集めて吸ってください。粘度が高くうまく隅に集まらない場合は、15分～30分ほど精液を放置し液化させることで集めやすくなります。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>挿入する時に痛みを感じます。
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>カテーテルの外側に、精液を付着させてみてください。ただし、痛みが強い場合は使用を中止してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>精液注入時はどのような姿勢が良いでしょうか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>横になった姿勢であれば、どの様な姿勢でも大丈夫です。やり易い姿勢で注入してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>途中までは問題ないのですが、奥まで入れると痛いです。奥に注入しないとダメでしょうか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>問題ありません。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>精液注入後は、しばらく横になっていた方が良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>5分程度横になって、安静にしてください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>本体を床に落として汚してしまいました。洗って使用しても大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>衛生上の観点から、使用不可です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>注入後にカテーテル（管）の中に精液が残ってしまいます。
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>シリンジ内に少し空気を含ませた状態で注入してください。最後に空気を押し込むことによって、カテーテル内の精液も残らず注入されます。
+                        </p>
+                    </dd>
+                </dl>
+
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>途中までは問題ないのですが、奥まで入れると痛いです。奥に注入しないとダメでしょうか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>痛みを感じる場合はそれ以上奥には挿入せず、途中の位置で精液を注入して構いません。使用後も痛みが続く場合は、医療機関を受診してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>採取できる精液量が少ないのですが、最低どれくらいあれば良いですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>自然妊娠に必要な精液量のWHO（世界保健機関）基準は1.4mlです。この基準値は「自然妊娠するための最低限のライン」という意味になります。 この基準値以下や、基準値を少し超えた程度の精液所見では、自然妊娠する可能性は低いと考えられます。そのような場合、原因に応じた適切な対応が重要です。外陰部の視触診や超音波検査など、医師（できれば男性不妊の専門医）による精密検査を受け、精液所見が悪い原因を探しましょう。
+                        </p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="detail-desc-area">
+                <h3>【製品詳細】</h3>
+                <ul>
+                    <li>製品名：Seed in(シード イン)</li>
+                    <li>参考価格: 1本で1,430円、3本セットで3,300円(ともに税込)</li>
+                    <li>一般的名称: 精液注入用子宮カテーテル</li>
+                    <li>
+                        医療機器の分類: 一般医療機器(クラスⅠ)
+                    </li>
+                    <li>材質: カテーテル：シリコーンゴム／シリンジ：ポリプロピレン</li>
+                    <li>商品サイズ: （幅×奥行×高さ）132×25×220 mm 重量：24g(1本)</li>
+                    <li>取扱場所: 公式オンラインストア、ほかWEBストア、一部医療機関、ドラッグストア</li>
+                </ul>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

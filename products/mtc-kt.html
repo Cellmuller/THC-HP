@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="5段階の刺激の異なるCUPを使用したトレーニングで、段階的に刺激に慣れることで、射精をコントロールできる状態を目指します。">
+    <title>MEN’S TRAINING CUP KEEP TRAINING（メンズトレーニングカップ キープトレーニング） ｜ TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“../favicon.ico”>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/mtc-kt-fv.png" class="second-fv-img">
+            <img src="../images/mtc-kt-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/sourou.html">早漏</a>
+            <a>></a>
+            <a href="#" class="current">メンズトレーニングカップ キープトレーニング</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>早漏*には<br class="sp">適切なトレーニングが必要です。</h2>
+                <div>
+                    <p class="desc-text-1">
+                        男性機能に関する悩みでもっとも多いのが<br>「早漏についての悩み」だと言われています。
+                    </p>
+                    <p class="desc-text-2">
+                        2017年に実施されたTENGAヘルスケアの調査では、日本国内で推定約1300万人、<br>
+                        実に成人男性の約3.5人に1人が早漏の悩みを<br class="sp">抱えていることがわかりました。<br>
+                        すぐに射精してしまうから、<br class="sp">パートナーを満足させられているか心配....。<br class="sp">自分が満足する性生活を行えていない....。<br>
+                        そうしたお悩みを解消すべく生まれたのが、<br>
+                        <span>MEN’S TRAINING CUP <br class="sp">KEEP TRAINING<br>(メンズトレーニングカップ<br class="sp"> キープトレーニング)</span><br class="sp">です。
+                    </p>
+                    
+                    <p class="desc-text-3">
+                        このトレーニングでは、刺激の異なる<br class="sp">5種類のCUPを使用して<br class="sp">段階的に刺激に慣れることで、<br>
+                        <span>射精をコントロールできる状態を目指します。</span>
+                    </p>
+                    <p class="desc-text-4">
+                        (*疾病に該当するものを除きます。本製品は治療を必要とする早漏を改善させるものではありません。)
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">射精が早いことで、パートナーが挿入時間に満足しているか心配</li>
+                    <li><img src="../images/worries2.png">挿入から1分も我慢できずに射精してしまい、情けない、恥ずかしい気分になる</li>
+                    <li><img src="../images/worries2.png">射精が早いことで、セックスや恋愛に自信が持てない、前向きになれない</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>調査と改良の末に生まれた、自宅でできる男性機能のトレーニング法</h3>
+                                <p>
+                                    日本では早漏の治療薬は認可されておらず、「早漏＝病気であり治すべきもの」と捉えている男性はほとんどいないでしょう。そのため、多くの男性が適切な医療機関を受診することなく、早漏に関する悩みを抱え込んでしまっています。<br>
+                                    「悩んでいるけど、病院に行くのは恥ずかしい......」「どうしたら良いのかわからない......」という男性たちに向けて、TENGAヘルスケアは日本で初となる早漏のためのトレーニングカップを開発しました。<br>
+                                    早漏の主な原因は、射精を上手くコントロールできないことです。5段階のカップで徐々に刺激に慣らし、射精のコントロール力を上げていきましょう。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="improvement">
+                            <div>
+                                <h3>刺激に慣れるだけじゃない、「骨盤底筋の操作」で射精のコントロールを身につける</h3>
+                                <div class="img-flex">
+                                    <p>
+                                        このトレーニングは「刺激に慣れる」ことに加え、もう一つ目的があります。<br>
+                                        それは、「骨盤底筋の操作」によって、射精をコントロールする方法を習得することです。 骨盤底筋は放尿中に尿を止めたり、肛門を締めたりする際に収縮する筋肉です。<br>
+                                         骨盤底筋が緊張している（ 力が入っている）と、射精の我慢が難しくなるので、骨盤底筋を意識的にリラックスさせる方法を習得していきます。
+                                    </p>
+                                    <img src="../images/kotsubantei.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>早漏トレーニングの3つの特徴</h3>
+                            <ul>
+                                <li>
+                                    気持ちいいトレーニング<br>
+                                    筋トレなどと違い、マスターベーションをベースとしているので「気持ちいい」トレーニングです。
+                                </li>
+                                <li>
+                                    臨床研究済だから安心<br>
+                                    性機能を専門とする医師が集まる「日本性機能学会」や「世界性機能学会」でもその効果が発表された、信頼のおける方法です。
+                                </li>
+                                <li>
+                                    トレーナーがサポート<br>
+                                    TENGAヘルスケアのスタッフが、LINEを通じたコミュニケーションで、わかりづらい部分やつまづきやすい部分をサポートします。
+                                </li>
+                            </ul>
+                            <span>※早漏には疾病に該当するものがあります。その場合医師の診断、治療が必要となりますので、医師にご相談ください。</span>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MKT_howtouse01.png" class="how-use-img">
+                            </div>
+                            <div><span>01</span>製品天面のシールを剝がします</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MKT_howtouse02.png" class="how-use-img">
+                            </div>
+                            <div><span>02</span>製品下部のフィルムをはがします</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MKT_howtouse03.png" class="how-use-img">
+                            </div>
+                            <div><span>03</span>ふたを外します</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MKT_howtouse04.png" class="how-use-img">
+                            </div>
+                            <div><span>04</span>性交と同等のスピードで動かします</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MKT_howtouse05.png" class="how-use-img">
+                            </div>
+                            <div><span>05</span>使用後はふたを閉めて廃棄します</div>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/1038/">
+                        <div>
+                            <h3>【総論】早漏トレーニングとは？実践前の確認・まとめ</h3>
+                            <p>
+                                早漏の対策法の1つである「早漏トレーニング」について解説します。
+                                トレーニングを検討している方は、ぜひご確認ください。
+                            </p>
+                        </div>
+                        <img src="../images/MKT_column1.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="article-area2">
+                <a href="https://tengahealthcare.com/column/1038/">
+                    <img src="../images/MKT_column1.jpeg" class="article-area2-img">
+                </a>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="8800">
+                    <div>
+                        <img src="../images/MKT_short_standard.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">キープトレーニング ショートプログラム スタンダードセット</div>
+                        <p class="explain">
+                            キープトレーニングをこれ一つで完結できる標準のセット。Lv.1~Lv.5の各2本ずつ計10本を、8本分（20%OFF）のお値段でご用意しました。
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥8,800</span>(税込)<span class="normal-price">通常 ¥11,000(税込)</span>
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="STH-026">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="23100">
+                    <div>
+                        <img src="../images/MKT_long_28.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">キープトレーニング ロングプログラム CUP28回スタンダードセット</div>
+                        <p class="explain">
+                            キープトレーニングStep1〜4まで全28回のトレーニングがこれ一つで。 通常価格より25％OFF！
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥23,100</span>(税込)<span class="normal-price">通常 ¥30,800(税込)</span>
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="STH-029">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="detail-btn">
+                <p>他の商品ラインナップ</p>
+                <button class="more"></button>
+            </div>
+            <div class="txt-hide">
+                <section class="product-area">
+                    <div class="product-item" data-price="14800">
+                        <div>
+                            <img src="../images/MKT_short_complete.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">キープトレーニング ショートプログラム コンプリートセット</div>
+                            <p class="explain">
+                                キープトレーニング スタンダードセットに、CUP WARMERが付いてさらに1,000円お得なセット。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥14,800</span>(税込)<span class="normal-price">通常 ¥18,000(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="STH-027">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="product-item" data-price="5500">
+                        <div>
+                            <img src="../images/MKT_long_trial.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">キープトレーニング ロングプログラム お試しセット</div>
+                            <p class="explain">
+                                キープトレーニングLv.1でじっくりトレーニングに臨みたい方向けの6本セット。普通に買うより少しお得です。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥5,500</span>(税込)<span class="normal-price">通常 ¥6,600(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="STH-028">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="5500">
+                        <div>
+                            <img src="../images/MKT_short_trial.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">キープトレーニング ショートプログラム お試しセット</div>
+                            <p class="explain">
+                                まずはトレーニングをお試しで始めたい方へおすすめのお得なセット。 Lv.1~Lv.3までを各2本ずつ計6本を、5本分（17%OFF）のお値段でご用意しました。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥5,500</span>(税込)<span class="normal-price">通常 ¥6,600(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="STH-025">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item panel active" data-price="1100">
+                        <div>
+                            <img src="../images/MKT_lv1_single.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">単品購入</div>
+                            <p class="explain">
+                                シリーズ中、最も締めつけ感と刺激が弱いタイプ。
+                            </p>
+                            <!--<div class="free-text">送料無料</div>-->
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥1,100</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-MTCK-01">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item panel" data-price="1100">
+                        <div>
+                            <img src="../images/MKT_lv2_single.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">単品購入</div>
+                            <p class="explain">
+                                シリーズ中、二番目に締めつけ感と刺激が弱いタイプ。
+                            </p>
+                            <!--<div class="free-text">送料無料</div>-->
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥1,100</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-MTCK-02">カートに追加する</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="product-item panel" data-price="1100">
+                        <div>
+                            <img src="../images/MKT_lv3_single.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">単品購入</div>
+                            <p class="explain">
+                                シリーズ中、締めつけ感と刺激が中間に位置するタイプ。
+                            </p>
+                            <!--<div class="free-text">送料無料</div>-->
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥1,100</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-MTCK-03">カートに追加する</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item panel" data-price="1100">
+                        <div>
+                            <img src="../images/MKT_lv4_single.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">単品購入</div>
+                            <p class="explain">
+                                シリーズ中、二番目に締めつけ感と刺激が強いタイプ。
+                            </p>
+                            <!--<div class="free-text">送料無料</div>-->
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥1,100</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-MTCK-04">カートに追加する</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item panel" data-price="1100">
+                        <div>
+                            <img src="../images/MKT_lv5_single.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">単品購入</div>
+                            <p class="explain">
+                                シリーズ中、最も締めつけ感と刺激が強いタイプ。
+                            </p>
+                            <!--<div class="free-text">送料無料</div>-->
+                            <div class="price price-margin">
+                                単品価格<span class="font-red">¥1,100</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-MTCK-05">カートに追加する</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="tab-area">
+                        <li class="tab active"><img src="../images/MKT_lv1.jpeg"></li>
+                        <li class="tab"><img src="../images/MKT_lv2.jpeg"></li>
+                        <li class="tab"><img src="../images/MKT_lv3.jpeg"></li>
+                        <li class="tab"><img src="../images/MKT_lv4.jpeg"></li>
+                        <li class="tab"><img src="../images/MKT_lv5.jpeg"></li>
+                    </ul>
+                </section>
+                
+                
+            </div>
+            
+        </div>
+        <section class="column-area">
+            <h2>早漏について学ぶ</h2>
+            <!-- <p>関連コラム</p> -->
+            <section class="carousel-box">
+                <div class="carousel-area2">
+                    <a href="https://tengahealthcare.com/column/post-3618/">
+                        <img src="../images/MKT_column2.jpeg" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/post-3614/">
+                        <img src="../images/MKT_column3.jpeg" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/post-3821/">
+                        <img src="../images/MKT_column4.jpeg" class="carousel-img">
+                    </a>                   
+                </div>
+            </section>
+        </section>
+        <section class="faq-area">
+            <h2 class="faq-titile">よくある質問</h2>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>繰り返し使用できますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>メンズトレーニングカップは、衛生上の観点から1回使い切りの製品となっております。繰り返しのご使用や、他の方との使い回しはお止めください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>どのぐらいの頻度で、また、どのぐらいの期間トレーニングするのがよいですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>週4回の頻度で、7週間（合計28回）のトレーニングをお勧めしています。週4回が難しい場合は頻度を下げても構いませんが、トレーニングガイドに従って合計28回のトレーニングを実施しましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>どのようにトレーニングを進めたら良いですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>トレーニングガイドの説明に従って、4STEPのトレーニング（合計28回）を実施してください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>そもそも挿入時間は何分くらいが良いのでしょうか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>女性449名に「理想の挿入時間」を調査したところ、理想の挿入時間の平均は9.7分でした（TENGAヘルスケア調べ、2017年）。しかし挿入時間の長短ではなく、2人の挿入時間について、あなたとパートナーがストレスを感じているかどうかが重要です。もし挿入時間についてパートナーと話したことがなければ、一度相談してみることをお勧めします。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>あまり勃ちが良くなくてもトレーニングはできますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>挿入ができればトレーニングは可能です。トレーニングカップのLv.を上げると軟質素材が硬くなりますが、挿入が難しい場合は一段階刺激の低いCUP（軟質素材が軟らかくなり挿入しやすくなります）をご使用ください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>トレーニング後、トレーニングカップの使用を中止するとまた元の状態に戻ってしまいますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>骨盤底筋の操作による射精の我慢は、しばらく行わないでいると身体がコツを忘れてしまいます。定期的（推奨週1回）に性交渉を行うか、Lv.5のトレーニングカップを使用して、コツを忘れないようにしましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>挿入口の近くに小さい穴が開いていましたが、不良ですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>こちらの穴（カット）は、挿入時にカップ内の空気を逃がすため製造時に開けてあるものです。お気になさらずご使用ください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>挿入しづらい、挿入時に痛みを感じるのですが……
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>.挿入が難しい場合は、下記の点をご確認ください。<br>
+                        ・製品上部のシールを剥がしているか、ご確認ください。このシールを貼ったままだと空気が抜けないため、挿入しづらくなります。<br>
+                        ・挿入時に痛みが生じる場合は、ご自身の方にも少しローションを塗ると、挿入がスムーズになります。それでも痛みが生じる場合は、サイズが合っていない可能性があるので、一段階刺激の弱いCUP（内部のサイズが大きくなります）をお試しください。<br>
+                        ・挿入時にご自身の方が曲がってしまい挿入できない場合は、硬さが足りない可能性があります。一段階刺激の低いCUP（ゲルが軟らかくなり挿入しやすくなります）をお試しください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>トレーニング中、ローションが乾いてしまいました。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>ローションが乾くと刺激感が変わり、トレーニングに支障が出るため注意しましょう。「乾いてきたな」と感じたら、まずはCUPの蓋に付いているローションを追加してみましょう。それでも足りない場合は、追加用のローションをお求めください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>使用していたら中からスポンジが出てきましたが、これは何ですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>スポンジは、ローションの渇きを防止するために入れています。使用中に出てきてしまっても問題はありませんので、そのままご使用ください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>Lv.1でも刺激が強すぎて、トレーニングになりません。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>コンドームを併用したトレーニングをお勧めします。コンドームを使用することで、刺激を弱めることができます。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>STEP1を4回やらなくても骨盤底筋の動きをしっかり意識できるようになりました。STEP2に進んでも良いですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>はい。骨盤底筋の動きをしっかり意識できるようになれば、4回トレーニングが完了しなくてもSTEP2に進んでいただいて結構です。ただしSTEP2以降では、回数をこなしてから次のSTEPに進むようにしてください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>各STEPを余裕を持ってできるようにならなくても、次のSTEPに進んで良いですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>はい。設定された回数に達したら次のSTEPに進みましょう。トレーニングでは我慢が難しくても、骨盤底筋の操作が上達していれば、実際の性交渉で挿入時間が伸びている可能性はあります。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>STEP2,3,4で全然我慢ができません。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>我慢ができなくても骨盤底筋の操作は状態している可能性がありますので、トレーニングをつづけていきましょう。骨盤底筋の操作がまったく分からない場合は、一度STEP0を見返し、骨盤底筋の動かし方をおさらいしてみましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>STEP4の腰振りトレーニングのやり方が、よくわかりません。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>クッションなどにCUPを固定する方法をお勧めしています。こちらを参考にトレーニングしてみましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>STEP4までトレーニングをしましたが、もっと挿入時間を長くしたいです。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>STEP4の腰振りトレーニングの継続をお勧めします。骨盤底筋のリラックスを今までよりも更に意識して、トレーニングに取り組みましょう。また、TENGA CUP WARMER（テンガ カップウォーマー）でCUPを温めると実際の性交渉に近くなりますので、使用をお勧めします。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>すべてのトレーニングを終えましたが、実際の性交渉ではなかなか我慢ができません。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>実際の性交渉でも、トレーニングと同じように骨盤底筋をリラックスさせるに意識しましょう。また、トレーニングカップと膣の温度差が我慢を難しくしている可能性もあります。その場合は、TENGA CUP WARMER（テンガ カップウォーマー）でトレーニングカップを温めてからトレーニングしてみましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>使用後のカップはどのように処分すればよいですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>ご使用後は各自治体のルールに従い、プラスチックごみとして処分してください。
+                    </p>
+                </dd>
+            </dl>
+        </section>
+        <section class="detail-desc-area">
+            <h3>【製品詳細】</h3>
+            <ul>
+                <li>製品名：メンズトレーニングカップ キープトレーニング</li>
+                <li>参考価格: 1,100円（税込）</li>
+                <li>本体原料: プラスチック、エラストマー、ウレタン</li>
+                <li>
+                    ローション成分: 水、グリセリン、PG、PEG-40水添ヒマシ油、ポリアクリル酸Na、フェノキシエタノール、<br>
+                    ヒドロキシエチルセルロース、シクロペンタシロキサン、メチルパラベン、<br>
+                    ヒドロキシプロピルシクロデキストリン、ブチルカルバミン酸ヨウ化プロピニル、シクロテトラシロキサン
+                </li>
+                <li>商品サイズ:（幅×奥行×高さ）6.8×6.8×15.4 cm</li>
+                <li>挿入可能サイズ: 概ね直径5㎝まで</li>
+                <li>重量: 112~132g（Lv.により異なる）</li>
+                <!-- <li>取扱場所: 公式オンラインストア、ほかWEBストア、ドラッグストア、一部医療機関</li> -->
+            </ul>
+        </section>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

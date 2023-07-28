@@ -1,0 +1,276 @@
+*{
+    color: #3c3c3c;
+}
+.category{
+    margin-top: 30px;
+    margin-left: 50px;
+    border-bottom: 1px solid #b5b5b5;
+    width: 5%;
+}
+#my-map canvas{
+    display: block;
+    margin: 0 auto;
+    border: none !important;
+    width: auto;
+}
+/* 都道府県プルダウン非表示 */
+.map-sp {
+    display: none;
+}
+.fv-area{
+    height: 740px;
+    width: 100%;
+}
+/* 店舗リスト */
+.tab-content{
+  width: 85%;
+  margin: 30px auto 0;
+}
+.tab-items{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #fff !important;
+    margin: 0 !important;
+    list-style: none;
+}
+.tab__item {
+    flex: 1;
+    flex-basis: 120px;
+    margin: 0 20px;
+}
+.tab__link {
+    display: block;
+    text-decoration: none;
+    color: #3c3c3c;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 10px;
+}
+.tab__link.on {
+    background-color: #65c6ba;
+    color: #fff;
+}
+.tab-body__item {
+    margin: 30px 15px;
+    display: none;
+    text-align: center;
+}
+.tab-body__item.on {
+    display: block;
+}
+.tab-body__item ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+.tab-body__item ul li{
+    text-align: left;
+    padding: 15px;
+    margin: 0 15px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    flex: calc(100%/4);
+    position: relative;
+    display: flex;
+}
+.tab-body__item ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 7px;
+    width: 9px;
+    height: 9px;
+    margin: auto;
+    border-top: 2px solid #65c6ba;
+    border-right: 2px solid #65c6ba;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+.tab-body__item ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.tab-body__item ul li a:hover{
+    cursor: pointer;
+}
+.tab-body__item ul li button {
+    background-color: #FFFFFF;
+    border: solid 1px#65c6ba;
+    border-radius: 25px;
+    width: 50%;
+    margin: 0 2%;
+    color: #65c6ba;
+}
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル枠の指定*/
+  .modal-body{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 500px;
+    width: 90%;
+  }
+  /*モーダルを閉じるボタンの指定*/
+  .modal-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: -20px;
+    left: -1px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #65c6ba;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 2px 5px 5px #bebebe;
+    
+  }
+  /*モーダル内のコンテンツの指定*/
+  .modal-content{
+    background: #fff;
+    text-align: left;
+    padding: 30px;
+  }
+  .genre:nth-child(1) {
+      padding-bottom: 5%;
+      margin-bottom: 5%;
+      border-bottom: 1px solid rgb(223, 223, 223);
+  }
+  .genre h3 {
+      color: #65c6ba;
+  }
+  .genre p {
+      font-size: 12px;
+      line-height: 30px;
+}
+@media screen and (max-width:479px) {
+    /* 都道府県プルダウン */
+    .fv-area {
+        display: none;
+    }
+    .map-sp {
+        display: block;
+        background-color: rgb(255, 248, 234);
+        text-align: center;
+        padding: 10% 0;
+    }
+    .map-sp p {
+        color: #65c6ba;
+    }
+
+    .map-pull {
+        margin-bottom: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .selectbox{
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        width: 42%;
+        margin: 0 2%;
+    }
+    
+    .selectbox::after {
+        position: absolute;
+        right: 15px;
+        width: 10px;
+        height: 7px;
+        background-color: #65c6ba;
+        clip-path: polygon(0 0, 100% 0, 50% 100%);
+        content: '';
+        pointer-events: none;
+    }
+    
+    .selectbox select {
+        appearance: none;
+        width: 170px;
+        height: 2.8em;
+        padding: .4em calc(.8em + 30px) .4em .8em;
+        border: 1px solid #65c6ba;
+        border-radius: 25px;
+        background-color: #fff;
+        color: #65c6ba;
+        font-size: 1em;
+        cursor: pointer;
+        margin: 5% 0;
+    }
+    .category {
+        margin-top: 30px;
+        margin-left: 0px;
+        border-bottom: 1px solid #b5b5b5;
+        width: 20%;
+    }
+    .tab-content {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .tab-items {
+        flex-wrap: wrap;
+    }
+    .tab__item {
+        flex: calc(100%/5);
+        margin: 5px;
+    }
+    .tab-body__item {
+        margin: 25px 0 0;
+    }
+    .tab-body__item ul {
+        padding: 10px 0;
+    }
+    .tab-body__item ul li {
+        display: block;
+        max-width: 140px;
+    }
+    .tab-body__item ul li button {
+        width: 55px;
+    }
+    .tab-body__item ul li::after {
+        right: 3px;
+    }     
+    .genre p {
+        font-size: 10px;
+    }   
+}

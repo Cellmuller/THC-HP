@@ -1,0 +1,96 @@
+/* news-area */
+.news-area{
+    margin-top: 30px;
+}
+.news-area h2 {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 4px;
+    margin: 20px 0 35px;
+}
+.container p {
+    color: #28A5A0;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 62px;
+    font-weight: bold;
+}
+.contents{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 55px auto 0;
+}
+
+.contents .content{
+    flex: calc(100%/3);
+    margin: 25px 25px 73px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    text-decoration: none;
+    background-color: #F2FAF9;
+    max-width: 725px;
+    /* height: 345px; */
+}
+.news-img{
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.text-area{
+    padding: 0 15px 15px;
+}
+.text-area .date{
+    margin: 15px 0 10px 0;
+    color: #B5B5B5;
+    text-align: right;
+    font-size: 14px;
+}
+.text-area .title{
+    margin-top: 5px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 80px;
+}
+.text-area .text{
+    padding: 10px 0;
+}
+@media screen and (max-width:599px) {
+    .text-area .title {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:479px) {
+    .contents {
+        width: 100%;
+    }
+    .contents .content{
+        flex: calc(100%/1);
+        margin: 0 0 35px;
+        height: auto;
+        width: 100%;
+    }
+    .news-area h2 {
+        margin: 52px 0 20px;
+        font-size: 35px;
+    }
+    .news-img {
+        height: auto;
+    }
+    .text-area .title {
+        font-size: 12px;
+        line-height: 20px;
+        height: auto;
+    }
+    .text-area .text {
+        font-size: 10px;
+        line-height: 25px;
+    }
+}

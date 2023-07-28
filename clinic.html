@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="TENGAヘルスケア製品お取り扱いの医療機関等をご案内します。">
+    <title>Clinic ｜ TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“favicon.ico”>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/clinic.css">
+    <!-- font awesome -->
+    <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="./index.html" class="header-logo-area">
+            <img src="./images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="./category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="./category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="./category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="./category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="./category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="./category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="./category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <ul id="category-menu">
+                        <li>
+                            <a href="./category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="./category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="./category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="./category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="./category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="./category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="./category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="./news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="./store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="./clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="./images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="./images/cart-icon-w.png">
+                    </a>
+                    <a href="./location/index.html">
+                        <img src="./images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="./images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="./images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="./location/index.html">
+                <img src="./images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="./images/clinic-fv.png" class="second-fv-img">
+            <img src="./images/clinic-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="./index.html">Home</a>
+            <a>></a>
+            <a href="#" class="current">クリニック</a>
+        </section>
+        <!-- <div class="category-btn">
+            <button class="modal-open-1">早漏</button>
+            <button class="modal-open-2">遅漏</button>
+            <button class="modal-open-3">活力</button>
+            <button class="modal-open-7">性交痛</button>
+            <button class="modal-open-6">妊活</button>
+            <button class="modal-open-5">骨盤底</button>
+            <button class="modal-open-4">膣内フローラ</button>
+        </div> -->
+        <h3>TENGAヘルスケア製品お取扱いの医療機関等をご案内します。</h3>
+        <div class="container">
+            <!-- 店舗リスト -->
+            <section class="store-lists-area">
+                <div>
+                    <div class="tab-content">
+                        <ul class="tab-items">
+                            <li class="tab__item on"><span class="tab__link" data-tab-body="1">北海道</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="2">東北</span></li>
+                            <li class="tab__item"><span class="tab__link on" data-tab-body="3">関東</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="4">北陸</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="5">東海</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="6">近畿</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="7">四国</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="8">九州・沖縄</span></li>
+                        </ul>
+                        <div class="tab-body">
+                            <div class="tab-body__item tab-body__item--1">
+                                <h2>北海道</h2>
+                                <div>
+                                    <ul class="card">
+                                        <li>
+                                            <a href="https://hanaemi-clinic.com/">
+                                                <img src="./images/clinic-icon.png" class="card-icon">はなえみレディースクリニック
+                                            </a>
+                                            <div>
+                                                <button class="modal-open-7">性交痛</button>
+                                                <button class="modal-open-1">早漏</button>
+                                                <button class="modal-open-2">遅漏</button>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="https://goo.gl/maps/UH3zwHH3JgUvZKGD9">
+                                                <img src="./images/location-icon.png" class="card-icon card-icon-center">北海道札幌市中央区大通西16丁目1-10 ITCセンタービル6F
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="tel:0116338703">
+                                                <img src="./images/tel-icon.png" class="card-icon">011-633-8703
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--2">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">岩手県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>岩手県</h2>
+                                        <!-- 岩手の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.osakaiin.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">逢坂医院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/1QwJ85cxdaRR8rgg7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">岩手県盛岡市長田町１０−３２
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0116338703">
+                                                    <img src="./images/tel-icon.png" class="card-icon">019-622-6016
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--3 on">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">東京</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="2">埼玉</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="3">千葉</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="4">神奈川</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1 on">
+                                        <h2>東京都</h2>
+                                        <!-- 東京の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://ygm-clinic.or.jp/shinbashi/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">YGメディカルクリニック新橋院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/vNCAre6mxFmfdkg7A">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都港区新橋1-18-11 一松ビル 5階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0120-987-051">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0120-987-051
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://privatecare-clinic.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">プライベートケアクリニック東京 東京院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/diUqqughyG46eYr6A">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都中央区日本橋2-2-2 マルヒロ日本橋ビル4F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-5255-6611">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-5255-6611
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://ginza-ginginclinic.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">AGクリニック銀座
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/1rxS8btWjfT6z1KD6">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都中央区銀座4-10-1 HOLON GINZA 4階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-6278-8112">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-6278-8112
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://shinbashi-hibiya-dori.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">新橋日比谷通りクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/yQQtfmTKNiPaxfdFA">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都港区新橋2-12-16 明和ビル3F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-3595-4976">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-3595-4976
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://tokyo-players.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">東京プレイヤーズクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/eyjp3ivk7TN5Qx3T6">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都渋谷区恵比寿西１－７－５ かどやビル5階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-6277-4816">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-6277-4816
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://setagaya-uro.jp">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">せたがや泌尿器腎クリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-3">活力</button>    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/AnhhKBmvppA6jpQ98">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都世田谷区桜新町1-40-8 桜新町クリニックモール2F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-3425-1124">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-3425-1124
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://kakinokizono.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">柿木園治療院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/JqATsUtaStT6oYeo6">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都新宿区新宿1-14-10 松山ビル2階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-6380-4642">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-6380-4642
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://setagaya-uro.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">せたがや泌尿器腎クリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/AnhhKBmvppA6jpQ98">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都世田谷区桜新町1-40-8 桜新町クリニックモール2F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:03-3425-1124">
+                                                    <img src="./images/tel-icon.png" class="card-icon">03-3425-1124
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://atom-clinic.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">新宿アトムクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/ttQHbKfi9HCQsrWk9">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都新宿区新宿2-3-12 光和ビル2階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0120-065-057">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0120-065-057
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://atom-clinic.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">花小金井レディースクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/2AbiySztyCtQYpaKA">
+                                                    <img src="./images/location-icon.png" class="card-icon">東京都小平市花小金井南町1-19-3 SORA1階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:042-497-5218">
+                                                    <img src="./images/tel-icon.png" class="card-icon">042-497-5218
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--2 on">
+                                        <h2>埼玉県</h2>
+                                        <!-- 埼玉の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.kawagoe-inter.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">川越インタークリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/B5JXhPH377LRkJsv8">
+                                                    <img src="./images/location-icon.png" class="card-icon">埼玉県川越市豊田町3-11-3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:049-246-1126">
+                                                    <img src="./images/tel-icon.png" class="card-icon">049-246-1126
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--3 on">
+                                        <h2>千葉県</h2>
+                                        <!-- 千葉の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="http://juno-vesta-clinic-hatta.net/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">ジュノ・ヴェスタクリニック八田
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/SmEUr7iKW8KDgCWZ7">
+                                                    <img src="./images/location-icon.png" class="card-icon">千葉県松戸市牧の原2-92
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:047-385-3281">
+                                                    <img src="./images/tel-icon.png" class="card-icon">047-385-3281
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--4 on">
+                                        <h2>神奈川県</h2>
+                                        <!-- 神奈川の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.luna-clinic.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">女性医療クリニックLUNAネクストステージ
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-5">骨盤底</button>
+                                                    <button class="modal-open-4">膣フローラ</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/EfM7UK1JpWDoznFW8">
+                                                    <img src="./images/location-icon.png" class="card-icon">神奈川県横浜市中区元町1-32
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:045-662-0618">
+                                                    <img src="./images/tel-icon.png" class="card-icon">045-662-0618
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--4">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">富山県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>富山県</h2>
+                                        <!-- 富山の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://yoshimoto-lc.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人社団吉本レディースクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/xNW4sJYHzuLCWwwY6">
+                                                    <img src="./images/location-icon.png" class="card-icon">富山県富山市羽根511
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:076-422-2000">
+                                                    <img src="./images/tel-icon.png" class="card-icon">076-422-2000
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--5">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">静岡県</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="2">愛知県</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="3">岐阜県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>静岡県</h2>
+                                        <!-- 静岡の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.tawara-ivf.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人社団 俵IVFクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/BXkyXPZGDY8aKGG27">
+                                                    <img src="./images/location-icon.png" class="card-icon">静岡県静岡市駿河区泉町2-20
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:054-288-2882">
+                                                    <img src="./images/tel-icon.png" class="card-icon">054-288-2882
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="http://seseragi.clinic/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">せせらぎ泌尿器科診療所
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/nSNdUyioQEwkcDQU7">
+                                                    <img src="./images/location-icon.png" class="card-icon">静岡県浜松市東区有玉南町543-1
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:053-432-5000">
+                                                    <img src="./images/tel-icon.png" class="card-icon">053-432-5000
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--2">
+                                        <h2>愛知県</h2>
+                                        <!-- 愛知の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://kimura-clinic.nagoya">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">きむら泌尿器科クリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/CC6rfZghwd6mCGeG7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">愛知県名古屋市南区忠次1-1-6
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:052-692-0080">
+                                                    <img src="./images/tel-icon.png" class="card-icon">052-692-0080
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.nishiyama-clinic-nagoya.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">にしやま形成外科皮フ科クリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/V2RC14bYdW3QkV4C7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">愛知県名古屋市中区栄3-14-13 ドトール名古屋栄ビル5F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:052-242-3535">
+                                                    <img src="./images/tel-icon.png" class="card-icon">052-242-3535
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.sakieladiesclinic.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">咲江レディスクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/BMzJQHACHwKGzHhG6">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">愛知県名古屋市千種区池下町2-15 ハクビ池下ビル5F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:052-757-0222">
+                                                    <img src="./images/tel-icon.png" class="card-icon">052-757-0222
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.inuyamachuohospital.or.jp/department/urology/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">総合犬山中央病院 泌尿器科
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/dxcLJfuin4FxJ5xJ9">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">愛知県犬山市大字五郎丸字二タ子塚６
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0568-62-8111">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0568-62-8111
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--3">
+                                        <h2>岐阜県</h2>
+                                        <!-- 岐阜の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.tokaihp.jp/division/hinyoki/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">東海中央病院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/w4Eyv7w768wDx5BLA">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">岐阜県各務原市蘇原東島町4―6―2 公立学校共済組合東海中央病院
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:058-382-3101">
+                                                    <img src="./images/tel-icon.png" class="card-icon">058-382-3101
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://nishino-cl.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人 好誠会 西野クリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/GAKq9odG6pMe439X7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">岐阜県各務原市三井町1丁目55-2
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:058-371-0500">
+                                                    <img src="./images/tel-icon.png" class="card-icon">058-371-0500
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--6">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">大阪府</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="2">兵庫県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>大阪府</h2>
+                                        <!-- 大阪の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://ninomiya-lc.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">NINOMIYA LADIES CLINIC
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-5">骨盤底</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/4GxCBCMzS6ELtRsd6">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市中央区西心斎橋1-13-21コーニッシュビル6階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:06-6251-7500">
+                                                    <img src="./images/tel-icon.png" class="card-icon">06-6251-7500
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://grandjoy.jp/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">GRAND JOY CLINIC（女性専用）
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-5">骨盤底</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/B4mNXcBbuy7x3Z8n7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市北区曾根崎新地1-4-20 新橋IMビル5F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0120-242-390">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0120-242-390
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://risa-shinkyu.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">RISA鍼灸院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/MRaM9CFaDGtpicbS9">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市住吉区長居3
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/tel-icon.png" class="card-icon">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://hoshiyama-clinic.net/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">ほしやまクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/hUqSKs2codJKTyX9A">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市北区梅田1-8-16 ヒルトンプラザイースト5F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:06-6343-3511">
+                                                    <img src="./images/tel-icon.png" class="card-icon">06-6343-3511
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://giga-clinic.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">大阪なんばギガクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/ytFV2AYqVaA38E4ZA">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市中央区難波2-3-5 ティックランドビル301号
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/tel-icon.png" class="card-icon">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">スマルナ医科歯科レディースクリニックOSAKA
+                                                </a>
+                                                <!-- <div>
+                                                    <button class="modal-open">性教育</button>
+                                                </div> -->
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/YeiYEoWTdwzouV8M6">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府大阪市福島区海老江1-5-52 イオンスタイル海老江2F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/tel-icon.png" class="card-icon">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.arata-caregroup.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">あらたホームクリニック三国ヶ丘
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/pe9q1iPao3Bxs24o9">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">大阪府堺市堺区向陵中町4丁目3番10号 真山ビル315号室
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:072-242-7998">
+                                                    <img src="./images/tel-icon.png" class="card-icon">072-242-7998
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--2">
+                                        <h2>兵庫県</h2>
+                                        <!-- 兵庫の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://hoshiyama-hari.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">ほしやま鍼灸院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/iYvBcWLMTyrP9Xhd8">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">兵庫県三田市武庫が丘3-4 プチモール３号区画
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:079-501-4949">
+                                                    <img src="./images/tel-icon.png" class="card-icon">079-501-4949
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="http://www.ihara-clinic-urology.jp">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">いはらクリニック
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/vTg7eCFMDPKExDYT9">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">兵庫県西宮市甲子園口2ｰ4ｰ6
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0798-68-2577">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0798-68-2577
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--7">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">愛媛県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>愛媛県</h2>
+                                        <!-- 愛媛の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://tominaga-clinic.or.jp">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人TMC 富永ペインクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-7">性交痛</button>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/oEZk2Qq5EuqEjckc7">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">愛媛県松山市此花町７−３３
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:089-921-7711">
+                                                    <img src="./images/tel-icon.png" class="card-icon">089-921-7711
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-body__item tab-body__item--8">
+                                <!-- <div class="sub-tab-items">
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="1">鹿児島県</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="2">福岡県</span></li>
+                                    <li class="sub-tab__item"><span class="sub-tab__link" data-sub-tab-body="3">沖縄県</span></li>
+                                </div> -->
+                                <div class="sub-tab-body">
+                                    <div class="sub-tab-body__item sub-tab-body__item--1">
+                                        <h2>鹿児島県</h2>
+                                        <!-- 鹿児島の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="http://fukumoto-menshealth.clinic">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人友心会 福元メンズヘルスクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-1">早漏</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-3">活力</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/BQ9bNrGHF3Xds3oa8">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">鹿児島県鹿児島市山下町12-8-301
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:090-5736-0050">
+                                                    <img src="./images/tel-icon.png" class="card-icon">090-5736-0050
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--2">
+                                        <h2>福岡県</h2>
+                                        <!-- 福岡の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">北九州レディース鍼灸院
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/AqgBRczyw6M7crey9">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">福岡県北九州市小倉北区片野3丁目9-18 片野富士ビル１階
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:093-967-7589">
+                                                    <img src="./images/tel-icon.png" class="card-icon">093-967-7589
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://fukuoka-repro.com/">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">医療法人 福岡泌尿器リプロダクションクリニック
+                                                </a>
+                                                <div>
+                                                    <button class="modal-open-6">妊活</button>
+                                                    <button class="modal-open-2">遅漏</button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/mtboUBvh4hZzRtqY6">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">福岡県福岡市中央区今泉1-13-21-4F
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:092-401-1085">
+                                                    <img src="./images/tel-icon.png" class="card-icon">092-401-1085
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sub-tab-body__item sub-tab-body__item--3">
+                                        <h2>沖縄県</h2>
+                                        <!-- 沖縄の内容 -->
+                                        <ul class="card">
+                                            <li>
+                                                <a href="https://www.yashinokiclinic.com">
+                                                    <img src="./images/clinic-icon.png" class="card-icon">やしのきクリニック
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://goo.gl/maps/MjfMYSnmezZCmgU66">
+                                                    <img src="./images/location-icon.png" class="card-icon card-icon-center">沖縄県石垣市大川579ー5
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="tel:0980-88-1184">
+                                                    <img src="./images/tel-icon.png" class="card-icon">0980-88-1184
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-1">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 早漏カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mtc-kt.html">MEN’S TRAINING CUP KEEP TRAINING</a></li>
+                                    <li><a href="./products/ttk.html">TIMING TRAINER -KEEP-</a></li>
+                                    <li><a href="./products/htl-01.html">TRAINER LOTION</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-2">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 遅漏カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mtc.html">MEN’S TRAINING CUP FINISH TRAINING</a></li>
+                                    <li><a href="./products/ttf.html">TIMING TRAINER -FINISH-</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-3">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 活力カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/tls.html">活力支援サプリメント</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-4">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 膣内フローラカテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/tfs.html">YoniFlora</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-5">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 骨盤底カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/kch.html">K-Gel CHECKER </a></li>
+                                    <li><a href="./products/tks.html">K-Gel サポートサプリメント</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-6">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 妊活カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mensloupe.html">TENGA MEN’S LOUPE</a></li>
+                                    <li><a href="./products/tss.html">精育支援サプリメント</a></li>
+                                    <li><a href="./products/seedin.html">Seed in</a></li>
+                                    <li><a href="./products/seedpod.html">SEED POD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-7">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 性交痛カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mcg.html">MOIST CARE GEL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="./images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="./images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="./images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="./images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="./index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="./news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="./store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="./clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/japan-map-js@1.0.1/dist/jpmap.min.js"></script>
+    <script src="./js/clinic.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

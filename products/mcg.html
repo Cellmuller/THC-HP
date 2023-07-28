@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="モイストケアジェルは痛みを和らげたり、セックスを楽しむための補助となる、医薬部外品の潤滑ジェルです。うるおい不足にお悩みの全ての女性におすすめです。">
+    <title>モイストケアジェル ｜ TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“../favicon.ico”>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/mcg-fv.png" class="second-fv-img">
+            <img src="../images/mcg-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/seikoutsu.html">性交痛</a>
+            <a>></a>
+            <a href="#" class="current">モイストケアジェル</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>
+                    やさしくうるおう<br class="sp">「MOIST CARE GEL」で<br>
+                    不安とストレスのない<br class="sp">ラブタイムを
+                </h2>
+                <div>
+                    <p class="desc-text-2">
+                        TENGAヘルスケアが20〜60代の女性<br class="sp">約1,000人に行なったアンケートでは、<br class="sp">50％以上の女性が<br class="sp">「セックス中に痛みを感じたことがある」<br class="sp">と回答しました。<br>
+                        年齢を重ねるほどにデリケートゾーンは<br class="sp">潤いが不足しやすくなると言われていますが、20代や30代でも乾燥の悩みを抱えている方は<br class="sp">珍しくありません。<br>
+                        パートナーと充実したラブタイムを<br class="sp">過ごすために、潤いはとても重要な<br class="sp">ポイントです。<br>
+                        グリチルリチン酸2K配合で<br class="sp">「炎症を抑える」効果もあり、<br class="sp">性交痛やうるおい不足に悩む女性に<br class="sp">寄り添ったアイテムが<br>
+                        <span>MOIST CARE GEL<br class="sp">(モイストケアジェル)</span><br class="sp">です。
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">セックスが痛くて怖い</li>
+                    <li><img src="../images/worries2.png">生理前後に性交痛がある</li>
+                    <li><img src="../images/worries2.png">産後でセックスをするのが怖い、傷が痛い</li>
+                    <li><img src="../images/worries2.png">挿入時にデリケートゾーン、膣の奥が摩擦で痛い</li>
+                    <li><img src="../images/worries2.png">デリケートゾーンのうるおいが足りないことに悩んでいる</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>潤滑ゼリー（ジェルローション）を持つということは、「お互いに幸せな時間を増やしたい」という気持ちの表れ</h3>
+                                <p>
+                                    ローションと聞くと、プレイ用として大量に使うイメージを持たれることも多いですが、モイストケアジェルは「痛みを和らげ、セックスを楽しむための補助がしたい」という思いから生まれました。<br><br>
+                                    セックスの最中に「痛い」と言えずに我慢してしまったり、濡れにくいことがパートナーの自信を喪失させるのではないか......<br>
+                                    と1人で抱え込んでしまったりすると、パートナーとの関係の悪化にも繋がりかねません。潤滑ゼリーを持っていることは、いやらしいことではなく、お互いのことを大切に思う気持ちの表れです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>こだわりの6つのポイント</h3>
+                            <ul>
+                                <li>
+                                    拭き取りやすくて無臭
+                                </li>
+                                <li>
+                                    潤滑ゼリー業界唯一の医薬部外品<br>
+                                    （※2019年10月自社調べ）
+                                </li>
+                                <li>
+                                    炎症を抑えるグリチルリチン酸2K配合
+                                </li>
+                                <li>
+                                    うるおいを長持ちさせる濃グリセリン成分配合
+                                </li>
+                                <li>
+                                    チューブタイプとパウチタイプをご用意しております
+                                </li>
+                                <li>
+                                    水溶性なので衣服や寝具などに付着してもシミにならない
+                                </li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/MCG_howtouse.png" class="how-use-img">
+                            </div>
+                            <div>
+                                ご自身のデリケートゾーンのうるおい具合と対話しながら、使用量を調整ください。目安としては人差し指の第一関節くらいまでを推奨しております。<br>
+                                <br>
+                                ※パウチタイプの場合は、開封後は一度で使い切ってください。
+                            </div>
+                        </div>
+
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/post-1058/">
+                        <div>
+                            <h3>性交痛への気づかい足りてる？男性も知ってほしい、性交痛への男女の認識の差</h3>
+                            <p>
+                                性交痛に対する男女の認識の差や実態について、解説していきます。
+                            </p>
+                        </div>
+                        <img src="../images/mcg_column1.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="1210">
+                    <div>
+                        <img src="../images/MCG_tube.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">モイストケアジェル チューブタイプ</div>
+                        <p class="explain">
+                            たっぷり使える50g
+                        </p>
+                        <div class="price price-margin">
+                            単品価格<span class="font-red">¥1,210</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-EC-MCG-01">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="699">
+                    <div>
+                        <img src="../images/MCG_puch.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">モイストケアジェル パウチタイプ</div>
+                        <p class="explain">
+                            パウチタイプでさらに携帯に便利 5g x 5包入
+                        </p>
+                        <div class="price price-margin">
+                            単品価格<span class="font-red">¥699</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-MCG-01P-05">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="column-area">
+            <h2>性交痛について学ぶ</h2>
+            <!-- <p>関連コラム</p> -->
+            <section class="carousel-box">
+                <div class="carousel-area2">
+                    <a href="https://tengahealthcare.com/column/630/">
+                        <img src="../images/mcg_column2.jpeg" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/978/">
+                        <img src="../images/mcg_column3.jpeg" class="carousel-img">
+                    </a>                
+                </div>
+            </section>
+        </section>
+        <section class="faq-area">
+            <h2 class="faq-titile">よくある質問</h2>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>1回の使用量はどれくらいですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>うるおい具合は人それぞれですので、ご自身のデリケートゾーンと対話しながら使用量を調整ください。目安としては人差し指の第一関節くらいまでを推奨しております。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>乾燥肌ですが、荒れませんか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>お肌の状態にもよりますので一概には言えませんが、お肌が弱いようでしたらご使用後はすぐに洗い流したうえで保湿をされることをお勧めいたします。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>18歳ですが、使用できますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>特に年齢の制限はありません。初めての体験をスムーズにという観点での使用もオススメしております。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>産後、授乳期つかえますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>はい。問題無くご使用いただけます。特に産後はうるおいが不足しがちですので、積極的にご使用ください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>男性でも使用できますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>もちろん男性でもご使用いただけます。男性自身に塗布し、女性と楽しむだけでなく、バックでのご使用も可能です。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>使用期限はどれくらいですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>チューブタイプの場合、開封後はなるべく早くご使用ください。パウチタイプの場合は、開封後は一度で使い切ってください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>毎日使っても良いですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>特に問題ありません。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>更年期中ですが、何か身体に影響はありますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>特に影響はありません。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>コンドームと併用しても良いですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>水溶性ですので、基本的にコンドームにダメージを与えることはありませんが、全てのコンドームに対して試験をしているわけではありませんので、保証はいたしかねます。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>妊活には使えますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>妊活向けに作られた製品ではありませんので、妊娠目的の使用はお控えください。 ただし、妊活時の痛みが気になる際にはご使用ください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>匂いはついていますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>無臭です
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>味はどうですか？（舐めても大丈夫ですか？）
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>有効成分であるグリチルリチン酸２Kには若干の甘みがございますので、舐めるとかすかにその甘みを感じることがございます。食品ではありませんので、大量に飲用することはお控えいただき、口に入った場合は飲み込まずに口をゆすいで出していただくことをオススメいたします。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>irohaと使用しても大丈夫ですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>問題ありません。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>衣服やシーツについても大丈夫ですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>問題ありません。気になるようでしたら洗濯をして洗い流してください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>pH値はどれくらいですか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>6.5です。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>保管温度に指定はありますか？
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>常温で保管してください。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>すべてのトレーニングを終えましたが、実際の性交渉ではなかなか我慢ができません。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>実際の性交渉でも、トレーニングと同じように骨盤底筋をリラックスさせるに意識しましょう。また、トレーニングカップと膣の温度差が我慢を難しくしている可能性もあります。その場合は、TENGA CUP WARMER（テンガ カップウォーマー）でトレーニングカップを温めてからトレーニングしてみましょう。
+                    </p>
+                </dd>
+            </dl>
+            <dl class="ac">
+                <dt class="ac-parent">
+                    <span>Q.</span>カバンに入れていて、蓋が空いてしまうことが心配です。
+                </dt>
+                <dd class="ac-child">
+                    <p>
+                        <span>A.</span>蓋はシッカリ閉まりますので、勝手に空いてしまう可能性は低いですが、心配な場合は、携帯にはパウチタイプをお勧めします。
+                    </p>
+                </dd>
+            </dl>
+        </section>
+        <section class="detail-desc-area">
+            <h3>【製品詳細】</h3>
+            <ul>
+                <li>
+                    製品名：MOIST CARE GEL <br>
+                    参考価格：1,210円（税込） <br>
+                    内容量：50g <br>
+                    商品サイズ：（幅×奥行×高さ）4.9×3.0×12.5 cm <br>
+                    成分（パウチセットも同様）： 有効成分：グリチルリチン酸2Ｋ、その他の成分：濃グリセリン、粘度調整剤、ヒドロキシエタンジホスホン酸4Na液、パラオキシ安息香酸エステル、pH調整剤<br>
+                    取扱場所（パウチセットも同様）：公式オンラインストア、ほかWEBストア、全国のドラッグストア、一部医療機関<br>
+                    製品名：MOIST CARE GEL パウチセット<br>
+                    参考価格：636円（税込）<br>
+                    内容量：5g x 5包入り<br>
+                    商品サイズ ：（幅×奥行×高さ）50×30×100 mm
+                </li>
+            </ul>
+        </section>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

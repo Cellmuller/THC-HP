@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="日本では、成人男性の約5人に1人が精子に何らかの問題を抱え、不妊の半分のケースで男性にも原因があるという事をご存知でしたか？妊活サポートシリーズ「精育支援サプリメント」は、弱った精子を元気にして妊活を応援するサプリメントです。女性が葉酸サプリを飲むように、男性も精育サプリで精子ケアをはじめませんか？">
+    <title>精育支援サプリメント | TENGAヘルスケア プロダクトサイト</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/tss-fv.png" class="second-fv-img">
+            <img src="../images/tss-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/ninkatsu.html">妊活</a>
+            <a>></a>
+            <a href="#" class="current">精育支援サプリメント</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>
+                    適切な栄養補給は男性にできる<br class="sp">妊活のひとつ<br>
+                    「精育支援サプリメント」で<br class="sp">体と心に健康を
+                </h2>
+                <div>
+                    <p class="desc-text-1">
+                        妊活や不妊は女性だけの問題ではありません
+                    </p>
+                    <p class="desc-text-2">
+                        自身の状態を気にかけ、<br class="sp">できるだけ良いコンディションで妊活に臨む。これは、全ての男性にできる妊活です。<br>
+                        <span>精育支援サプリメント</span>で<br class="sp">妊活の第一歩を踏み出してみませんか。
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">もっと"元気"にしたい</li>
+                    <li><img src="../images/worries2.png">パートナーと一緒に妊活に取り組みたい</li>
+                    <li><img src="../images/worries2.png">現在妊活中、または妊活を始めようと考えている</li>
+                    <li><img src="../images/worries2.png">妊活を始めたいけど、何をしたら良いのかわからない</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>「精育サプリで体を整えることを、当たり前にしたい」という強い思いで“高品質で低価格”を実現しました</h3>
+                                <p>
+                                    TENGAヘルスケアの精育サプリは、通常販売価格で3,980円と開発当時の競合のサプリ価格8,000円と比較して低価格を実現しています。TENGAヘルスケアは、“男性も女性と同じように積極的に妊活に取り組んでほしい”と考えています。その第一歩として日常的に精育サプリを服用してもらうことを考えると、8,000円は高すぎる。せめて4,000円でなければ定期的に飲んでもらうのは難しい。信頼できる成分を厳選し、実際に変化を体感できる品質の高いサプリを4,000円以下で販売するために、試行錯誤しました。<br>
+                                    医師監修のもと改良を重ねた結果、90％の男性が「実感できる」と回答したのが、今の精育サプリです。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>こだわりの4つのポイント</h3>
+                            <ul>
+                                <li>
+                                    1袋120粒入り(30日分)
+                                </li>
+                                <li>
+                                    安心の全主要成分、分量表示
+                                </li>
+                                <li>
+                                    エンザイムQ10をたっぷり200㎎
+                                </li>
+                                <li>
+                                    プリマビエ（シラジット粉末）もたっぷり200mg配合
+                                </li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TSS_howtouse.png" class="how-use-img">
+                            </div>
+                            <div>
+                                1日4粒を目安に水またはぬるま湯で服用してください<br>
+                                <br>
+                                サプリメントは健康食品であり、医師から処方される薬とは異なります。医薬品のように数日で劇的な変化をもたらす成分は含まれていません。3ヶ月以上継続し、体の状態を確かめてみましょう。
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/553/">
+                        <div>
+                            <h3>男性妊活サプリ「精育支援サプリメント」　あなたの精子は大丈夫？？</h3>
+                            <p>
+                                男性の妊活に特化したサプリメントはまだ多くありませんが、どのような製品を選んだらよいのか悩む方もいるでしょう。
+                                注意して確認したい点をお伝えします。
+                            </p>
+                        </div>
+                        <img src="../images/tss_column1.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="11605">
+                    <div>
+                        <img src="../images/TSS_threeset.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">精育支援サプリメント3個セット</div>
+                        <p class="explain">
+                            3個セットで10％OFF！
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥11,605</span>(税込)<span class="normal-price">通常 ¥12,894(税込)</span>
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-STH-011">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="4298">
+                    <div>
+                        <img src="../images/TSS.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">精育支援サプリメント</div>
+                        <p class="explain">
+                            適切な栄養補給 は、男性にできる妊活のひとつ <br>「精育支援サプリメント」で体と心に栄養を
+                        </p>
+                        <!--<div class="free-text">送料無料</div>-->
+                        <div class="price">
+                            単品価格<span class="font-red">¥4,298</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-TSS-01">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <div class="detail-btn">
+                <p>他の商品ラインナップ</p>
+                <button class="more"></button>
+            </div>
+            <div class="txt-hide">
+                <section class="product-area">
+                    <div class="product-item" data-price="3868">
+                        <div>
+                            <img src="../images/TSS_regular.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">【定期購入 10%OFF】</div>
+                            <p class="explain">
+                                精育支援サプリメントを28日ごとにお届けする定期購入です。 <br>初回購入時に精子観察キット MEN’S LOUPEをプレゼントいたします。さらに継続特典として、3回目の発送時には「活力支援サプリメント12粒」を、4回目には「Seed in 1回分」をプレゼント。
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                定期購入価格<span class="font-red">¥3,868</span>(税込)<span class="normal-price">通常 ¥4,298(税込)</span>
+                            </div>
+                            <div class="field">                
+                                <a href="https://shop.tengahealthcare.com/product/TTH-004" class="cartIn-button">定期購入する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="7294">
+                        <div>
+                            <img src="../images/TSS_seedin.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">精育・Seed inセット</div>
+                            <p class="explain">
+                                Seed inとセットで5％OFF！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥7,294</span>(税込)<span class="normal-price">通常 ¥9,233(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-STH-019">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="8782">
+                        <div>
+                            <img src="../images/TLS_TSS.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">精育・活力 サプリメントセット</div>
+                            <p class="explain">
+                                活力アプリとセットで5％OFF！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥8,782</span>(税込)<span class="normal-price">通常 ¥9,244(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-STH-009">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item" data-price="8166">
+                        <div>
+                            <img src="../images/TSS_twoset.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">精育支援サプリメント2個セット</div>
+                            <p class="explain">
+                                2個セットで5％OFF！
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥8,166</span>(税込)<span class="normal-price">通常 ¥8,596(税込)</span>
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="CL-STH-018">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <section class="column-area">
+                <h2>精育について学ぶ</h2>
+                <!-- <p>関連コラム</p> -->
+                <section class="carousel-box">
+                    <div class="carousel-area2">
+                        <a href="https://tengahealthcare.com/column/574/">
+                            <img src="../images/tss_column2.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/post-2726/">
+                            <img src="../images/tss_column3.jpeg" class="carousel-img">
+                        </a>              
+                    </div>
+                </section>
+            </section>
+            <section class="faq-area">
+                <h2 class="faq-titile">よくある質問</h2>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>賞味期限はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>賞味期限は、製造日から3年です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>製造場所はどちらですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>日本国内のいくつかの工場にて製造しています。ロットにより製造場所は異なることがありますが、品質基準はどれもGMP認定工場として統一されています。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>副作用はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>トレーニングガイドの説明に従って、4STEPのトレーニング（合計28回）を実施してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>カプセルのサイズはどのくらいですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>横13.5mm x 縦8mmのオーバル型です。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>TENGAヘルスケアの精育支援サプリメントと一緒に飲んでも大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>1日目安量の範囲であれば、問題ありません。処方薬を飲まれている場合は、医師または薬剤師に相談のうえ服用してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>購入を検討しているのですが、現在デュタステリドを服用しています。活力サプリと同時に服用は可能ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>大変申し訳ございませんが、お客様がどのような理由で該当の薬を飲んでいらっしゃるのか分からないため、判断できかねます。お手数をおかけいたしますが、一度かかりつけの医師または薬剤師に相談のうえ服用してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>他社のサプリと一緒に飲んでも大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>弊社では判断しかねますので、該当するサプリメーカーへお問合せをお願いいたします
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>保管場所についての注意はありますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>35度までは試験をしておりますが、それ以上ですと錠剤が溶けてしまう可能性があります。夏場の車の中や、直射日光のあたる場所は避けて保管してください。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>葉酸は含まれていますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>葉酸は含まれておりません。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>コーヒーやお茶と一緒に飲んでも大丈夫ですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>プリマビエに含まれるミネラル分の吸収が阻害されてしまう可能性があるため、水またはぬるま湯と一緒に飲むことをお勧めいたします。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>いつ飲むのがおすすめですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>主成分であるコエンザイムQ10は脂溶性ビタミンといって、油に溶けやすい性質があります。そのため食事中や食後などのタイミングでの摂取で吸収率がアップします。 油を使用した食事との組み合わせがお勧めです。
+                        </p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="detail-desc-area">
+                <h3>【製品詳細】</h3>
+                <ul>
+                    <li>
+                        製品名：精育支援サプリメント<br>
+                        参考価格：4,298円（税込）<br>
+                        内容量：63.6g （530mg x 120粒）<br>
+                        商品サイズ：（幅×奥行×高さ）:10x3x19 cm<br>
+                        原材料・成分：サフラワー油（国内製造）、コエンザイムQ10、精製シラジットエキス粉末、酵母（亜鉛含有）/ゼラチン、グリセリン、ビタミンC、カラメル色素、グリセリン脂肪酸エステル、ミツロウ、ビタミンE<br>
+                        用量の目安：1日4粒<br>
+                        取扱場所：公式オンラインストア、ほかWEBストア、一部病院・クリニック
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

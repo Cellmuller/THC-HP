@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="繰り返し使える早漏トレーニング用アイテム。コストが気になる方や、長期的にトレーニングに取り組んでいきたい方におすすめです。">
+    <title>タイミングトレーナー キープ ｜ TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“../favicon.ico”>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/product.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- Slick.js -->
+     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="../js/main.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="../index.html" class="header-logo-area">
+            <img src="../images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="../category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="../category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="../category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="../category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="../category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    
+                    <ul id="category-menu">
+                        <li>
+                            <a href="../category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="../category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="../category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="../category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="../category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="../category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>  
+                </li>
+                <li>
+                    <a href="../news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="../store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="../clinic.html">
+                        クリニック
+                        <span class="header-nav-text">clClinicsinic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="../images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="../images/cart-icon-w.png">
+                    </a>
+                    <a href="../location/index.html">
+                        <img src="../images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="../images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="../images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="../location/index.html">
+                <img src="../images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="second-fv-area">
+            <img src="../images/ttk-fv.png" class="second-fv-img">
+            <img src="../images/ttk-fv-sp.png" class="second-fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+        <section class="breadcrumbs-area">
+            <a href="../index.html">Home</a>
+            <a>></a>
+            <a href="../category/sourou.html">早漏</a>
+            <a>></a>
+            <a href="#" class="current">タイミングトレーナーキープ</a>
+        </section>
+        <div class="container">
+            <section class="desc-area">
+                <h2>早漏*トレーニングに<br class="sp">最適化された、<br class="sp">繰り返し使用できるアイテム</h2>
+                <div>
+                    <p class="desc-text-1">
+                        男性機能に関する悩みでもっとも多いのが<br>「早漏についての悩み」だと言われています。
+                    </p>
+                    <p class="desc-text-2">
+                        2017年に実施されたTENGAヘルスケアの調査では、日本国内で推定約1300万人、<br>
+                        実に成人男性の約3.5人に1人が早漏の悩みを<br class="sp">抱えていることがわかりました。<br>
+                        従来の早漏トレーニングには使い切りタイプの『MEN’S TRAINING CUP -KEEP TRAINING-』が活用されていましたが、<br>
+                        早漏の方は1回のトレーニングが短時間で<br class="sp">終わってしまうなど<br class="sp">コスト面の課題がありました。<br>
+                        そうした課題を解消すべく生まれたのが、<br>
+                        <span>TIMING TRAINER -KEEP-<br class="sp">(タイミングトレーナー キープ)</span><br class="sp">です。
+                    </p>
+                    
+                    <p class="desc-text-3">
+                        このトレーニングでは、<br class="sp">実際の性交に近い刺激に慣れることで<br>
+                        <span>射精をコントロールできる状態を目指します。</span>
+                    </p>
+                    <p class="desc-text-4">
+                        (*疾病に該当するものを除きます。本製品は治療を必要とする早漏を改善させるものではありません。)
+                    </p>
+                </div>
+            </section>
+            <section class="target-area">
+                <h2><img src="../images/worries1.png">こんなお悩みありませんか？</h2>
+                <ul>
+                    <li><img src="../images/worries2.png">コストを気にせず、繰り返しトレーニングしたい</li>
+                    <li><img src="../images/worries2.png">射精が早いことで、パートナーが挿入時間に満足しているか心配　</li>
+                    <li><img src="../images/worries2.png">早漏にコンプレックスがあることでセックスや恋愛に自信が持てず、前向きになれない</li>
+                    <li><img src="../images/worries2.png">挿入から1分も我慢できずに射精してしまい、情けない、恥ずかしい思いをしたことがある</li>
+                </ul>
+            </section>
+            <section class="effect-area">
+                <dl class="ac">
+                    <dt class="ac-parent">商品詳細</dt>
+                    <dd class="ac-child">
+                        <div class="improvement">
+                            <div>
+                                <h3>調査と改良の末に生まれた、自宅でできる男性機能のトレーニング法</h3>
+                                <p>
+                                    日本では早漏の治療薬は認可されておらず、「早漏＝病気であり治すべきもの」と捉えている男性もほとんどいないでしょう。 そのため、多くの男性が適切な医療機関を受診することなく、ひとりで悩みを抱え込んでしまっています。 「悩んでいるけど、病院に行くのは恥ずかしい……」「どうしたら良いのかわからない…..」という男性たちに向けて、TENGAヘルスケアは早漏のための繰り返し使用できるトレーニングアイテムを開発しました。 トレーニングカップより、更にじっくり、回数を気にせずトレーニングができるTIMING TRAINER -KEEP-をぜひお試しください。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="improvement">
+                            <div>
+                                <h3>刺激に慣れるだけじゃない、「骨盤底筋の操作」で射精のコントロールを身につける</h3>
+                                <div class="img-flex">
+                                    <p>
+                                        このトレーニングは「刺激に慣れる」ことに加え、もう一つ目的があります。<br>
+                                        それは、「骨盤底筋の操作」によって、射精をコントロールする方法を習得することです。 骨盤底筋は放尿中に尿を止めたり、肛門を締めたりする際に収縮する筋肉です。<br>
+                                         骨盤底筋が緊張している（ 力が入っている）と、射精の我慢が難しくなるので、骨盤底筋を意識的にリラックスさせる方法を習得していきます。
+                                    </p>
+                                    <img src="../images/kotsubantei.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trouble">
+                            <h3>早漏トレーニングの3つの特徴</h3>
+                            <ul>
+                                <li>
+                                    気持ちいいトレーニング<br>
+                                    筋トレなどと違い、マスターベーションをベースとしているので「気持ちいい」トレーニングです。
+                                </li>
+                                <li>
+                                    臨床研究済だから安心<br>
+                                    性機能を専門とする医師が集まる「日本性機能学会」や「世界性機能学会」でもその効果が発表された、信頼のおける方法です。
+                                </li>
+                                <li>
+                                    トレーナーがサポート<br>
+                                    TENGAヘルスケアのスタッフが、LINEを通じたコミュニケーションで、わかりづらい部分やつまづきやすい部分をサポートします。
+                                </li>
+                            </ul>
+                            <span>※早漏には疾病に該当するものがあります。その場合医師の診断、治療が必要となりますので、医師にご相談ください。</span>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="how-use-area">
+                <dl class="ac">
+                    <dt class="ac-parent">使い方</dt>
+                    <dd class="ac-child">
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse01.png" class="how-use-img">
+                            </div>
+                            <div><span>01</span>スタンド側面をしっかりおさえて、クリアカバーを回してケースを開けます。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse02.png" class="how-use-img">
+                            </div>
+                            <div><span>02</span>スライドアームを取り外します。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse03.png" class="how-use-img">
+                            </div>
+                            <div><span>03</span>レール部分を両手で持ち、カチっと音がするまで押すとロックが外れて開きます。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse04.png" class="how-use-img">
+                            </div>
+                            <div><span>04</span>専用のTRAINER LOTIONを適量（10ml～15ml）塗布します。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse05.png" class="how-use-img">
+                            </div>
+                            <div><span>05</span>本体を閉じ、スライドアームを取り付けます。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse06.png" class="how-use-img">
+                            </div>
+                            <div><span>06</span>挿入口にローションを塗布します。</div>
+                        </div>
+                        <div class="use-item">
+                            <div>
+                                <img src="../images/TTK_howtouse07.png" class="how-use-img">
+                            </div>
+                            <div><span>07</span>挿入口から挿入します。</div>
+                        </div>
+                    </dd>
+                </dl>
+            </section>
+            <section class="article-area">
+                <div class="article-detail">
+                    <a href="https://tengahealthcare.com/column/1038/">
+                        <div>
+                            <h3>【総論】早漏トレーニングとは？実践前の確認・まとめ</h3>
+                            <p>
+                                早漏の対策法の1つである「早漏トレーニング」について解説します。
+                                トレーニングを検討している方は、ぜひご確認ください。
+                            </p>
+                        </div>
+                        <img src="../images/MKT_column1.jpeg">
+                    </a>
+                </div>
+            </section>
+            <section class="article-area2">
+                <a href="https://tengahealthcare.com/column/1038/">
+                    <img src="../images/MKT_column1.jpeg" class="article-area2-img">
+                </a>
+            </section>
+            <section class="product-area">
+                <div class="product-item" data-price="12100">
+                    <div>
+                        <img src="../images/TTK_standard.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">TIMING TRAINER -KEEP- スタンダードセット</div>
+                        <p class="explain">
+                            『TIMING TRAINER -KEEP-』 と『TRAINER LOTION』2本のセットです (『TIMING TRAINER -KEEP-』付属の1本と合わせ、『TRAINER LOTION』は合計3本お届け)。 <br>ローション1本分がお得になったセットです。
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            セット価格<span class="font-red">¥12,100</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-STH-014">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="product-item" data-price="11000">
+                    <div>
+                        <img src="../images/TTK_single.png" class="product-img">
+                    </div>
+                    <div>
+                        <div class="title">TIMING TRAINER -KEEP- タイミングトレーナー キープ</div>
+                        <p class="explain">
+                            専用のトレーニングガイドに加え、トレーニング専用ローション『TRAINER LOTION』が1本付属 <br>1本(160ml)で約10~15回のトレーニングが可能です。
+                        </p>
+                        <div class="free-text">送料無料</div>
+                        <div class="price">
+                            単品価格<span class="font-red">¥11,000</span>(税込)
+                        </div>
+                        <div class="field">
+                            <div class="count-field">
+                                <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                            </div>                        
+                            <a href="#!" class="cartIn-button" data-id="CL-HTT-01K">カートに追加する</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <div class="detail-btn">
+                <p>他の商品ラインナップ</p>
+                <button class="more"></button>
+            </div>
+            <div class="txt-hide">
+                <section class="product-area">
+                    <div class="product-item" data-price="18000">
+                        <div>
+                            <img src="../images/TTK_complete.png" class="product-img">
+                        </div>
+                        <div>
+                            <div class="title">TIMING TRAINER -KEEP- コンプリートセット</div>
+                            <p class="explain">
+                                TIMING TRAINER -KEEP- スタンダードセットに、FLIP WARMERが付いてさらにお得なセット。<br> (『TIMING TRAINER -KEEP-』付属の1本と合わせ、『TRAINER LOTION』は合計3本となります)
+                            </p>
+                            <div class="free-text">送料無料</div>
+                            <div class="price">
+                                セット価格<span class="font-red">¥18,000</span>(税込)
+                            </div>
+                            <div class="field">
+                                <div class="count-field">
+                                    <button class="minus">－</button><input type="text" name="input01" value="1" readonly class="number"><button class="plus">＋</button>
+                                </div>                        
+                                <a href="#!" class="cartIn-button" data-id="STH-034">カートに追加する</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="column-area">
+                <h2>早漏について学ぶ</h2>
+                <!-- <p>関連コラム</p> -->
+                <section class="carousel-box">
+                    <div class="carousel-area2">
+                        <a href="https://tengahealthcare.com/column/post-3614/">
+                            <img src="../images/MKT_column3.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/post-3821/">
+                            <img src="../images/MKT_column4.jpeg" class="carousel-img">
+                        </a>
+                        <a href="https://tengahealthcare.com/column/post-3082/">
+                            <img src="../images/TTK_column1.jpeg" class="carousel-img">
+                        </a>                   
+                    </div>
+                </section>
+            </section>
+            <section class="faq-area">
+                <h2 class="faq-titile">よくある質問</h2>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>繰り返し何回くらい使えますか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>ご使用方法やお手入れの状態によりますが、50～100回以上はご使用いただけます。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="ac">
+                    <dt class="ac-parent">
+                        <span>Q.</span>TIMING TRAINER-FINISH- とは別のものですか？
+                    </dt>
+                    <dd class="ac-child">
+                        <p>
+                            <span>A.</span>TIMING TRAINER -FINISH-は遅漏や膣内射精のトレーニング用品です。外観が似ていますが、違う商品となります。内部形状や素材の柔らかさ、刺激の強さが異なります。また、TIMING TRAINER-KEEP-は本体色が薄いグレーなのに対し、TIMING TRAINER-FINISH-の本体色はホワイトとなっております。
+                        </p>
+                    </dd>
+                </dl>
+            </section>
+            <section class="detail-desc-area">
+                <h3>【製品詳細】</h3>
+                <ul>
+                    <li>製品名: TIMING TRAINER -KEEP- タイミングトレーナー キープ</li>
+                    <li>参考価格: 11,000円(税込)</li>
+                    <li>
+                        本体原料: エラストマー/シリコーン/ABS/PC<br>
+                        ローション成分: 水、グリセリン、PG、PEG-40水添ヒマシ油、ポリアクリル酸Na、フェノキシエタノール、<br>
+                        ヒドロキシエチルセルロース、シクロペンタシロキサン、メチルパラベン、ヒドロキシプロピルシクロデキストリン、<br>
+                        ブチルカルバミン酸ヨウ化プロピニル、シクロテトラシロキサン
+                    </li>
+                    <li>商品サイズ: (幅×奥行×高さ)80mmx70mmx180mm</li>
+                    <li>挿入可能サイズ: 概ね直径5cmまで</li>
+                    <li>重量: 737g</li>
+                    <!-- <li>取扱場所: 公式オンラインストア、ほかWEBストア、一部医療機関</li> -->
+                </ul>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="../images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="../images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="../images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="../images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="../news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="../store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="../clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+    <section class="fixed-area">
+        <input id="price_total" name="小計" value="TOTAL : 0円"  class="total-output" readonly>
+        <a href="#" class="buy-button" id="addToCartButton">ご購入手続きへ</a>
+    </section>
+    <div id="ageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-close closeBtn">×</div>
+          <h2>年齢確認</h2>
+          <p><span>こちらの商品は、18歳以上を対象としています。</span><br>
+            <span>あなたは18歳以上ですか？</span>
+          </p>
+          <button class="yesButton" id="confirmAgeButton" onclick="loction.href='#'">YES</button>
+          <button class="no" id="modal-close" onclick="">NO</button>
+          <p class="conf">株式会社TENGAヘルスケアのサービス全体の情報は、コーポレートサイトに掲載しております。</p>
+          <button class="corp" onclick="location.href='https://tengahealthcare.co.jp/company/'">CORPORATE SITE</button>
+        </div>
+    </div>
+    <script src="../js/common.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>

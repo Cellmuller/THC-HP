@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="TENGAヘルスケアは、「性に関する悩みや問題のない社会」の実現を目指しています。誰もが持っている「性」、普遍的でありながら人それぞれ、そのような「性」特有の性質が性の問題を複雑にしてきました。「性」について誰もがポジティブになって欲しい。少しでも多くの幸せを願い、全ての人々へ新しい希望を届けます。">
+    <title>TENGAヘルスケア プロダクトサイト</title>
+    <link rel=”icon” href=“/favicon.ico”>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Slick-theme CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Slick.js -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <a href="#" class="header-logo-area">
+            <img src="./images/logo-blue.png" class="header-logo">
+        </a>
+        <span class="nav_toggle">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        <nav>
+            <ul>
+                <li class="pc">
+                    <a href="#">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <div class="hover-content">
+                        <ul>
+                            <li>
+                                <a href="./category/sourou.html">早漏</a>
+                            </li>
+                            <li>
+                                <a href="./category/chirou.html">遅漏</a>
+                            </li>
+                            <li>
+                                <a href="./category/katsuryoku.html">活力</a>
+                            </li>
+                            <li>
+                                <a href="./category/seikoutsu.html">性交痛</a>
+                            </li>
+                            <li>
+                                <a href="./category/ninkatsu.html">妊活</a>
+                            </li>
+                            <li>
+                                <a href="./category/kotsubantei.html">骨盤底</a>
+                            </li>
+                            <li>
+                                <a href="./category/chitsunaiflora.html">膣内フローラ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sp category">
+                    <a href="#" id="categoryToggle">
+                        お悩みカテゴリ
+                        <span class="header-nav-text">Category</span>
+                    </a>
+                    <ul id="category-menu">
+                        <li>
+                            <a href="./category/sourou.html">早漏</a>
+                        </li>
+                        <li>
+                            <a href="./category/chirou.html">遅漏</a>
+                        </li>
+                        <li>
+                            <a href="./category/katsuryoku.html">活力</a>
+                        </li>
+                        <li>
+                            <a href="./category/seikoutsu.html">性交痛</a>
+                        </li>
+                        <li>
+                            <a href="./category/ninkatsu.html">妊活</a>
+                        </li>
+                        <li>
+                            <a href="./category/kotsubantei.html">骨盤底</a>
+                        </li>
+                        <li>
+                            <a href="./category/chitsunaiflora.html">膣内フローラ</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.com/column/">
+                        コラム
+                        <span class="header-nav-text">Column</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="./news.html">
+                        ニュース
+                        <span class="header-nav-text">News</span>
+                    </a>
+                    
+                </li>
+                <!-- <li>
+                    <a href="./store.html">
+                        取扱店舗
+                        <span class="header-nav-text">Store</span>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="./clinic.html">
+                        クリニック
+                        <span class="header-nav-text">Clinics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://tengahealthcare.co.jp/company/" target="_blank">
+                        会社情報
+                        <span class="header-nav-text">Company</span>
+                    </a> 
+                </li>
+                <li class="sp icon">
+                    <a href="https://shop.tengahealthcare.com/login">
+                        <img src="./images/login-icon-w.png">
+                    </a>
+                    <a href="https://shop.tengahealthcare.com/cart">
+                        <img src="./images/cart-icon-w.png">
+                    </a>
+                    <a href="./location/index.html">
+                        <img src="./images/language-icon-w.png">
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <div>
+            <a href="https://shop.tengahealthcare.com/login">
+                <img src="./images/login-icon.png">
+                <div class="popup">
+                    ログイン
+                </div>
+            </a>
+            <a href="https://shop.tengahealthcare.com/cart">
+                <img src="./images/cart-icon.png">
+                <div class="popup">
+                    カート
+                </div>
+            </a>
+            <a href="./location/index.html">
+                <img src="./images/language-icon.png">
+                <div class="popup">
+                    地域選択
+                </div>
+            </a>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- fv-area -->
+        <section class="fv-area">
+            <img src="./images/fv-img.png" class="fv-img">
+            <img src="./images/fv-img-sp.png" class="fv-img-sp">
+        </section>
+        <!-- パンくずリスト -->
+
+        <section class="message-area">
+            <div class="text">
+                <div class="sp">
+                    一人ひとりの性を想う。
+                </div>
+                <p class="sp">
+                    生きていく上で切り離せない性にまつわる悩みや不安。<br><br>
+                    抱え込んでしまう前に、目を背けてしまう前に、<br class="sp">
+                    自分自身で、そして愛する人と、<br class="sp">
+                    今できることがあるはずです。<br><br>
+                    オープンにしづらい社会だからこそ、<br>
+                    TENGAヘルスケアはあなたと共に問題に向き合います。
+                </p>
+                <img class="pc" src="./images/text-fv.png">
+            </div>  
+        </section>
+        <div class="container">
+            <h2>Category</h2>
+            <h3>お悩みカテゴリ</h3>
+            <!-- カテゴリー -->
+            <section class="category-area">
+                <a href="./category/sourou.html" class="category-item sourou">
+                    <div>
+                        <div class="title">
+                            <div>
+                                早漏
+                                <img class="sp" src="./images/man-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            早漏は、最もポピュラーな男性機能障害の一つで、多くの男性が早漏に悩んでいます。あなたも早漏と向き合い、適切なトレーニングに取り組んで、射精をコントロールできる状態を目指しませんか。
+                        </div>
+                        <div class="text-sp">
+                            早漏は、最もポピュラーな<br class="sp">
+                            男性機能障害の一つです。
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/chirou.html" class="category-item chirou">
+                    <div>
+                        <div class="title">
+                            <div>
+                                遅漏
+                                <img class="sp" src="./images/man-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            遅漏・膣内射精障害の原因の70%以上が「不適切なマスターベーションによるもの」と言われています。不適切なマスターベーションから卒業し、適切な刺激で射精できる状態を目指しましょう。
+                        </div>
+                        <div class="text-sp">
+                            遅漏の原因の70%以上が<br class="sp">
+                            「不適切なマスターベーションによるもの」と言われています。
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/katsuryoku.html" class="category-item katsuryoku">
+                    <div>
+                        <div class="title">
+                            <div>
+                                活力
+                                <img class="sp" src="./images/man-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            「最近なんだか疲れやすい…..」、「心も体も元気が出ない…..」といった悩みはありませんか？ <br>
+                            活力支援サプリで以前のような元気を取り戻しましょう。
+                        </div>
+                        <div class="text-sp">
+                            「最近なんだか疲れやすい…..」といった<br class="sp">
+                            悩みはありませんか？
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/seikoutsu.html" class="category-item seikoutsu">
+                    <div>
+                        <div class="title">
+                            <div>
+                                性交痛
+                                <img class="sp" src="./images/man-icon.png">
+                                <img class="sp" src="./images/woman-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            行為中に痛みを感じたり、不快感を抱いてしまうとセックスを楽しむことができませんし、パートナー間の不和にもつながりかねません。性交痛をケアして、お互いに幸せな時間を過ごしましょう。
+                        </div>
+                        <div class="text-sp">
+                            性交痛をケアして、お互いに幸せな時間を過ごしましょう。
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/ninkatsu.html" class="category-item ninkatsu">
+                    <div>
+                        <div class="title">
+                            <div>
+                                妊活
+                                <img class="sp" src="./images/man-icon.png">
+                                <img class="sp" src="./images/woman-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            「妊活」や「不妊」という言葉を聞くと、まだ女性主体であるイメージが強いように思いますが、妊活や不妊は女性だけの問題ではありません。 男性も女性と同じように積極的に妊活に取り組んでみませんか。
+                        </div>
+                        <div class="text-sp">
+                            妊活や不妊は女性だけの<br class="sp">
+                            問題ではありません。
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/kotsubantei.html" class="category-item kotsubantei">
+                    <div>
+                        <div class="title">
+                            <div>
+                                骨盤底
+                                <img class="sp" src="./images/woman-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            骨盤底には内臓の支持や排泄のコントロールする役割があります。 女性の骨盤底は、妊娠や出産によって骨盤底とその周辺に何かしらの損傷が生じます。 正しいトレーニングで骨盤底を鍛えて快適な毎日を過ごしませんか。
+                        </div>
+                        <div class="text-sp">
+                            内臓の支持や排泄をコントロールする<br>女性の骨盤底をケアしましょう
+                        </div>
+                    </div>
+                </a>
+                <a href="./category/chitsunaiflora.html" class="category-item chitsunaiflora">
+                    <div>
+                        <div class="title">
+                            <div>
+                                膣内フローラ
+                                <!-- <img class="sp" src="./images/man-icon.png"> -->
+                                <img class="sp" src="./images/woman-icon.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            女性特有のデリケートゾーンのお悩みに。 サプリメントで膣内のバランス（膣内フローラ）を整えましょう。
+                        </div>
+                        <div class="text-sp">
+                            女性特有のデリケートゾーンのお悩みに。
+                        </div>
+                    </div>
+                </a>
+                <a class="category-item none">
+                    
+                </a>
+            </section>
+            <section class="carousel-box">
+                <h2>Column</h2>
+                <h3 class="column">コラム</h3>
+                <p>性における情報を正しく届けるための
+                    <br class="sp">TENGAヘルスケア公式コラム
+                </p>
+                <div class="carousel-area">
+                    <a href="https://tengahealthcare.com/column/category/%e9%81%85%e6%bc%8f/">
+                        <img src="./images/thc_column_image_chirou.png" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/category/%e5%a6%8a%e6%b4%bb/">
+                        <img src="./images/thc_column_image_ninkatsu.png" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/category/%e6%97%a9%e6%bc%8f/">
+                        <img src="./images/thc_column_image_sourou.png" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/category/%e7%9f%a5%e8%ad%98/">
+                        <img src="./images/thc_column_image_chisiki.png" class="carousel-img">
+                    </a>
+                    <a href="https://tengahealthcare.com/column/category/%e8%86%a3%e5%86%85%e3%83%95%e3%83%ad%e3%83%bc%e3%83%a9/">
+                        <img src="./images/thc_column_image_chitsunaiflora.png" class="carousel-img">
+                    </a>
+                    <!-- <a href="https://tengahealthcare.com/column/category/%e6%97%a9%e6%bc%8f/">
+                        <img src="./images/thc_column_image_katsuryoku.png" class="carousel-img">
+                    </a> -->
+                    <a href="https://tengahealthcare.com/column/category/%e9%aa%a8%e7%9b%a4%e5%ba%95/">
+                        <img src="./images/thc_column_image_kotsubantei.png" class="carousel-img">
+                    </a>
+                    <!-- <a href="https://tengahealthcare.com/column/category/%e6%97%a9%e6%bc%8f/">
+                        <img src="./images/thc_column_image_voice.png" class="carousel-img">
+                    </a> -->
+                    <a href="https://tengahealthcare.com/column/category/ed/">
+                        <img src="./images/thc_column_image_ed.png" class="carousel-img">
+                    </a>
+                    <!-- <a href="https://tengahealthcare.com/column/category/%e6%97%a9%e6%bc%8f/">
+                        <img src="./images/thc_column_image_karada.png" class="carousel-img">
+                    </a> -->
+                    <a href="https://tengahealthcare.com/column/category/%e6%80%a7%e4%ba%a4%e7%97%9b/">
+                        <img src="./images/thc_column_image_seikoutsu.png" class="carousel-img">
+                    </a>
+                </div>
+            </section>
+            <section class="carousel-box">
+                <h2>Pick up</h2>
+                <h3>ピックアップ</h3>
+                <div class="carousel-area">
+                    <a href="https://tengahealthcare.com/special/report/">
+                        <img src="./images/onani.png" class="carousel-img">
+                    </a>
+                    <a href="https://seicil.com/">
+                        <img src="./images/seishiru.png" class="carousel-img">
+                    </a>
+                    <a href="./products/kch.html">
+                        <img src="./images/kgel-car.png" class="carousel-img">
+                    </a>       
+                    <a href="./products/tks.html">
+                        <img src="./images/ksuport-car.png" class="carousel-img">
+                    </a>
+                    <a href="./products/tfs.html">
+                        <img src="./images/yoniflora-car.png" class="carousel-img">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <section class="sns-area">
+            <a href="https://twitter.com/TengaHealthcare">
+                <img src="./images/twitter-icon.png" class="sns-icon">Twitter
+            </a>
+            <a href="https://www.instagram.com/tengahealthcare_pr/">
+                <img src="./images/insta-icon.png" class="sns-icon">Instagram
+            </a>
+            <a href="https://www.facebook.com/tengahealthcareinc/">
+                <img src="./images/face-icon.png" class="sns-icon">Facebook
+            </a>
+        </section>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="./images/logo-white.png" class="footer-logo">
+        </div>
+        <ul>
+            <li>
+                <a href="#">ホーム</a>
+            </li>
+            <!-- <li>
+                <a href="#">カテゴリー</a>
+            </li> -->
+            <li>
+                <a href="./news.html">ニュース</a>
+            </li>
+            <!-- <li>
+                <a href="./store.html">取扱店舗</a>
+            </li> -->
+            <li>
+                <a href="./clinic.html">クリニック</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.com/column/">コラム</a>
+            </li>
+            <li>
+                <a href="https://tengahealthcare.co.jp/contact/">お問い合わせ</a>
+            </li>
+        </ul>
+        <small>&copy; TENGA HealthCare Inc.all rights reserved</small>
+    </footer>
+
+    <script src="./js/common.js"></script>
+</body>
+</html>

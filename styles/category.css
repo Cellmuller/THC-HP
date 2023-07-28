@@ -1,0 +1,241 @@
+.none {
+    background-color: #FCFCFC !important;
+    box-shadow: none !important;
+}
+.message-area {
+    padding: 50px 0 0px;
+    position: relative;
+    height: 300px;
+    margin: 0 auto 70px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+.message-area .text{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.message-area .text a {
+    display: inline-block;
+    max-width: 336px;
+    width: 100%;
+  }
+.message-area .text a:hover {
+    opacity: 0.7;
+}
+  
+.message-area .text a img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.message-area .text div {
+    width: 50%;
+    text-align: left;
+}
+.message-area .text h2 {
+    color: #28A5A0;
+    font-size: 30px;
+}
+.message-area .text p{
+    margin-top: 25px;
+    color: #333333;
+    line-height: 40px;
+}
+.category-area{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto 0;
+}
+.category-item{
+    flex: calc(100%/3);
+    margin: 0 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    height: 615px;
+    text-decoration: none;
+    max-width: 725px;
+    background-color: #F2FAF9;
+}
+
+.category-img{
+    display: block;
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+.category-item > div:nth-child(2){
+    padding: 25px;
+    border-radius :0px 0px 20px 20px;
+    height: 295px;
+}
+.category-item .title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.category-item .price{
+    margin: 10px 0;
+}
+.category-item p {
+    line-height: 30px;
+    font-size: 17px;
+}
+.category-item .price .font-red{
+    color: #EF5454;
+    display: inline-block;
+    margin: 0 10px;
+}
+.category-item .price .normal-price{
+    display: inline-block;
+    color: #B5B5B5;
+    font-size: 14px;
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.detail-button{
+    background-color: #01BBB4;
+    text-decoration: none;
+    display: block;
+    width: 40%;
+    text-align: center;
+    margin: 25px 0 10px auto;
+    padding: 5px;
+    color: #fff;
+    border-radius: 25px;
+    transition: all .2s;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.detail-button:hover{
+    background: rgba(255, 255, 255, 0.5);
+    color: #B5B5B5;
+}
+
+@media screen and (max-width:1600px) {
+    .message-area .text div {
+        width: 60%;
+    }
+    .category-item {
+        max-height: 530px;
+        max-width: 530px;
+    }
+}
+@media screen and (max-width:1279px) {
+    .category-item {
+        max-width: 468px;
+    }
+
+}
+@media screen and (max-width:959px) {
+    .none {
+        display: none !important;
+    }
+    .category-item {
+        flex: calc(100%/1);
+    }
+    .category-area {
+        justify-content: center;
+    }
+    .sp img {
+        width: 54%;
+        margin-bottom: 20px;
+    }
+    .column {
+        display: none !important;
+    }
+}
+@media screen and (max-width:834px) {
+    .category-item {
+        max-height: 530px;
+    }
+    .none {
+        display: none !important;
+    }
+}
+@media screen and (max-width:599px) {
+    .none {
+        display: none !important;
+    }
+    .pc {
+        display: none !important;
+    }
+    .sp img {
+        border-radius: 10px;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        
+    }
+    .column {
+        display: block!important;
+        margin-bottom: 50px !important;
+    }
+    .sourou {
+        background-position: 750px;
+    }
+    .chirou {
+        background-position: 750px;
+    }
+    .katsuryoku {
+        background-position: 850px;
+    }
+    .chitsunaiflora {
+        background-position: 870px;
+    }
+    .kotsubantei {
+        background-position: 650px;
+    }
+    .ninkatsu {
+        background-position: 750px;
+    }
+    .seikoutsu {
+        background-position: 850px;
+    }
+    .message-area .text {
+        position: absolute;
+        
+    }
+    .message-area .text div {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .message-area .text h2 {
+        margin: 20px auto 0;
+        width: 90%;
+        font-size: 20px;
+    }
+    .message-area .text p {
+        margin-top: 25px;
+        margin: 25px auto 0;
+        width: 90%;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .category-area {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .category-item {
+        flex: calc(100%/1);
+        margin: 0 0 35px;
+        height: auto;
+    }
+    .category-item div p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .category-item > div:nth-child(2) {
+        height: auto;
+    }
+    
+}
