@@ -269,7 +269,15 @@
 }
 .ac-child .improvement{
     margin-top: 20px;
+}
+.feature {
     display: flex;
+    width: 100%;
+    align-items: center;
+}
+.feature img {
+    width: 50%;
+    height: 50%;
 }
 .ac-child .improvement > div:first-child{
     flex: 60%;
@@ -290,6 +298,15 @@
 }
 .ac-child .trouble{
     margin-top: 20px;
+}
+.howto-use {
+    display: flex;
+}
+.howto-use div {
+    width: 100%;
+}
+.howto-use img {
+    width: 50%;
 }
 .ac-child .trouble ul{
     list-style: none;
@@ -776,6 +793,12 @@ footer {
     .article-area2-img {
         width: 80%;
     }
+    .feature {
+        display: block;
+    }
+    .feature img {
+        width: 100%;
+    }
     .product-area {
         padding: 0 33px;
         justify-content: center;
@@ -875,6 +898,12 @@ footer {
         font-size: 12px;
         justify-content: center;
         margin-top: 10px;
+    }
+    .howto-use {
+        display: block;
+    }
+    .howto-use img {
+        width: 100%;
     }
 
 }
