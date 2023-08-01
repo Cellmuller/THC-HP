@@ -301,6 +301,7 @@
 }
 .howto-use {
     display: flex;
+    margin-top: 50px !important;
 }
 .howto-use div {
     width: 100%;
