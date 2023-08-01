@@ -111,9 +111,13 @@
     width: 20%;
     margin-left: 30px;
 }
-.effect-comment {
+/* .effect-comment {
     border: solid 3px #01BBB4;
     border-radius: 10px;
+} */
+.doctor-comment {
+    padding: 0;
+    margin: 20px 0;
 }
 /* how-use-area */
 .how-use-area{
