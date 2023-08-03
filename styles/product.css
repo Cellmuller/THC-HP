@@ -93,6 +93,7 @@
 .effect-fixed-explain {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .effect-fixed-explain div {
     text-align: center;
