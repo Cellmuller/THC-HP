@@ -135,6 +135,9 @@
     width: 78%;
     margin: 0 auto;
 }
+.tfs-use img {
+    width: 100%;
+}
 .use-item{
     display: flex;
     align-items: center;
