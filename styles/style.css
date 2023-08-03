@@ -96,7 +96,7 @@ main {
     background-color: #6d8fb4;
 }
 .category-item:hover {
-    box-shadow: rgba(0, 0, 0, 0.6) 0px 20px 40px;
+    box-shadow: rgba(0, 0, 0, 0.356) 0px 18px 50px -10px;
     transform: scale(1.05) translateY(-8px);
 }
 
