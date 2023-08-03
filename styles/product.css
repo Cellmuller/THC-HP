@@ -280,6 +280,9 @@
 .ac-child .improvement{
     margin-top: 20px;
 }
+.improvement img {
+    width: 100%;
+}
 .feature {
     display: flex;
     width: 100%;
@@ -322,6 +325,9 @@
 .howto-use img {
     width: 50%;
     height: 100%;
+}
+.mcg img {
+    width: 25% !important;
 }
 .use-block {
     display: block;
