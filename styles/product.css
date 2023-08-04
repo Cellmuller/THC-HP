@@ -130,6 +130,51 @@
     padding: 0;
     margin: 20px 0;
 }
+/* carousel-area */
+.carousel-area{
+    margin-bottom: 50px !important;
+}
+.carousel-area img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+/* .carousel-area > div > div{
+    width: 100% !important;
+} */
+#slick-slide00 > div > div > div.flex.slick-slide.slick-current.slick-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slick-slide00 > div > div > div > div:nth-child(2) > div{
+    color: #01BBB4;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#slick-slide00 > div > div > div > div:nth-child(1){
+    flex: 50%;
+}
+#slick-slide00 > div > div > div > div:nth-child(2){
+    flex: 50%;
+}
+body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-dotted > div > div{
+    width: 80% !important;
+    margin: 0 auto !important;
+}
+#slick-slide00{
+    width: 100% !important;
+}
+body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-dotted > ul{
+    display: none;
+}
+.slick-dots {
+    position: relative;
+    bottom: -50px !important; /* この値は必要に応じて調整してください。 */
+}
+#slick-slide00{
+    margin-bottom: 50px;
+}
 /* how-use-area */
 .how-use-area{
     width: 78%;
@@ -874,6 +919,18 @@ footer {
     .buy-button {
         width: 30%;
     }
+    .carousel-area img {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #slick-slide00 > div > div > div > div:nth-child(2) {
+        text-align: center;
+    }
+    .slick-prev, 
+    .slick-next {
+        display: none !important;
+    }
+    
 }
 @media screen and (max-width:599px) {
     .article-area {
