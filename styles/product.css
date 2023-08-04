@@ -857,9 +857,9 @@ footer {
     }
 }
 @media screen and (max-width:959px) {
-    .effect-comment {
-        /* display: block; */
-    }
+    /* .effect-comment {
+        display: block;
+    } */
     .effect-comment div {
         width: 100%;
         margin: auto;
