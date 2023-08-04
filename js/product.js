@@ -1,4 +1,3 @@
-
 $(function () {
   $(".ac-child").css("display", "none");
   $(".ac-parent").on("click", function () {
@@ -13,12 +12,12 @@ $(function () {
 });
 
 // 詳しくはこちらボタン
-$(function(){
-	$(".more").on("click", function() {
-		$(this).toggleClass("on-click");
-		$(".txt-hide").slideToggle(450);
-	});
-}); 
+$(function () {
+  $(".more").on("click", function () {
+    $(this).toggleClass("on-click");
+    $(".txt-hide").slideToggle(450);
+  });
+});
 
 // 個数カウント
 $(function () {
@@ -130,7 +129,13 @@ $(function () {
     var paramSeparator = destinationURL.indexOf("?") !== -1 ? "&" : "?";
 
     // パラメを結合して新しいURLを作成
-  detailUrl += paramSeparator + totalParam + "&product_code[]=" + itemId + "&qty[]=" + itemNumber;
+    detailUrl +=
+      paramSeparator +
+      totalParam +
+      "&product_code[]=" +
+      itemId +
+      "&qty[]=" +
+      itemNumber;
 
     if (destinationURL.indexOf("?") !== -1) {
       destinationURL = destinationURL.replace(/#.*$/, "");
@@ -146,7 +151,10 @@ $(function () {
 
     // 「ご購入手続きへ」ボタンのhref属性を変更
     $("#addToCartButton").attr("href", destinationURL);
-    $("#confirmAgeButton").attr("onclick", "location.href='" + destinationURL + "';");
+    $("#confirmAgeButton").attr(
+      "onclick",
+      "location.href='" + destinationURL + "';"
+    );
 
     // 「セット商品はこちら」ボタンのhref属性を変更
     $("#detailButton").attr("href", detailUrl);
@@ -163,18 +171,16 @@ $(function () {
 });
 
 // tab切り替え
-$(function() {
-  $('.tab').on('click', function() {
-    $('.tab, .panel').removeClass('active');
-  
-    $(this).addClass('active');
-     
-    var index = $('.tab').index(this);
-    $('.panel').eq(index).addClass('active');
+$(function () {
+  $(".tab").on("click", function () {
+    $(".tab, .panel").removeClass("active");
+
+    $(this).addClass("active");
+
+    var index = $(".tab").index(this);
+    $(".panel").eq(index).addClass("active");
   });
 });
-
-
 
 // 年齢確認モーダル
 // クッキーをチェックし、モーダルウィンドウを表示するかどうかを判断
@@ -223,43 +229,51 @@ function closeModal() {
 }
 
 // 年齢確認ボタンがクリックされた場合にクッキーをセットし、モーダルウィンドウを非表示
-document.getElementById("confirmAgeButton").addEventListener("click", function () {
-  setCookie("ageConfirmed", true, 1); // 1日間有効なクッキーをセット
-  closeModal();
-  // 「ご購入手続きへ」ボタンにURLを付与
-  document.getElementById("addToCartButton").href = "https://shop.tengahealthcare.com/cart";
-});
+document
+  .getElementById("confirmAgeButton")
+  .addEventListener("click", function () {
+    setCookie("ageConfirmed", true, 1); // 1日間有効なクッキーをセット
+    closeModal();
+    // 「ご購入手続きへ」ボタンにURLを付与
+    document.getElementById("addToCartButton").href =
+      "https://shop.tengahealthcare.com/cart";
+  });
 
 // カート追加ボタンがクリックされた場合に年齢確認モーダルを表示
-document.getElementById("addToCartButton").addEventListener("click", function () {
-  var ageConfirmed = getCookie("ageConfirmed");
-  if (ageConfirmed) {
-    // クッキーがある場合はそのままカートページに遷移
-    window.location.href = "https://shop.tengahealthcare.com/cart";
-  } else {
-    // クッキーがない場合はモーダルウィンドウを表示
-    displayModal();
-    // 「ご購入手続きへ」ボタンのリンクを無効化
-    document.getElementById("addToCartButton").href = "#";
-  }
-});
+document
+  .getElementById("addToCartButton")
+  .addEventListener("click", function () {
+    var ageConfirmed = getCookie("ageConfirmed");
+    if (ageConfirmed) {
+      // クッキーがある場合はそのままカートページに遷移
+      window.location.href = "https://shop.tengahealthcare.com/cart";
+    } else {
+      // クッキーがない場合はモーダルウィンドウを表示
+      displayModal();
+      // 「ご購入手続きへ」ボタンのリンクを無効化
+      document.getElementById("addToCartButton").href = "#";
+    }
+  });
 
 // モーダル内のYESボタンにリンクを付与
-document.getElementById("confirmAgeButton").addEventListener("click", function () {
-  // クッキーをセット
-  setCookie("ageConfirmed", true, 1); // 1日間有効なクッキーをセット
-  // モーダルウィンドウを非表示
-  closeModal();
-});
+document
+  .getElementById("confirmAgeButton")
+  .addEventListener("click", function () {
+    // クッキーをセット
+    setCookie("ageConfirmed", true, 1); // 1日間有効なクッキーをセット
+    // モーダルウィンドウを非表示
+    closeModal();
+  });
 
 // モーダルウィンドウ内のYESボタンがクリックされた際の処理
-document.getElementById("confirmAgeButton").addEventListener("click", function () {
-});
+document
+  .getElementById("confirmAgeButton")
+  .addEventListener("click", function () {});
 
 // CLOSEボタンをクリックしたときの処理
 var closeButton = document.querySelector(".closeBtn");
 
-closeButton.addEventListener("click", function() {
+closeButton.addEventListener("click", function () {
   var modal = document.getElementById("ageModal");
   modal.style.display = "none";
 });
@@ -267,11 +281,10 @@ closeButton.addEventListener("click", function() {
 // 「CLOSE」リンクをクリックしたときの処理
 var closeLink = document.getElementById("modal-close");
 
-closeLink.addEventListener("click", function() {
+closeLink.addEventListener("click", function () {
   var modal = document.getElementById("ageModal");
   modal.style.display = "none";
 });
-
 
 //gsap
 $(document).ready(function () {
@@ -289,4 +302,13 @@ $(document).ready(function () {
   })
     .setTween(tl)
     .addTo(controller);
+});
+$(document).ready(function () {
+  $(".slick-carousel").slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+  });
 });
