@@ -810,37 +810,7 @@ footer {
 .carousel-area a:hover{
     opacity: 0.8;
 }
-.slick-prev:before, .slick-next:before {
-    color: #000 !important;
-    font-size: 30px !important;
-}
-.slick-prev {
-    top: 50%;
-    left: -60px !important;
-    transform: translateY(-50%);
-}
-.slick-next {
-    top: 50%;
-    right: -60px !important;
-    transform: translateY(-50%);
-}
-.slick-prev:before, .slick-next:before {
-    color: #28A5A0!important;
-    font-size: 30px !important;
-}
-.slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #28A5A0 !important;
-}
+
 @media screen and (max-width:2000px) {
     .modal-close {
         top: 9%;
@@ -923,13 +893,6 @@ footer {
         margin-bottom: 20px;
         width: 100%;
     }
-    #slick-slide00 > div > div > div > div:nth-child(2) {
-        text-align: center;
-    }
-    .slick-prev, 
-    .slick-next {
-        display: none !important;
-    }
     
 }
 @media screen and (max-width:599px) {
@@ -1003,8 +966,16 @@ footer {
     .use-item > div:nth-child(2) {
         padding: 0px;
         font-size: 12px;
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 10px;
+        width: 50%;
+        margin: 10px auto 0;
+    }
+    .use-item span {
+        font-size: 10px;
+        padding: 2px 2px;
+        display: inline-block;
+        margin-right: 10px !important;
     }
     .howto-use {
         display: block;
@@ -1077,12 +1048,16 @@ footer {
     .use-item > div:nth-child(2) {
         padding: 0px;
         font-size: 12px;
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 10px;
+        width: 50%;
+        margin: 10px auto 0;
     }
     .use-item span {
         font-size: 10px;
         padding: 2px 2px;
+        display: inline-block;
+        margin-right: 10px !important;
     }
     .article-area {
         display: none;
@@ -1195,12 +1170,6 @@ footer {
     }
     .slick-slide {
         margin: 0 10px;
-    }
-    #slick-slide00 > div > div > div.flex.slick-slide.slick-current.slick-active {
-        display: block !important;
-    }
-    body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-dotted > div > div {
-        width: 100% !important;
     }
     
 }
