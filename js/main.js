@@ -36,20 +36,38 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $(".carousel-area2").slick({
-    autoplay: true,
-    autoplaySpeed: 5000,
-    dots: true,
+// $(document).ready(function () {
+//   $(".carousel-area2").slick({
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     dots: true,
+//     slidesToShow: 2,
+//     prevArrow: false, // 前への矢印を非表示にする
+//     nextArrow: false, // 次への矢印を非表示にする
+//     responsive: [{
+//       breakpoint: 959,
+//            settings: {
+//                 slidesToShow: 1,
+//            }
+//       }
+//  ]
+//   });
+// });
+$(document).ready(function(){
+  $('.carousel-area2').slick({
+    infinite: true,
     slidesToShow: 2,
-    prevArrow: false, // 前への矢印を非表示にする
-    nextArrow: false, // 次への矢印を非表示にする
-    responsive: [{
-      breakpoint: 959,
-           settings: {
-                slidesToShow: 1,
-           }
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 959,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
- ]
+    ]
   });
 });
