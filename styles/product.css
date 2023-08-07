@@ -326,6 +326,29 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     padding-left: 10px;
     margin-bottom: 15px;
 }
+.ac-child .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ac-child .card:not(:last-child){
+    margin-bottom: 25px;
+}
+.reverse{
+    flex-direction: row-reverse !important;
+}
+.ac-child .card > div:first-child{
+    flex: 50%;
+}
+.ac-child .card > div:nth-child(2){
+    padding: 25px;
+    flex: 50%;
+}
+.ac-child .card img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
 .ac-child .improvement{
     margin-top: 20px;
 }
