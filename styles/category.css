@@ -2,6 +2,94 @@
     background-color: #FCFCFC !important;
     box-shadow: none !important;
 }
+/* target-area */
+.target-area{
+    width: 70%;
+    margin: 70px auto;
+}
+.target-area h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background-color: #01BBB4;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.target-area img {
+    margin-right: 1%;
+}
+.target-area ul{
+    list-style: none;
+    padding:  20px;
+    line-height: 2.5;
+    background-color: #F2FAF9;
+    border-radius: 0 0 15px 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.target-area ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.effect-fixed-area {
+    width: 78%;
+    margin: 70px auto;
+}
+.effect-fixed-detail {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.htl-effect img {
+    width: 100% !important;
+    margin: 0  !important;
+}
+.f-feature {
+    display: flex;
+}
+.f-feature img {
+    width: 50% !important;
+}
+.effect-fixed-explain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.effect-fixed-explain div {
+    text-align: center;
+    width: 100%;
+}
+.effect-fixed-explain div img {
+    margin: 0 10px;
+    width: 100%;
+    padding: 0 10px;
+}
+.effect-fixed-explain div p {
+    font-size: 15px;
+    line-height: 15px;
+}
+.effect-fixed-detail h3 {
+    color: #01BBB4;
+    font-weight: bold;
+    border-left: 5px solid #01BBB4;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.effect-fixed-detail p {
+    padding: 10px 15px;
+}
+.effect-fixed-detail img {
+    width: 20%;
+    margin-left: 30px;
+}
+.doctor-comment {
+    padding: 0;
+    margin: 20px 0;
+}
+/* message-area */
 .message-area {
     padding: 50px 0 0px;
     position: relative;
@@ -200,6 +288,16 @@
     }
     .seikoutsu {
         background-position: 850px;
+    }
+    .target-area{
+        width: 90%;
+    }
+    .target-area h2 {
+        font-size: 18px;
+    }
+    .target-area ul li {
+        font-size: 13px;
+        align-items: flex-start;
     }
     .message-area .text {
         position: absolute;
