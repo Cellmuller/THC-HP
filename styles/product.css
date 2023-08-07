@@ -1196,5 +1196,11 @@ footer {
     .slick-slide {
         margin: 0 10px;
     }
+    #slick-slide00 > div > div > div.flex.slick-slide.slick-current.slick-active {
+        display: block !important;
+    }
+    body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-dotted > div > div {
+        width: 100% !important;
+    }
     
 }
