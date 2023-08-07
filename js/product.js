@@ -246,7 +246,7 @@ document
     var ageConfirmed = getCookie("ageConfirmed");
     if (ageConfirmed) {
       // クッキーがある場合はそのままカートページに遷移
-      window.location.href = "https://shop.tengahealthcare.com/cart";
+      window.location.href = "#";
     } else {
       // クッキーがない場合はモーダルウィンドウを表示
       displayModal();
@@ -311,4 +311,18 @@ $(document).ready(function () {
     slidesToShow: 1,
     adaptiveHeight: true,
   });
+});
+
+$(document).on('click', 'a[href^="#product-area"]', function(e) {
+  // デフォルトのイベントを無効化
+  e.preventDefault();
+
+  // アンカーの値を取得
+  var target = $(this.hash);
+  if (target.length === 0) target = $('html');
+
+  // スクロールアニメーション
+  $('html, body').animate({
+    scrollTop: target.offset().top
+  }, 1000);
 });
