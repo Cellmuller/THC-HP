@@ -349,6 +349,12 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     width: 80%;
     margin: 0 auto;
 }
+section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
+    color: #01BBB4;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
 .ac-child .improvement{
     margin-top: 20px;
 }
@@ -979,6 +985,14 @@ footer {
     
     .ac-parent:after {
         right: 8px;
+    }
+    .ac-child .card{
+        display: block;
+        margin-top: 25px;
+    }
+    section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
+        margin-bottom: 15px;
+        font-size: 18px;
     }
     .buy-button {
         width: 30%;
