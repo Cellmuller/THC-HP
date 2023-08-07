@@ -346,7 +346,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 }
 .ac-child .card img{
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
