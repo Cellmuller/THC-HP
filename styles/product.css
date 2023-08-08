@@ -326,6 +326,14 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     padding-left: 10px;
     margin-bottom: 15px;
 }
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:not(:last-child) {
+    margin-bottom: 25px;
+}
 .ac-child .card{
     display: flex;
     align-items: center;
@@ -349,7 +357,22 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     width: 100%;
     margin: 0 auto;
 }
+.card > div:nth-child(2) {
+    padding: 25px;
+    flex: 50%;
+}
+.card img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
 section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
+    color: #01BBB4;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
     color: #01BBB4;
     font-weight: bold;
     margin-bottom: 20px;
