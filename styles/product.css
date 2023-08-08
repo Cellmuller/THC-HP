@@ -363,7 +363,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 }
 .card img {
     display: block;
-    width: 100%;
+    width: 600px;
     margin: 0 auto;
 }
 section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
@@ -426,6 +426,7 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
 .howto-use img {
     width: 50%;
     height: 100%;
+    margin: 0;
 }
 .mcg img {
     width: 25% !important;
@@ -1076,6 +1077,12 @@ footer {
     .target-area ul li {
         font-size: 13px;
         align-items: flex-start;
+    }
+    .card {
+        display: block;
+    }
+    .card img {
+        width: 100%;
     }
     .effect-area {
         width: 100%;
