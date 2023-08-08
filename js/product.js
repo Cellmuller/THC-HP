@@ -244,16 +244,27 @@ document
   .getElementById("addToCartButton")
   .addEventListener("click", function () {
     var ageConfirmed = getCookie("ageConfirmed");
-    if (ageConfirmed) {
-      // クッキーがある場合はそのままカートページに遷移
-      window.location.href = "#";
-    } else {
-      // クッキーがない場合はモーダルウィンドウを表示
-      displayModal();
-      // 「ご購入手続きへ」ボタンのリンクを無効化
-      document.getElementById("addToCartButton").href = "#";
-    }
-  });
+    var currentHref = $("#addToCartButton").attr("href");
+  //   if (ageConfirmed) {
+  //     // クッキーがある場合はそのままカートページに遷移
+  //     window.location.href = "#";
+  //   } else {
+  //     // クッキーがない場合はモーダルウィンドウを表示
+  //     displayModal();
+  //     // 「ご購入手続きへ」ボタンのリンクを無効化
+  //     document.getElementById("addToCartButton").href = "#";
+  //   }
+  // });
+  if (ageConfirmed && currentHref.startsWith("https://")) {
+    window.location.href = currentHref; // カートに移動
+  } else if (ageConfirmed && currentHref === "#") {
+    window.location.href = "#product-area"; // ページ内リンクに移動
+  } else if(!ageConfirmed && currentHref.startsWith("https://")) {
+    // e.preventDefault(); // ページ遷移をキャンセル
+    displayModal(); // モーダル表示
+    document.getElementById("addToCartButton").href = "#";
+  }
+});
 
 // モーダル内のYESボタンにリンクを付与
 document
