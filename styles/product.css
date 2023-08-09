@@ -76,6 +76,19 @@
     width: 78%;
     margin: 70px auto;
 }
+.effect-fixed-area h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.effect-fixed-area h2::after {
+    content: "";
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 2px;
+    background: #2525259e;
+    
+}
 .effect-fixed-detail {
     padding: 0 20px;
     margin-bottom: 40px;
