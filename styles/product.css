@@ -263,7 +263,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     display: none;
 }
 .how-use-img{
-    display: block;
+    /* display: block; */
     width: 100%;
     border-radius: 15px;
 }
@@ -295,6 +295,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     cursor: pointer;
     transition: .3s;
     font-weight: bold;
+    font-size: 25px;
 }
 .ac-parent:before {
     content: "";
@@ -1149,7 +1150,7 @@ footer {
         font-size: 12px;
         justify-content: flex-start;
         margin-top: 10px;
-        width: 50%;
+        width: 90%;
         margin: 10px auto 0;
     }
     .use-item span {
