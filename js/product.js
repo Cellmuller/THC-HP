@@ -240,31 +240,49 @@ document
   });
 
 // カート追加ボタンがクリックされた場合に年齢確認モーダルを表示
-document
-  .getElementById("addToCartButton")
-  .addEventListener("click", function () {
-    var ageConfirmed = getCookie("ageConfirmed");
-    var currentHref = $("#addToCartButton").attr("href");
-  //   if (ageConfirmed) {
-  //     // クッキーがある場合はそのままカートページに遷移
-  //     window.location.href = "#";
-  //   } else {
-  //     // クッキーがない場合はモーダルウィンドウを表示
-  //     displayModal();
-  //     // 「ご購入手続きへ」ボタンのリンクを無効化
-  //     document.getElementById("addToCartButton").href = "#";
-  //   }
-  // });
+var ignoreScrollEventUntil = 0;
+
+document.getElementById("addToCartButton").addEventListener("click", function() {
+  var ageConfirmed = getCookie("ageConfirmed");
+  var currentHref = $("#addToCartButton").attr("href");
+
   if (ageConfirmed && currentHref.startsWith("https://")) {
     window.location.href = currentHref; // カートに移動
-  } else if (ageConfirmed && currentHref === "#") {
-    window.location.href = "#product-area"; // ページ内リンクに移動
-  } else if(!ageConfirmed && currentHref.startsWith("https://")) {
-    // e.preventDefault(); // ページ遷移をキャンセル
+  } else if (currentHref === "#") {
+    var target = document.getElementById('product-area');
+    var topPos = target.offsetTop;
+    window.scrollTo({ top: topPos, behavior: 'smooth' });
+    document.getElementById('addToCartButton').textContent = 'ご購入手続きへ';
+    // 1秒間スクロールイベントを無視する
+    ignoreScrollEventUntil = Date.now() + 1000;
+  } else if (!ageConfirmed && currentHref.startsWith("https://")) {
     displayModal(); // モーダル表示
     document.getElementById("addToCartButton").href = "#";
   }
 });
+
+// スクロールイベントリスナー
+window.addEventListener('scroll', checkScrollPosition);
+
+// ページの特定のエリアを超えたかどうかをチェックする関数
+function checkScrollPosition() {
+  // クリックイベントによって設定された期間中はスクロールイベントを無視
+  if (Date.now() < ignoreScrollEventUntil) return;
+
+  const productArea = document.getElementById('product-area');
+  const currentScrollPosition = window.pageYOffset;
+  const productAreaPosition = productArea.offsetTop;
+  const addToCartButton = document.getElementById('addToCartButton');
+
+  if (addToCartButton) {
+    if (currentScrollPosition > productAreaPosition) {
+      addToCartButton.textContent = 'ご購入手続きへ';
+    } else {
+      addToCartButton.textContent = 'ご購入はこちら';
+    }
+  }
+}
+
 
 // モーダル内のYESボタンにリンクを付与
 document
