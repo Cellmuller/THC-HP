@@ -284,6 +284,9 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     width: 78%;
     margin: 77px auto 0;
 }
+.howTo {
+    font-size: 25px;
+}
 .ac-parent {
     position: relative;
     height: 80px;
@@ -295,7 +298,6 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     cursor: pointer;
     transition: .3s;
     font-weight: bold;
-    font-size: 25px;
 }
 .ac-parent:before {
     content: "";
@@ -1150,7 +1152,7 @@ footer {
         font-size: 12px;
         justify-content: flex-start;
         margin-top: 10px;
-        width: 90%;
+        width: 98%;
         margin: 10px auto 0;
     }
     .use-item span {
