@@ -346,12 +346,18 @@ $(document).on('click', 'a[href^="#product-area"]', function(e) {
   // デフォルトのイベントを無効化
   e.preventDefault();
 
+  // ヘッダーの高さを取得
+  var headerHeight = $('header').outerHeight(); // ヘッダー要素に合わせて適切に変更してください
+
   // アンカーの値を取得
   var target = $(this.hash);
   if (target.length === 0) target = $('html');
 
+  // スクロール位置にヘッダーの高さを反映
+  var scrollToPosition = target.offset().top - headerHeight;
+
   // スクロールアニメーション
   $('html, body').animate({
-    scrollTop: target.offset().top
+    scrollTop: scrollToPosition
   }, 1000);
 });
