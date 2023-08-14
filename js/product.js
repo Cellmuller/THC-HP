@@ -248,13 +248,14 @@ document.getElementById("addToCartButton").addEventListener("click", function() 
 
   if (ageConfirmed && currentHref.startsWith("https://")) {
     window.location.href = currentHref; // カートに移動
-  } else if (currentHref === "#") {
+  } else if (currentHref === "#product-area") {
+    console.log(addToCartButton);
     var target = document.getElementById('product-area');
     var topPos = target.offsetTop;
     window.scrollTo({ top: topPos, behavior: 'smooth' });
-    document.getElementById('addToCartButton').textContent = 'ご購入手続きへ';
+    document.getElementById('addToCartButton').textContent = 'ご購入手続きへ';    
     // 1秒間スクロールイベントを無視する
-    ignoreScrollEventUntil = Date.now() + 1000;
+    ignoreScrollEventUntil = Date.now() + 2000;
   } else if (!ageConfirmed && currentHref.startsWith("https://")) {
     displayModal(); // モーダル表示
     document.getElementById("addToCartButton").href = "#";
