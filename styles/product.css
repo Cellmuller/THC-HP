@@ -515,7 +515,7 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* margin-top: 120px; */
+    margin-top: 120px;
     padding: 0 60px;
 }
 .product-item{
