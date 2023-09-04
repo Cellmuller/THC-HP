@@ -464,6 +464,10 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
     margin-top: 15px;
     /* font-weight: bold; */
 }
+.trouble {
+    display: flex;
+    justify-content: space-between;
+}
 .trouble ul li::before {
     display: inline-block;
 	content: "";
