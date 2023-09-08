@@ -918,6 +918,14 @@ footer {
         max-width: 538px;
     }
 }
+@media screen and (max-width:1300px) {
+    .card {
+        display: block;
+    }
+    .card img {
+        width: 100%;
+    }
+}
 @media screen and (max-width:959px) {
     /* .effect-comment {
         display: block;
@@ -947,6 +955,12 @@ footer {
         display: block;
     }
     .feature img {
+        width: 100%;
+    }
+    .card {
+        display: block;
+    }
+    .card img {
         width: 100%;
     }
     .product-area {
