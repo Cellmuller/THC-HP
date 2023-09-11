@@ -57,6 +57,7 @@
 }
 .target-area img {
     margin-right: 1%;
+    width: 2% !important;
 }
 .target-area ul{
     list-style: none;
@@ -429,6 +430,9 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
 }
 .ac-child .trouble{
     margin-top: 20px;
+}
+.trouble li {
+    margin-bottom: 20px;
 }
 .howto-use {
     display: flex;
@@ -953,6 +957,9 @@ footer {
         text-align: center;
         display: block;
         margin: 20px 0;
+    }
+    .target-area img {
+        width: 5% !important;
     }
     .article-area2 a {
         width: 80%;
