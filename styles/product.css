@@ -925,6 +925,15 @@ footer {
     .card img {
         width: 100%;
     }
+    .effect-fixed-explain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .effect-fixed-detail img {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
 }
 @media screen and (max-width:959px) {
     /* .effect-comment {
