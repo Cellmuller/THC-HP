@@ -434,6 +434,9 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
 .trouble li {
     margin-bottom: 20px;
 }
+.trouble li a {
+    color: #01BBB4;
+}
 .howto-use {
     display: flex;
     margin-top: 50px !important;
