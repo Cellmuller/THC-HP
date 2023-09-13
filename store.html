@@ -158,341 +158,149 @@
     <!-- メイン -->
     <main>
         <!-- fv-area -->
-        <section class="fv-area">
-            <div id="my-map">
-            </div>
+        <section class="second-fv-area">
+            <img src="./images/clinic-fv.png" class="second-fv-img">
+            <img src="./images/clinic-fv-sp.png" class="second-fv-img-sp">
         </section>
         <!-- パンくずリスト -->
         <section class="breadcrumbs-area">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             <a>></a>
-            <a href="#">取扱店舗</a>
+            <a href="#" class="current">クリニック</a>
         </section>
-        <!-- --------------都道府県プルダウン-------------- -->
-        <section class="map-sp">
-            <div class="map-search">
-                <p>Search By Prefecture</p>
-                <h2>都道府県から探す</h2>
-                <div class="map-pull">
-                    <label class="selectbox">
-                        <select>
-                            <option id="hokkaido">北海道</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>東北</option>
-                            <option value="#aomori">青森県</option>
-                            <option value="#akita">秋田県</option>
-                            <option value="#iwate">岩手県</option>
-                            <option value="#yamagata">山形県</option>
-                            <option value="#miyagi">宮城県</option>
-                            <option value="#fukushima">福島県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>関東</option>
-                            <option value="#ibaraki">茨城県</option>
-                            <option value="#tochigi">栃木県</option>
-                            <option value="#gunma">群馬県</option>
-                            <option value="#saitama">埼玉県</option>
-                            <option value="#chiba">千葉県</option>
-                            <option value="#tokyo">東京都</option>
-                            <option value="#kanagawa">神奈川県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>中部</option>
-                            <option value="#niigata">新潟県</option>
-                            <option value="#toyama">富山県</option>
-                            <option value="#ishikawa">石川県</option>
-                            <option value="#fukui">福井県</option>
-                            <option value="#yamanashi">山梨県</option>
-                            <option value="#nagano">長野県</option>
-                            <option value="#gifu">岐阜県</option>
-                            <option value="#sizuoka">静岡県</option>
-                            <option value="#aichi">愛知県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>近畿</option>
-                            <option value="#mie">三重県</option>
-                            <option value="#siga">滋賀県</option>
-                            <option value="#kyoto">京都府</option>
-                            <option value="#osaka">大阪府</option>
-                            <option value="#hyogo">兵庫県</option>
-                            <option value="#nara">奈良県</option>
-                            <option value="#wakayama">和歌山県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>中国</option>
-                            <option value="#okayama">岡山県</option>
-                            <option value="#hiroshima">広島県</option>
-                            <option value="#tottori">鳥取県</option>
-                            <option value="#shimane">島根県</option>
-                            <option value="#yamaguchi">山口県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>四国</option>
-                            <option value="#tokushima">徳島県</option>
-                            <option value="#kagawa">香川県</option>
-                            <option value="#ehime">愛媛県</option>
-                            <option value="#kochi">高知県</option>
-                        </select>
-                    </label>
-                    <label class="selectbox">
-                        <select>
-                            <option>九州・沖縄</option>
-                            <option value="#fukuoka">福岡県</option>
-                            <option value="#saga">佐賀県</option>
-                            <option value="#nagasaki">長崎県</option>
-                            <option value="#kumamoto">熊本県</option>
-                            <option value="#oita">大分県</option>
-                            <option value="#miyazaki">宮崎県</option>
-                            <option value="#kagoshima">鹿児島県</option>
-                            <option value="#okinawa">沖縄県</option>
-                        </select>
-                    </label>
-                    
-                </div>
-            </div>
-        </section>
-        <!-- --------------都道府県プルダウン-------------- -->
+        <!-- <div class="category-btn">
+            <button class="modal-open-1">早漏</button>
+            <button class="modal-open-2">遅漏</button>
+            <button class="modal-open-3">活力</button>
+            <button class="modal-open-7">性交痛</button>
+            <button class="modal-open-6">妊活</button>
+            <button class="modal-open-5">骨盤底</button>
+            <button class="modal-open-4">膣内フローラ</button>
+        </div> -->
+        <h3>TENGAヘルスケア製品お取扱いの医療機関等をご案内します。</h3>
         <div class="container">
             <!-- 店舗リスト -->
             <section class="store-lists-area">
                 <div>
-                    <div class="category" id="hokkaido">北海道</div>
                     <div class="tab-content">
                         <ul class="tab-items">
-                            <li class="tab__item on"><span class="tab__link on" data-tab-body="1">札幌</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="2">函館</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="3">小樽</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="4">室蘭</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="5">旭川</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="6">旭川</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="7">旭川</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="8">旭川</span></li>
+                            <li class="tab__item on"><span class="tab__link" data-tab-body="1">北海道</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="2">東北</span></li>
+                            <li class="tab__item"><span class="tab__link on" data-tab-body="3">関東</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="4">北陸</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="5">東海</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="6">近畿</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="7">四国</span></li>
+                            <li class="tab__item"><span class="tab__link" data-tab-body="8">九州・沖縄</span></li>
                         </ul>
-                        <div class="tab-body">
-                            <div class="tab-body__item tab-body__item--1 on">
-                                <ul>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                </ul>
+                        <div class="tab-body" id="tab-body">
+                            <!-- 各地方 -->
+                            <div class="tab-body__item tab-body__item--1">
                             </div>
-                            <div class="tab-body__item tab-body__item--2">
+                            <div class="tab-body__item tab-body__item--2"></div>
+                            <div class="tab-body__item tab-body__item--3"></div>
+                            <div class="tab-body__item tab-body__item--4"></div>
+                            <div class="tab-body__item tab-body__item--5"></div>
+                            <div class="tab-body__item tab-body__item--6"></div>
+                            <div class="tab-body__item tab-body__item--7"></div>
+                            <div class="tab-body__item tab-body__item--8"></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-1">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 早漏カテゴリ商品一覧</h3>
                                 <ul>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名2</a>
-                                        <button class="modal-open">性生活</button>
-                                        <button class="modal-open">妊活</button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-body__item tab-body__item--3">
-                                <ul>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名3</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-body__item tab-body__item--4">
-                                <ul>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名4</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-body__item tab-body__item--5">
-                                <ul>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">・店舗名5</a>
-                                    </li>
+                                    <li><a href="./products/mtc-kt.html">MEN’S TRAINING CUP KEEP TRAINING</a></li>
+                                    <li><a href="./products/ttk.html">TIMING TRAINER -KEEP-</a></li>
+                                    <li><a href="./products/htl-01.html">TRAINER LOTION</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="modal-container">
+                <div class="modal-container modal-container-2">
                     <div class="modal-body">
                         <div class="modal-close">x</div>
                         <div class="modal-content">
                             <div class="genre">
-                                <h3>■ 性生活</h3>
-                                <p>
-                                    ・早漏やちろうといった男性機能のお悩みの改善を目指すトレーニングアイテム<br>
-                                    ・女性のデリケートゾーンや骨盤底のお悩みをケアするアイテム<br>
-                                    ・成功つうやデリケートゾーンの渇きが木になる方のためのジェル
-                                </p>
+                                <h3>■ 遅漏カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mtc.html">MEN’S TRAINING CUP FINISH TRAINING</a></li>
+                                    <li><a href="./products/ttf.html">TIMING TRAINER -FINISH-</a></li>
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-3">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
                             <div class="genre">
-                                <h3>■ 妊活</h3>
-                                <p>
-                                    ・シリンジ法による妊活キットや静止観察キットなどの妊活アイテム
-                                </p>
+                                <h3>■ 活力カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/tls.html">活力支援サプリメント</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-4">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 膣内フローラカテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/tfs.html">YoniFlora</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-5">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 骨盤底カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/kch.html">K-Gel CHECKER </a></li>
+                                    <li><a href="./products/tks.html">K-Gel サポートサプリメント</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-6">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 妊活カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mensloupe.html">TENGA MEN’S LOUPE</a></li>
+                                    <li><a href="./products/tss.html">精育支援サプリメント</a></li>
+                                    <li><a href="./products/seedin.html">Seed in</a></li>
+                                    <li><a href="./products/seedpod.html">SEED POD</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-container modal-container-7">
+                    <div class="modal-body">
+                        <div class="modal-close">x</div>
+                        <div class="modal-content">
+                            <div class="genre">
+                                <h3>■ 性交痛カテゴリ商品一覧</h3>
+                                <ul>
+                                    <li><a href="./products/mcg.html">MOIST CARE GEL</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
