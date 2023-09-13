@@ -1,77 +1,3 @@
-var areaLinks = {
-  1: "./store.html#hokkaido",
-  2: "https://www.pref.aomori.lg.jp/",
-  3: "https://www.pref.iwate.lg.jp/",
-  4: "https://www.pref.miyagi.lg.jp/",
-};
-
-
-var d = new jpmap.japanMap(document.getElementById("my-map"), {
-  areas: [
-    { code: 1, name: "北海道", color: "#106198", hoverColor: "#b3b2ee" },
-    { code: 2, name: "青森", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 3, name: "岩手", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 4, name: "宮城", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 5, name: "秋田", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 6, name: "山形", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 7, name: "福島", color: "#1578af", hoverColor: "#98b9ff" },
-    { code: 8, name: "茨城", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 9, name: "栃木", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 10, name: "群馬", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 11, name: "埼玉", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 12, name: "千葉", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 13, name: "東京", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 14, name: "神奈川", color: "#0b97cc", hoverColor: "#b7e5f4" },
-    { code: 15, name: "新潟", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 16, name: "富山", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 17, name: "石川", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 18, name: "福井", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 19, name: "山梨", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 20, name: "長野", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 21, name: "岐阜", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 22, name: "静岡", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 23, name: "愛知", color: "#2ebcce", hoverColor: "#aceebb" },
-    { code: 24, name: "三重", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 25, name: "滋賀", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 26, name: "京都", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 27, name: "大阪", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 28, name: "兵庫", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 29, name: "奈良", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 30, name: "和歌山", color: "#63d5ce", hoverColor: "#fff19c" },
-    { code: 31, name: "鳥取", color: "#62c3e4", hoverColor: "#ffe0a3" },
-    { code: 32, name: "島根", color: "#62c3e4", hoverColor: "#ffe0a3" },
-    { code: 33, name: "岡山", color: "#62c3e4", hoverColor: "#ffe0a3" },
-    { code: 34, name: "広島", color: "#62c3e4", hoverColor: "#ffe0a3" },
-    { code: 35, name: "山口", color: "#62c3e4", hoverColor: "#ffe0a3" },
-    { code: 36, name: "徳島", color: "#88d0e9", hoverColor: "#ffbb9c" },
-    { code: 37, name: "香川", color: "#88d0e9", hoverColor: "#ffbb9c" },
-    { code: 38, name: "愛媛", color: "#88d0e9", hoverColor: "#ffbb9c" },
-    { code: 39, name: "高知", color: "#88d0e9", hoverColor: "#ffbb9c" },
-    { code: 40, name: "福岡", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 41, name: "佐賀", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 42, name: "長崎", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 43, name: "熊本", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 44, name: "大分", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 45, name: "宮崎", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 46, name: "鹿児島", color: "#a4e0ea", hoverColor: "#ffbdbd" },
-    { code: 47, name: "沖縄", color: "#47a3b2", hoverColor: "#f5c9ff" },
-  ],
-
-  
-  showsPrefectureName: true,
-  width: 1000,
-  movesIslands: true,
-  borderLineColor: "#3c3c3c",
-  lang: "ja",
-  fontSize: 11,
-  font: "serif",
-  prefectureNameType: "short",
-  onSelect: function (data) {
-    location.href = areaLinks[data.area.code];
-  },
-});
-
-
 document.addEventListener("DOMContentLoaded", function () {
   var $tab__link = $(".tab__link");
   var $tab_body_item = $(".tab-body__item");
@@ -84,31 +10,178 @@ document.addEventListener("DOMContentLoaded", function () {
     var num = target.data("tab-body");
     $tab_body_item.removeClass("on");
     $(".tab-body__item--" + num).addClass("on");
+    $(".sub-tab-body__item").addClass("on");
+  });
+
+  // サブタブ用のクリックリスナー
+  var $sub_tab__link = $(".sub-tab__link");
+  var $sub_tab_body_item = $(".sub-tab-body__item");
+  $sub_tab__link.on("click", function (e) {
+    var target = $(e.currentTarget);
+    //サブタブの表示非表示
+    $sub_tab__link.removeClass("on");
+    target.addClass("on");
+    //サブタブの中身の表示非表示
+    var num = target.data("sub-tab-body");
+    $sub_tab_body_item.removeClass("on");
+    $(".sub-tab-body__item--" + num).addClass("on");
   });
 });
 
 // モーダル
 $(function(){
   // 変数に要素を入れる
-  var open = $('.modal-open'),
+  var open1 = $('.modal-open-1'),
+    open2 = $('.modal-open-2'),
+    open3 = $('.modal-open-3'),
+    open4 = $('.modal-open-4'),
+    open5 = $('.modal-open-5'),
+    open6 = $('.modal-open-6'),
+    open7 = $('.modal-open-7'),
     close = $('.modal-close'),
-    container = $('.modal-container');
+    container1 = $('.modal-container-1'),
+    container2 = $('.modal-container-2'),
+    container3 = $('.modal-container-3'),
+    container4 = $('.modal-container-4'),
+    container5 = $('.modal-container-5'),
+    container6 = $('.modal-container-6'),
+    container7 = $('.modal-container-7');
 
-  //開くボタンをクリックしたらモーダルを表示する
-  open.on('click',function(){ 
-    container.addClass('active');
+  // ボタン1をクリックしたらモーダル1を表示する
+  open1.on('click', function(){ 
+    container1.addClass('active');
     return false;
   });
 
-  //閉じるボタンをクリックしたらモーダルを閉じる
-  close.on('click',function(){  
-    container.removeClass('active');
+  // ボタン2をクリックしたらモーダル2を表示する
+  open2.on('click', function(){ 
+    container2.addClass('active');
+    return false;
   });
 
-  //モーダルの外側をクリックしたらモーダルを閉じる
-  $(document).on('click',function(e) {
+  // ボタン3をクリックしたらモーダル3を表示する
+  open3.on('click', function(){ 
+    container3.addClass('active');
+    return false;
+  });
+
+  // ボタン4をクリックしたらモーダル4を表示する
+  open4.on('click', function(){ 
+    container4.addClass('active');
+    return false;
+  });
+
+  // ボタン5をクリックしたらモーダル5を表示する
+  open5.on('click', function(){ 
+    container5.addClass('active');
+    return false;
+  });
+
+  // ボタン6をクリックしたらモーダル6を表示する
+  open6.on('click', function(){ 
+    container6.addClass('active');
+    return false;
+  });
+
+  // ボタン7をクリックしたらモーダル7を表示する
+  open7.on('click', function(){ 
+    container7.addClass('active');
+    return false;
+  });
+
+  // 閉じるボタンをクリックしたらモーダルを閉じる
+  close.on('click', function(){  
+    container1.removeClass('active');
+    container2.removeClass('active');
+    container3.removeClass('active');
+    container4.removeClass('active');
+    container5.removeClass('active');
+    container6.removeClass('active');
+    container7.removeClass('active');
+  });
+
+  // モーダルの外側をクリックしたらモーダルを閉じる
+  $(document).on('click', function(e) {
     if(!$(e.target).closest('.modal-body').length) {
-      container.removeClass('active');
+      container1.removeClass('active');
+      container2.removeClass('active');
+      container3.removeClass('active');
+      container4.removeClass('active');
+      container5.removeClass('active');
+      container6.removeClass('active');
+      container7.removeClass('active');
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('sample.json')
+  .then(response => response.json())
+  .then(jsonData => {
+    
+    jsonData.forEach((regionData, index) => {
+      
+      // このindexはJSONデータの順序に依存するので注意
+      const tabBodyItem = document.querySelector(`.tab-body__item--${index + 1}`);
+      
+      regionData.prefectures.forEach(prefData => {
+        
+        // 都道府県のコンテナ
+        const prefDiv = document.createElement('div');
+        prefDiv.className = 'sub-tab-body__item';
+
+        // 都道府県のタイトル
+        const h2 = document.createElement('h2');
+        h2.textContent = prefData.prefecture;
+        prefDiv.appendChild(h2);
+
+        // 各店舗の情報
+        prefData.stores.forEach(store => {
+          
+          const ul = document.createElement('ul');
+          ul.className = 'card';
+
+          const liName = document.createElement('li');
+          const aName = document.createElement('a');
+          aName.href = store.url;
+          const imgName = document.createElement('img');
+          imgName.src = './images/clinic-icon.png';
+          imgName.className = 'card-icon';
+          aName.appendChild(imgName);
+          aName.appendChild(document.createTextNode(store.name));
+          liName.appendChild(aName);
+          ul.appendChild(liName);
+
+          const divTags = document.createElement('div');
+          store.tags.forEach(tag => {
+            const button = document.createElement('button');
+            button.className = 'modal-open-7';
+            button.textContent = tag;
+            divTags.appendChild(button);
+          });
+          liName.appendChild(divTags);
+
+          const liLocation = document.createElement('li');
+          const aLocation = document.createElement('a');
+          aLocation.href = store.map_url;
+          const imgLocation = document.createElement('img');
+          imgLocation.src = './images/location-icon.png';
+          imgLocation.className = 'card-icon card-icon-center';
+          aLocation.appendChild(imgLocation);
+          aLocation.appendChild(document.createTextNode(store.location));
+          liLocation.appendChild(aLocation);
+          ul.appendChild(liLocation);
+
+          prefDiv.appendChild(ul);
+        });
+
+        tabBodyItem.appendChild(prefDiv);
+      });
+      
+    });
+    
+  })
+  .catch(error => {
+    console.error('Error loading JSON:', error);
   });
 });
