@@ -125,13 +125,16 @@
 .effect-fixed-detail h3 {
     color: #01BBB4;
     font-weight: bold;
-    border-left: 5px solid #01BBB4;
     padding-left: 10px;
     margin-bottom: 15px;
     font-size: 25px;
 }
 .effect-fixed-detail p {
     padding: 10px 15px;
+}
+span {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.514);
 }
 .effect-fixed-detail img {
     width: 20%;
