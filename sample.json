@@ -1,6 +1,7 @@
 [
   {
-    "region": "東海",
+    "id": 5,
+    "name": "東海",
     "prefectures": [
       {
         "prefecture": "愛知県",
@@ -2810,7 +2811,8 @@
     ]
   },
   {
-    "region": "近畿",
+    "id": 6,
+    "name": "近畿",
     "prefectures": [
       {
         "prefecture": "京都府",
@@ -3056,15 +3058,16 @@
               "遅漏",
               "女性性機能"
             ],
-            "location": "#N/A",
-            "map_url": "#N/A"
+            "location": "大阪府大阪市北区梅田３丁目１−１ 大丸梅田店 5F michi kake",
+            "map_url": "https://goo.gl/maps/uq8L2bqDUiAiLpHbA"
           }
         ]
       }
     ]
   },
   {
-    "region": "関東",
+    "id": 3,
+    "name": "関東",
     "prefectures": [
       {
         "prefecture": "神奈川県",
@@ -3079,8 +3082,8 @@
               "遅漏",
               "女性性機能"
             ],
-            "location": "#N/A",
-            "map_url": "#N/A"
+            "location": "神奈川県横浜市西区南幸２丁目１５−１３ 2階",
+            "map_url": "https://goo.gl/maps/xUyNZ85gp5CuY1Yj7"
           }
         ]
       },
@@ -3097,8 +3100,8 @@
               "遅漏",
               "女性性機能"
             ],
-            "location": "#N/A",
-            "map_url": "#N/A"
+            "location": "東京都千代田区有楽町２丁目５−１ 阪急メンズ東京 6階",
+            "map_url": "https://goo.gl/maps/MtVYwmWHZh6vDCtG8"
           },
           {
             "name": "m's秋葉原店",
@@ -3109,15 +3112,16 @@
               "早漏",
               "遅漏"
             ],
-            "location": "#N/A",
-            "map_url": "#N/A"
+            "location": "東京都千代田区外神田１丁目１５−１３ 太平堂ビルB1F-6F",
+            "map_url": "https://goo.gl/maps/ECfCqXVZViAKZQMd6"
           }
         ]
       }
     ]
   },
   {
-    "region": "北陸",
+    "id": 4,
+    "name": "北陸",
     "prefectures": [
       {
         "prefecture": "石川県",
