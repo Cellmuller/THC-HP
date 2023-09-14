@@ -114,74 +114,152 @@ $(function(){
   });
 });
 
+// document.addEventListener("DOMContentLoaded", function() {
+//   fetch('sample.json')
+//   .then(response => response.json())
+//   .then(jsonData => {
+    
+//     jsonData.forEach((regionData, index) => {
+      
+//       // このindexはJSONデータの順序に依存するので注意
+//       const tabBodyItem = document.querySelector(`.tab-body__item--${index + 1}`);
+      
+//       regionData.prefectures.forEach(prefData => {
+        
+//         // 都道府県のコンテナ
+//         const prefDiv = document.createElement('div');
+//         prefDiv.className = 'sub-tab-body__item';
+
+//         // 都道府県のタイトル
+//         const h2 = document.createElement('h2');
+//         h2.textContent = prefData.prefecture;
+//         prefDiv.appendChild(h2);
+
+//         // 各店舗の情報
+//         prefData.stores.forEach(store => {
+          
+//           const ul = document.createElement('ul');
+//           ul.className = 'card';
+
+//           const liName = document.createElement('li');
+//           const aName = document.createElement('a');
+//           aName.href = store.url;
+//           const imgName = document.createElement('img');
+//           imgName.src = './images/clinic-icon.png';
+//           imgName.className = 'card-icon';
+//           aName.appendChild(imgName);
+//           aName.appendChild(document.createTextNode(store.name));
+//           liName.appendChild(aName);
+//           ul.appendChild(liName);
+
+//           const divTags = document.createElement('div');
+//           store.tags.forEach(tag => {
+//             const button = document.createElement('button');
+//             button.className = 'modal-open-7';
+//             button.textContent = tag;
+//             divTags.appendChild(button);
+//           });
+//           liName.appendChild(divTags);
+
+//           const liLocation = document.createElement('li');
+//           const aLocation = document.createElement('a');
+//           aLocation.href = store.map_url;
+//           const imgLocation = document.createElement('img');
+//           imgLocation.src = './images/location-icon.png';
+//           imgLocation.className = 'card-icon card-icon-center';
+//           aLocation.appendChild(imgLocation);
+//           aLocation.appendChild(document.createTextNode(store.location));
+//           liLocation.appendChild(aLocation);
+//           ul.appendChild(liLocation);
+
+//           prefDiv.appendChild(ul);
+//         });
+
+//         tabBodyItem.appendChild(prefDiv);
+//       });
+      
+//     });
+    
+//   })
+//   .catch(error => {
+//     console.error('Error loading JSON:', error);
+//   });
+// });
+
+
 document.addEventListener("DOMContentLoaded", function() {
   fetch('sample.json')
-  .then(response => response.json())
-  .then(jsonData => {
-    
-    jsonData.forEach((regionData, index) => {
-      
-      // このindexはJSONデータの順序に依存するので注意
-      const tabBodyItem = document.querySelector(`.tab-body__item--${index + 1}`);
-      
-      regionData.prefectures.forEach(prefData => {
-        
-        // 都道府県のコンテナ
-        const prefDiv = document.createElement('div');
-        prefDiv.className = 'sub-tab-body__item';
+    .then(response => response.json())
+    .then(jsonData => {
+      for (let index = 1; index <= 8; index++) { // 地方の数が8であると仮定
+        const regionDiv = document.querySelector(`.tab-body__item--${index}`);
+        if (!regionDiv) continue;
 
-        // 都道府県のタイトル
-        const h2 = document.createElement('h2');
-        h2.textContent = prefData.prefecture;
-        prefDiv.appendChild(h2);
+        const matchingRegionData = jsonData.find(region => region.id === index);
 
-        // 各店舗の情報
-        prefData.stores.forEach(store => {
-          
-          const ul = document.createElement('ul');
-          ul.className = 'card';
 
-          const liName = document.createElement('li');
-          const aName = document.createElement('a');
-          aName.href = store.url;
-          const imgName = document.createElement('img');
-          imgName.src = './images/clinic-icon.png';
-          imgName.className = 'card-icon';
-          aName.appendChild(imgName);
-          aName.appendChild(document.createTextNode(store.name));
-          liName.appendChild(aName);
-          ul.appendChild(liName);
+        if (!matchingRegionData) {
+          const noDataDiv = document.createElement('div');
+          noDataDiv.textContent = '0件';
+          regionDiv.appendChild(noDataDiv);
+          continue;
+        }
 
-          const divTags = document.createElement('div');
-          store.tags.forEach(tag => {
-            const button = document.createElement('button');
-            button.className = 'modal-open-7';
-            button.textContent = tag;
-            divTags.appendChild(button);
+        const subTabBody = document.createElement('div');
+        subTabBody.className = 'sub-tab-body';
+        regionDiv.appendChild(subTabBody);
+
+        matchingRegionData.prefectures.forEach(prefData => {
+          const prefDiv = document.createElement('div');
+          prefDiv.className = 'sub-tab-body__item';
+
+          const h2 = document.createElement('h2');
+          h2.textContent = prefData.prefecture;
+          prefDiv.appendChild(h2);
+
+          prefData.stores.forEach(store => {
+            const ul = document.createElement('ul');
+            ul.className = 'card';
+
+            const liName = document.createElement('li');
+            const aName = document.createElement('a');
+            aName.href = store.url;
+            const imgName = document.createElement('img');
+            imgName.src = './images/clinic-icon.png';
+            imgName.className = 'card-icon';
+            aName.appendChild(imgName);
+            aName.appendChild(document.createTextNode(store.name));
+            liName.appendChild(aName);
+            ul.appendChild(liName);
+
+            const divTags = document.createElement('div');
+            store.tags.forEach(tag => {
+              const button = document.createElement('button');
+              button.className = 'modal-open-7';
+              button.textContent = tag;
+              divTags.appendChild(button);
+            });
+            liName.appendChild(divTags);
+
+            const liLocation = document.createElement('li');
+            const aLocation = document.createElement('a');
+            aLocation.href = store.map_url;
+            const imgLocation = document.createElement('img');
+            imgLocation.src = './images/location-icon.png';
+            imgLocation.className = 'card-icon card-icon-center';
+            aLocation.appendChild(imgLocation);
+            aLocation.appendChild(document.createTextNode(store.location));
+            liLocation.appendChild(aLocation);
+            ul.appendChild(liLocation);
+
+            prefDiv.appendChild(ul);
           });
-          liName.appendChild(divTags);
 
-          const liLocation = document.createElement('li');
-          const aLocation = document.createElement('a');
-          aLocation.href = store.map_url;
-          const imgLocation = document.createElement('img');
-          imgLocation.src = './images/location-icon.png';
-          imgLocation.className = 'card-icon card-icon-center';
-          aLocation.appendChild(imgLocation);
-          aLocation.appendChild(document.createTextNode(store.location));
-          liLocation.appendChild(aLocation);
-          ul.appendChild(liLocation);
-
-          prefDiv.appendChild(ul);
+          subTabBody.appendChild(prefDiv);
         });
-
-        tabBodyItem.appendChild(prefDiv);
-      });
-      
+      }
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
     });
-    
-  })
-  .catch(error => {
-    console.error('Error loading JSON:', error);
-  });
 });
