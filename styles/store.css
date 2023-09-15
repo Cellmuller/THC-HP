@@ -80,6 +80,7 @@ h3 {
 .tab-body__item ul li:first-child a{
     width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 .tab-body__item ul li:nth-child(2){
     flex: 40%;
