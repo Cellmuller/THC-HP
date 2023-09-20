@@ -477,6 +477,7 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
 .trouble {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .trouble ul li::before {
     display: inline-block;
