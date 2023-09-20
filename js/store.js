@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 $(function(){
   for (let i = 1; i <= 7; i++) {
     (function(index) { // 即時実行関数でindexとしてiを受け取る
-      $(document).on('click', `.modal-open-${index}`, function() { // indexを使用
-        $(`.modal-container-${index}`).addClass('active'); // indexを使用
+      $(document).on('click', `.modal-open-${index}`, function() { 
+        $(`.modal-container-${index}`).addClass('active'); 
         return false;
       });
     })(i); // iを渡す
@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function() {
             ul.appendChild(liName);
 
             const divTags = document.createElement('div');
-            store.tags.forEach(tag => {
+            store.tags.forEach((tag, index) => {
               const button = document.createElement('button');
-              button.className = 'modal-open-7';
+              button.className = `modal-open-${index + 1}`;
               button.textContent = tag;
               divTags.appendChild(button);
             });
