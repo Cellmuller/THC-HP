@@ -1,3 +1,6 @@
+.csp {
+    display: none;
+}
 .none {
     background-color: #FCFCFC !important;
     box-shadow: none !important;
@@ -248,6 +251,19 @@
 
 }
 @media screen and (max-width:959px) {
+    .cpc {
+        display: none !important;
+    }
+    .csp {
+        display: block !important;
+        margin: auto;
+        text-align: center;
+    }
+    .csp img {
+        margin: auto;
+        width: 80%;
+        border-radius: 10px;
+    }
     .none {
         display: none !important;
     }
@@ -262,7 +278,20 @@
         margin-bottom: 20px;
     }
     .column {
-        display: none !important;
+        display: block!important;
+        margin-bottom: 50px !important;
+    }
+    .message-area .text h2 {
+        margin: 40px auto 0;
+        width: 90%;
+        font-size: 20px;
+    }
+    .message-area .text p {
+        margin-top: 25px;
+        margin: 25px auto 0;
+        width: 90%;
+        font-size: 14px;
+        line-height: 30px;
     }
 }
 @media screen and (max-width:834px) {
@@ -285,10 +314,6 @@
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
         
-    }
-    .column {
-        display: block!important;
-        margin-bottom: 50px !important;
     }
     .sourou {
         background-position: 750px;
