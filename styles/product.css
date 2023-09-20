@@ -1156,7 +1156,7 @@ footer {
     }
     .target-area ul li {
         font-size: 13px;
-        align-items: flex-start;
+        align-items: center;
     }
     .card {
         display: block;
