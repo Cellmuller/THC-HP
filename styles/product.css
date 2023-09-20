@@ -73,6 +73,10 @@
     width: 100%;
     align-items: center;
 }
+.special {
+    padding: 0 120px;
+    width: 100% !important;
+}
 .effect-fixed-area {
     width: 78%;
     margin: 70px auto;
