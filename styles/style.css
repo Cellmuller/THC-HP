@@ -344,7 +344,7 @@ main {
         width: 85%;
     }
     .category-item .title {
-        margin-bottom: 30px;
+        margin-bottom: 8px;
     }
     .category-item .title div {
         font-size: 35px;
@@ -460,9 +460,6 @@ main {
     }
     .category-item div {
         width: 85%;
-    }
-    .category-item .title {
-        margin-bottom: 30px;
     }
     .category-item .title div {
         font-size: 35px;
