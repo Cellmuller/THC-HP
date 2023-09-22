@@ -1060,6 +1060,9 @@ footer {
     .faq-area .ac-parent {
         padding: 0 10px;
     }
+    .special {
+        padding: 0;
+    }
     .effect-fixed-area {
         width: 100%;
     }
