@@ -353,21 +353,11 @@ footer small{
     header > .header-logo-area {
         margin: 0;
     }
-    /* .header-logo {
-        width: 37%!important;
-    } */
-    /* header > div > a > img {
-        width: 10%;
-    } */
 }
 
 @media screen and (max-width:1600px) {
     .fv-area {
         height: 750px;
-    }
-    .second-fv-img{
-        /* top: 60%;
-        width: 95%; */
     }
     
 }
@@ -502,7 +492,6 @@ footer small{
     }
     
     .category > ul > li {
-        /* padding: 5px; */
         border-bottom: 1px solid #01BCB5;
     }
     .category > ul > li:last-child {
@@ -1082,7 +1071,4 @@ footer small{
     .breadcrumbs-area{
         margin: 10px auto 60px;
     }
-    /* .message-area .text h2 {
-        margin: 126px auto 0 !important;
-    } */
 }
