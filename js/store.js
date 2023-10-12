@@ -76,6 +76,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const subTabBody = document.createElement('div');
         subTabBody.className = 'sub-tab-body';
         regionDiv.appendChild(subTabBody);
+        // 関東のタブをデフォルトで選択状態にする
+        const kantoSubTabBodies = document.querySelectorAll('.tab-body__item--3 .sub-tab-body__item');
+        kantoSubTabBodies.forEach(subTab => {
+          subTab.classList.add('on');
+        });
 
         matchingRegionData.prefectures.forEach(prefData => {
           const prefDiv = document.createElement('div');
