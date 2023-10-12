@@ -283,13 +283,13 @@
     }
     .message-area .text h2 {
         margin: 40px auto 0;
-        width: 90%;
+        width: 100%;
         font-size: 20px;
     }
     .message-area .text p {
         margin-top: 25px;
         margin: 25px auto 0;
-        width: 90%;
+        width: 100%;
         font-size: 14px;
         line-height: 30px;
     }

@@ -3056,9 +3056,9 @@
               "性生活",
               "早漏",
               "遅漏",
-              "女性性機能"
+              "女性機能"
             ],
-            "location": "大阪府大阪市北区梅田３丁目１−１ 大丸梅田店 5F michi kake",
+            "location": "大阪府大阪市北区梅田３丁目１−１",
             "map_url": "https://goo.gl/maps/uq8L2bqDUiAiLpHbA"
           }
         ]
@@ -3115,60 +3115,6 @@
             ],
             "location": "兵庫県揖保郡太子町鵤１３１９−１",
             "map_url": "https://www.google.com/maps/place?q=兵庫県揖保郡太子町鵤１３１９−１&sca_esv=563020551&rlz=1C5CHFA_enJP1053JP1054&ei=nkX4ZNmTL_fm2roPk4m_oAs&ved=0ahUKEwjZ2sei1ZWBAxV3s1YBHZPED7QQ4dUDCBA&uact=5&oq=%E3%81%82%E3%81%82&gs_lp=Egxnd3Mtd2l6LXNlcnAiBuOBguOBgjILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIHEAAYBBiABEixC1AAWKkJcAF4AZABAJgB4QGgAYQEqgEFMC4yLjG4AQPIAQD4AQGoAgrCAgcQABiKBRhDwgINEAAYigUYsQMYgwEYQ8ICDRAAGAQYgAQYsQMYgwHCAgsQABiKBRixAxiDAcICFhAAGAMYjwEY5QIY6gIYtAIYjAPYAQHCAgYQABgDGATiAwQYACBBiAYBugYECAEYCg&sclient=gws-wiz-serp"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "name": "関東",
-    "prefectures": [
-      {
-        "prefecture": "神奈川県",
-        "stores": [
-          {
-            "name": "TENGA STORE YOKOHAMA（横浜ビブレ）",
-            "url": "https://tenga-store.com/",
-            "tags": [
-              "妊活",
-              "性生活",
-              "早漏",
-              "遅漏",
-              "女性性機能"
-            ],
-            "location": "神奈川県横浜市西区南幸２丁目１５−１３ 2階",
-            "map_url": "https://goo.gl/maps/xUyNZ85gp5CuY1Yj7"
-          }
-        ]
-      },
-      {
-        "prefecture": "東京都",
-        "stores": [
-          {
-            "name": "TENGA STORE TOKYO（阪急メンズ東京）",
-            "url": "https://tenga-store.com/",
-            "tags": [
-              "妊活",
-              "性生活",
-              "早漏",
-              "遅漏",
-              "女性性機能"
-            ],
-            "location": "東京都千代田区有楽町２丁目５−１ 阪急メンズ東京 6階",
-            "map_url": "https://goo.gl/maps/MtVYwmWHZh6vDCtG8"
-          },
-          {
-            "name": "m's秋葉原店",
-            "url": "https://www.ms-online.co.jp/page/akihabara-store.php",
-            "tags": [
-              "妊活",
-              "性生活",
-              "早漏",
-              "遅漏"
-            ],
-            "location": "東京都千代田区外神田１丁目１５−１３ 太平堂ビルB1F-6F",
-            "map_url": "https://goo.gl/maps/ECfCqXVZViAKZQMd6"
           }
         ]
       }
@@ -3820,6 +3766,60 @@
             ],
             "location": "福井県敦賀市木崎17号高土手7番地",
             "map_url": "https://www.google.com/maps/place?q=福井県敦賀市木崎17号高土手7番地&sca_esv=563020551&rlz=1C5CHFA_enJP1053JP1054&ei=nkX4ZNmTL_fm2roPk4m_oAs&ved=0ahUKEwjZ2sei1ZWBAxV3s1YBHZPED7QQ4dUDCBA&uact=5&oq=%E3%81%82%E3%81%82&gs_lp=Egxnd3Mtd2l6LXNlcnAiBuOBguOBgjILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMggQABiABBixAzIFEAAYgAQyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyBRAAGIAEMgUQABiABDIHEAAYBBiABEixC1AAWKkJcAF4AZABAJgB4QGgAYQEqgEFMC4yLjG4AQPIAQD4AQGoAgrCAgcQABiKBRhDwgINEAAYigUYsQMYgwEYQ8ICDRAAGAQYgAQYsQMYgwHCAgsQABiKBRixAxiDAcICFhAAGAMYjwEY5QIY6gIYtAIYjAPYAQHCAgYQABgDGATiAwQYACBBiAYBugYECAEYCg&sclient=gws-wiz-serp"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "関東",
+    "prefectures": [
+      {
+        "prefecture": "東京都",
+        "stores": [
+          {
+            "name": "TENGA STORE TOKYO（阪急メンズ東京）",
+            "url": "https://tenga-store.com/",
+            "tags": [
+              "妊活",
+              "性生活",
+              "早漏",
+              "遅漏",
+              "女性機能"
+            ],
+            "location": "東京都千代田区有楽町２丁目５−１",
+            "map_url": "https://goo.gl/maps/MtVYwmWHZh6vDCtG8"
+          },
+          {
+            "name": "m's秋葉原店",
+            "url": "https://www.ms-online.co.jp/page/akihabara-store.php",
+            "tags": [
+              "妊活",
+              "性生活",
+              "早漏",
+              "遅漏"
+            ],
+            "location": " 東京都千代田区外神田１丁目１５−１３",
+            "map_url": "https://goo.gl/maps/ECfCqXVZViAKZQMd6"
+          }
+        ]
+      },
+      {
+        "prefecture": "神奈川県",
+        "stores": [
+          {
+            "name": "TENGA STORE YOKOHAMA（横浜ビブレ）",
+            "url": "https://tenga-store.com/",
+            "tags": [
+              "妊活",
+              "性生活",
+              "早漏",
+              "遅漏",
+              "女性機能"
+            ],
+            "location": "神奈川県横浜市西区南幸２丁目１５−１３",
+            "map_url": "https://goo.gl/maps/xUyNZ85gp5CuY1Yj7"
           }
         ]
       }
