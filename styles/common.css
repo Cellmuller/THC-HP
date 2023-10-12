@@ -304,6 +304,7 @@ header > nav > ul > li:nth-child(2){
 .sns-icon{
     width: 4%;
     margin-right: 10px;
+    min-width: 20px;
 }
 /* フッター */
 footer{
