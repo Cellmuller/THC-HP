@@ -109,6 +109,9 @@
     margin-left: 30px;
     height: 100%;
 }
+.c-img {
+    margin-left: 0 !important;
+}
 .doctor-comment {
     padding: 0;
     margin: 20px 0;
@@ -312,7 +315,6 @@
     .sp img {
         border-radius: 10px;
         width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
         
     }
     .sourou {

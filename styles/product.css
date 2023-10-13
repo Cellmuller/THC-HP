@@ -947,7 +947,6 @@ footer {
     .effect-fixed-detail img {
         width: 100%;
         margin-left: 0;
-        margin-bottom: 30px;
     }
 }
 @media screen and (max-width:959px) {
