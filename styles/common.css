@@ -785,7 +785,7 @@ footer small{
     }
 }
 @media screen and (max-width:479px) {
-
+    .sp 
     /* ヘッダー */
     header {
         padding: 5% 0;
