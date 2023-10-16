@@ -1,3 +1,41 @@
+/* story-area */
+.story-area, .about-area, .items-area, .howto-area, .spec-area {
+    width: 85%;
+    margin: 90px auto 40px;
+}
+.story-area h2, .about-area h2, .items-area h2, .howto-area h2, .spec-area h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.story-area h2::after, .about-area h2::after, .items-area h2::after, .howto-area h2::after, .spec-area h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #2525259e;
+}
+.story-explain, .about-explain, .spec-explain {
+    padding: 0 20px;
+}
+.story-explain:not(:first-child), .about-explain:not(:first-child), .spec-explain:not(:first-child) {
+    margin-top: 40px;
+}
+
+.story-explain h3, .about-explain h3, .spec-explain h3 {
+    color: #01BBB4;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.story-explain div, .about-explain div, .spec-explain div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.story-explain div img, .about-explain div img, .spec-explain div img {
+    width: 20%;
+    margin-left: 20px;
+}
 /* desc-area */
 .desc-area{
     width: 90%;
@@ -73,97 +111,10 @@
     width: 100%;
     align-items: center;
 }
-.special {
-    padding: 0 120px;
-    width: 100% !important;
-}
-.effect-fixed-area {
-    width: 78%;
-    margin: 70px auto;
-}
-.effect-fixed-area h2 {
-    font-size: 40px;
-    margin-bottom: 50px;
-}
-.effect-fixed-area h2::after {
-    content: "";
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 2px;
-    background: #2525259e;
-    
-}
-.effect-fixed-detail {
-    padding: 0 20px;
-    margin-bottom: 40px;
-}
-.htl-effect img {
-    width: 100% !important;
-    margin: 0  !important;
-}
-.f-feature {
-    display: flex;
-}
-.f-feature img {
-    width: 50% !important;
-}
-.effect-fixed-explain {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.effect-fixed-explain div {
-    text-align: center;
-    width: 100%;
-}
-.effect-fixed-explain div img {
-    margin: 0 10px;
-    width: 100%;
-    padding: 0 10px;
-}
-.effect-fixed-explain div p {
-    font-size: 15px;
-    line-height: 15px;
-}
-.effect-fixed-detail h3 {
-    color: #01BBB4;
-    font-weight: bold;
-    padding-left: 10px;
-    margin-bottom: 15px;
-    font-size: 25px;
-}
-.effect-fixed-detail p {
-    padding: 10px 15px;
-}
 span {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.514);
 }
-.effect-fixed-detail img {
-    width: 20%;
-    margin-left: 30px;
-}
-/* .effect-comment {
-    border: solid 3px #01BBB4;
-    border-radius: 10px;
-} */
-.doctor-comment {
-    padding: 0;
-    margin: 20px 0;
-}
-/* carousel-area */
-.carousel-area{
-    margin-bottom: 50px !important;
-}
-.carousel-area img{
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-}
-/* .carousel-area > div > div{
-    width: 100% !important;
-} */
 #slick-slide00 > div > div > div.flex.slick-slide.slick-current.slick-active{
     display: flex;
     align-items: center;
@@ -192,14 +143,14 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 }
 .slick-dots {
     position: relative;
-    bottom: -50px !important; /* この値は必要に応じて調整してください。 */
+    bottom: -50px !important; 
 }
 #slick-slide00{
     margin-bottom: 50px;
 }
 /* how-use-area */
 .how-use-area{
-    width: 78%;
+    width: 85%;
     margin: 0 auto;
 }
 .tfs-use img {
@@ -288,10 +239,6 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 }
 
 /* effect-area */
-.effect-area{
-    width: 78%;
-    margin: 77px auto 0;
-}
 .howTo {
     font-size: 25px;
 }
@@ -397,7 +344,7 @@ section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
     margin-bottom: 20px;
     font-size: 22px;
 }
-section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
+.card > div:nth-child(2) > div:nth-child(1) {
     color: #01BBB4;
     font-weight: bold;
     margin-bottom: 20px;
@@ -511,23 +458,7 @@ section.effect-fixed-area > .card > div:nth-child(2) > div:nth-child(1) {
     margin-top: 15px;
     color: #A7A7A7;
 }
-.items-area {
-    width: 85%;
-    margin: 90px auto 40px;
-}
-.items-area h2 {
-    font-size: 40px;
-    /* margin-bottom: 50px; */
-}
-.items-area h2::after {
-    content: "";
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 2px;
-    background: #2525259e;
-    
-}
+
 /* 商品 */
 .product-area{
     display: flex;
@@ -953,6 +884,14 @@ footer {
     /* .effect-comment {
         display: block;
     } */
+    .story-explain div, .about-explain div, .spec-explain div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .story-explain div img, .about-explain div img,  .spec-explain div img {
+        width: 100%;
+        margin-left: 0;
+    }
     .effect-comment div {
         width: 100%;
         margin: auto;
@@ -1059,25 +998,6 @@ footer {
     .faq-area .ac-parent {
         padding: 0 10px;
     }
-    .special {
-        padding: 0;
-    }
-    .effect-fixed-area {
-        width: 100%;
-    }
-    .effect-fixed-explain {
-        display: block;
-    }
-    .effect-fixed-explain img {
-        width: 100%;
-        margin: 0;
-    }
-    .effect-fixed-explain div {
-        width: 80%;
-    }
-    .effect-fixed-explain div img {
-        margin: 0;
-    }
     .f-feature {
         display: block;
     }
@@ -1129,6 +1049,9 @@ footer {
 
 }
 @media screen and (max-width:479px) {
+    .story-explain {
+        padding: 0;
+    }
     .desc-area {
         width: 95%;
     }
@@ -1159,6 +1082,9 @@ footer {
     .target-area ul li {
         font-size: 13px;
         align-items: center;
+    }
+    .card > div:nth-child(2) {
+        padding: 0;
     }
     .card {
         display: block;
