@@ -23,6 +23,9 @@
 }
 .target-area img {
     margin-right: 1%;
+    max-width: 24px;
+    width: 100%;
+
 }
 .target-area ul{
     list-style: none;
@@ -352,6 +355,12 @@
     .target-area ul li {
         font-size: 13px;
         align-items: flex-start;
+        line-height: 1.8;
+    }
+    .target-area img {
+        max-width: 18px;
+        margin-top: 1%;
+    
     }
     .message-area .text {
         position: absolute;

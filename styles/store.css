@@ -30,6 +30,7 @@ h3 {
 .tab-items{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     text-align: center;
     margin: 0 !important;
     list-style: none;
@@ -96,20 +97,6 @@ h3 {
     width: 60%;
     margin: 0 auto;
 }
-/* .tab-body__item ul li::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 2px;
-    width: 9px;
-    height: 9px;
-    margin: auto;
-    border-top: 2px solid #65c6ba;
-    border-right: 2px solid #65c6ba;
-    transform: rotate(45deg);
-    box-sizing: border-box;
-} */
 .tab-body__item ul li a{
     text-decoration: none;
     width: 100%;
@@ -277,7 +264,7 @@ h3 {
     h3 {
         font-size: 12px;
         width: 60%;
-        margin: 15px auto 0;
+        margin: 25px auto 0;
     }
     .map-sp {
         display: none;
