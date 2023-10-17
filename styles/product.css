@@ -202,7 +202,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     padding: 11px;
 }
 .article-detail h3, p {
-    line-height: 30px;
+    line-height: 1.8;
 }
 .article-detail a {
     margin: 2% 0;
@@ -222,7 +222,6 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     display: none;
 }
 .how-use-img{
-    /* display: block; */
     width: 100%;
     border-radius: 15px;
 }
@@ -349,6 +348,9 @@ section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 22px;
+}
+.card > div:nth-child(2) > div:nth-child(2){
+    line-height: 1.8;
 }
 .ac-child .improvement{
     margin-top: 20px;
@@ -688,7 +690,7 @@ button.more.on-click::after{
     margin: 0 auto;
     background-color: #F9F9F9;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
     margin-top: 5%;
     margin-bottom: 75px;
 }
@@ -881,9 +883,6 @@ footer {
     }
 }
 @media screen and (max-width:959px) {
-    /* .effect-comment {
-        display: block;
-    } */
     .story-explain div, .about-explain div, .spec-explain div {
         flex-direction: column;
         align-items: flex-start;
@@ -981,6 +980,10 @@ footer {
     .article-area2-img {
         width: 80%;
     }
+    .article-detail h3, p {
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
     .product-area {
         padding: 0 33px;
     }
@@ -1049,8 +1052,19 @@ footer {
 
 }
 @media screen and (max-width:479px) {
-    .story-explain {
-        padding: 0;
+    .story-area, .about-area, .items-area, .howto-area, .spec-area {
+        width: 95%;
+        margin: 35px auto;
+    }
+    .story-explain h3, .about-explain h3, .spec-explain h3 {
+        font-size: 22px;
+    }
+    .story-explain, .about-explain, .spec-explain {
+        padding: 0 ;
+    }
+    .card > div:nth-child(2) > div:nth-child(1) {
+        margin-top: 20px;
+        font-size: 18px;
     }
     .desc-area {
         width: 95%;

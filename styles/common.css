@@ -888,6 +888,7 @@ footer small{
     }
     .breadcrumbs-area a {
         font-size: 14px;
+        line-height: 1.8;
     }
     .category {
         flex-direction: column;
@@ -1030,7 +1031,7 @@ footer small{
 
     }
     .breadcrumbs-area{
-        margin: 85px auto 0;
+        margin: 35px auto 0;
     }
     /* SNSエリア */
     .sns-area > a{
