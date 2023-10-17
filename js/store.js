@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('sample.json')
     .then(response => response.json())
     .then(jsonData => {
-      for (let index = 1; index <= 8; index++) { // 地方の数が8であると仮定
+      for (let index = 1; index <= 7; index++) { // 地方の数が8であると仮定
         const regionDiv = document.querySelector(`.tab-body__item--${index}`);
         if (!regionDiv) continue;
 
