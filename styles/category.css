@@ -1,3 +1,6 @@
+.csp {
+    display: none;
+}
 .none {
     background-color: #FCFCFC !important;
     box-shadow: none !important;
@@ -116,29 +119,53 @@
     margin: 20px 0;
 }
 /* message-area */
-.message-area .text {
+.message-area {
+    padding: 50px 0 0px;
+    position: relative;
+    height: 300px;
+    margin: 0 auto 130px;
+    width: 90%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin: 30px auto;
-}
-.message-area .text div {
-    width: 45%;
-    margin-right: 30px;
-}
-.message-area .text  div h2 {
-    color: #28A5A0;
-    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+.message-area .text{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .message-area .text a {
-    width: 30%;
-    min-width: 250px;
-}
-.message-area .text a img {
-    border-radius: 10px;
+    display: inline-block;
+    max-width: 336px;
     width: 100%;
+  }
+.message-area .text a:hover {
+    opacity: 0.7;
+}
+  
+.message-area .text a img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+  
+.message-area .text div {
+    width: 50%;
+    text-align: left;
+}
+.message-area .text h2 {
+    color: #28A5A0;
+    font-size: 30px;
+}
+.message-area .text p{
+    margin-top: 25px;
+    color: #333333;
+    line-height: 40px;
+    padding-right: 25px;
 }
 
 .category-area{
@@ -214,6 +241,9 @@
 }
 
 @media screen and (max-width:1600px) {
+    .message-area .text div {
+        width: 60%;
+    }
     .category-item {
         max-height: 530px;
         max-width: 530px;
@@ -229,6 +259,19 @@
 
 }
 @media screen and (max-width:959px) {
+    .cpc {
+        display: none !important;
+    }
+    .csp {
+        display: block !important;
+        margin: auto;
+        text-align: center;
+    }
+    .csp img {
+        margin: auto;
+        width: 80%;
+        border-radius: 10px;
+    }
     .none {
         display: none !important;
     }
@@ -246,13 +289,20 @@
         display: block!important;
         margin-bottom: 50px !important;
     }
-    .message-area .text div {
-        width: 90%;
-        margin: 0 auto;
+    .message-area {
+        width: 100%;
     }
-    .message-area .text a {
+    .message-area .text h2 {
+        margin: 40px auto 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    .message-area .text p {
         margin-top: 25px;
-        width: 90%;
+        margin: 25px auto 0;
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
     }
 }
 @media screen and (max-width:834px) {
@@ -311,7 +361,28 @@
         max-width: 18px;
         margin-top: 1%;
     
-    }    
+    }
+    .message-area .text {
+        position: absolute;
+        
+    }
+    .message-area .text div {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .message-area .text h2 {
+        margin: 40px auto 0;
+        width: 90%;
+        font-size: 20px;
+    }
+    .message-area .text p {
+        margin-top: 25px;
+        margin: 25px auto 0;
+        width: 90%;
+        font-size: 14px;
+        line-height: 30px;
+    }
     .effect-fixed-area {
         width: 95%;
     }
