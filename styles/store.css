@@ -9,6 +9,10 @@
 h3 {
     text-align: center;
 }
+body > main > p {
+    text-align: center;
+    font-size: 13px;
+}
 .category-btn {
     width: 85%;
     margin: 44px auto;
