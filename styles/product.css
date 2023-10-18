@@ -95,7 +95,7 @@
 }
 .target-area img {
     margin-right: 1%;
-    width: 2% !important;
+    width: 2%;
 }
 .target-area ul{
     list-style: none;
@@ -907,7 +907,9 @@ footer {
         margin: 20px 0;
     }
     .target-area img {
-        width: 5% !important;
+        width: 100%;
+        max-width: 18px;
+        margin-top: 1%;
     }
     .article-area2 a {
         width: 80%;
@@ -1089,13 +1091,15 @@ footer {
     }
     .target-area{
         width: 100%;
+        margin: 25px auto;
     }
     .target-area h2 {
         font-size: 18px;
     }
     .target-area ul li {
         font-size: 13px;
-        align-items: center;
+        align-items: flex-start;
+        line-height: 1.8;
     }
     .card > div:nth-child(2) {
         padding: 0;
