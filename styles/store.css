@@ -342,7 +342,7 @@ body > main > p {
         text-align: left;
         margin: 10px 0;
     }
-    .tab-body__item ul li::after {
+    .tab-body__item ul li:not(:nth-child(1))::after  {
         content: '';
         position: absolute;
         top: 0;
@@ -354,7 +354,7 @@ body > main > p {
         border-top: 2px solid #65c6ba;
         border-right: 2px solid #65c6ba;
         transform: rotate(45deg);
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
     .genre h3 {
         margin: 10px 0;
