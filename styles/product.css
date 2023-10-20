@@ -560,7 +560,7 @@ section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
     display: block;
     width: 73%;
     text-align: center;
-    margin: 10px 0 10px auto;
+    margin: auto;
     padding: 15px;
     color: #fff;
     border-radius: 25px;
