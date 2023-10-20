@@ -131,6 +131,10 @@
 .message-area .text  div h2 {
     color: #28A5A0;
     margin-bottom: 25px;
+    font-size: 28px;
+}
+.message-area .text  div p{
+    line-height: 1.8;
 }
 .message-area .text a {
     width: 30%;
