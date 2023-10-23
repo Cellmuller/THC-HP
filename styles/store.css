@@ -85,7 +85,6 @@ body > main > p {
 .tab-body__item ul li:first-child a{
     width: 60%;
     margin: 0 auto;
-    text-align: center;
 }
 .tab-body__item ul li:nth-child(2){
     flex: 40%;
@@ -240,10 +239,10 @@ body > main > p {
     display: block;
 }
 .card-icon{
-    width: 6%;
+    width: 5%;
     vertical-align: middle;
     margin-right: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 @media screen and (max-width:599px) {
     .tab-items {
@@ -385,6 +384,9 @@ body > main > p {
     .tab-body__item ul li:first-child a, .tab-body__item ul li:nth-child(3) a {
         width: 100%;
         font-size: 14px;
+    }
+    .card > li > div {
+        text-align: left;
     }
     .card-icon{
         width: 6%;
