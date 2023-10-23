@@ -9,7 +9,6 @@ main {
     background-color: #FCFCFC;
 }
 .message-area{
-    /* background-image: url(../images/message-area-bg-img.png); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -94,6 +93,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #6d8fb4;
+    max-width: 615px;
 }
 .category-item:hover {
     box-shadow: rgba(0, 0, 0, 0.356) 0px 18px 50px -10px;
@@ -128,12 +128,6 @@ main {
 .category-item > div:nth-child(2){
     padding: 20px;
 }
-/* .category-item img{
-    display: block;
-    width: 100%;
-    border-radius: 20px 20px 0 0 ;
-    object-fit: cover;
-} */
 .category-item .title div{
     color: #fff;
     padding: 90px 25px;
@@ -240,33 +234,6 @@ main {
     opacity: .75;
     color: #28A5A0 !important;
 }
-@media screen and (max-width:1800px) {
-    .category-item {
-        max-width: 615px;
-    }
-}
-@media screen and (max-width:1600px) {
-    .category-item {
-        max-width: 530px;
-        height: 378px;
-    }
-    .category-item .title div {
-        padding: 0px 25px;
-    }
-    .category-item .text {
-        height: 200px;
-        display: flex;
-        align-items: end;
-    }
-}
-@media screen and (max-width:1279px) {
-    .sp {
-        display: none;
-    }
-    .category-item {
-        max-width: 468px;
-    }
-}
 @media screen and (max-width:959px) {
     .sp {
         display: flex !important;
@@ -323,6 +290,7 @@ main {
         background-image: url(../images/category_chitsunaiflora-sp.png);
     }
     .category-item {
+        max-width: 530px;
         width: 100%;
         margin: 0;
         flex: calc(100%/1);
@@ -332,6 +300,9 @@ main {
         display: flex;
         justify-content: left;
         align-items: center;
+    }
+    .category-item .title div {
+        padding: 0px 25px;
     }
     .category-area a {
         background-size: cover;
@@ -388,8 +359,7 @@ main {
         margin: 15px 0;
     }
 }
-
-@media screen and (max-width:599px) {
+@media screen and (max-width:768px) {
     .none {
         display: none !important;
     }
@@ -503,8 +473,7 @@ main {
         margin: 15px 0;
     }
 }
-
-@media screen and (max-width:479px) {
+@media screen and (max-width:450px) {
     .sp {
         display: block;
     }

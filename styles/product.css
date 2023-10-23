@@ -32,6 +32,12 @@
     align-items: center;
     justify-content: space-between;
 }
+.block {
+    display: block !important;
+}
+.block img {
+    margin: 20px 0 !important;
+}
 .story-explain div img, .about-explain div img, .spec-explain div img {
     width: 20%;
     margin-left: 20px;
@@ -300,7 +306,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 .card{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .card:not(:last-child) {
     margin-bottom: 25px;
@@ -330,7 +336,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
 }
 .card > div:nth-child(2) {
     padding: 25px;
-    flex: 50%;
+    width: 40%;
 }
 .card img {
     display: block;
