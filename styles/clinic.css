@@ -337,7 +337,7 @@ h3 {
         text-align: left;
         margin: 10px 0;
     }
-    .tab-body__item ul li::after {
+    .tab-body__item ul li:not(:nth-child(1)):not(:nth-child(2))::after  {
         content: '';
         position: absolute;
         top: 0;
