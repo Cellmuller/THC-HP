@@ -49,17 +49,8 @@
     opacity: 1;
     font-size: 30px;
 }
-@media screen and (max-width:959px) {
-    .jump-area a span {
-        top: 74%;
-    }
-}
-@media screen and (max-width:599px) {
-    .jump-area a span {
-        top: 57%;
-    }
-}
-@media screen and (max-width:479px) {
+
+@media screen and (max-width:450px) {
     .jump-area {
         width: 80%;
     }

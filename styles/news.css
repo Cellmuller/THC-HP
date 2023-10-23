@@ -67,7 +67,7 @@
         font-size: 14px;
     }
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:450px) {
     .contents {
         width: 100%;
     }

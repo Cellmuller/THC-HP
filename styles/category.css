@@ -216,22 +216,6 @@
     background: rgba(255, 255, 255, 0.5);
     color: #B5B5B5;
 }
-
-@media screen and (max-width:1600px) {
-    .category-item {
-        max-height: 530px;
-        max-width: 530px;
-    }
-}
-@media screen and (max-width:1279px) {
-    .category-item {
-        max-width: 468px;
-    }
-    .message-area {
-        width: 100%;
-    }
-
-}
 @media screen and (max-width:959px) {
     .none {
         display: none !important;
@@ -259,15 +243,7 @@
         width: 90%;
     }
 }
-@media screen and (max-width:834px) {
-    .category-item {
-        max-height: 530px;
-    }
-    .none {
-        display: none !important;
-    }
-}
-@media screen and (max-width:599px) {
+@media screen and (max-width:450px) {
     .none {
         display: none !important;
     }
