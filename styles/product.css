@@ -101,7 +101,7 @@
 }
 .target-area img {
     margin-right: 1%;
-    width: 2% !important;
+    width: 2%;
 }
 .target-area ul{
     list-style: none;
@@ -208,7 +208,7 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     padding: 11px;
 }
 .article-detail h3, p {
-    line-height: 30px;
+    line-height: 1.8;
 }
 .article-detail a {
     margin: 2% 0;
@@ -228,7 +228,6 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     display: none;
 }
 .how-use-img{
-    /* display: block; */
     width: 100%;
     border-radius: 15px;
 }
@@ -355,6 +354,9 @@ section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 22px;
+}
+.card > div:nth-child(2) > div:nth-child(2){
+    line-height: 1.8;
 }
 .ac-child .improvement{
     margin-top: 20px;
@@ -694,7 +696,7 @@ button.more.on-click::after{
     margin: 0 auto;
     background-color: #F9F9F9;
     text-align: left;
-    padding: 15px;
+    padding: 20px;
     margin-top: 5%;
     margin-bottom: 75px;
 }
@@ -855,14 +857,26 @@ footer {
     opacity: 0.8;
 }
 
+@media screen and (max-width:2000px) {
+    .modal-close {
+        top: 9%;
+        left: 25%;
+    }
+}
+@media screen and (max-width:1600px) {
+    .modal-close {
+        top: 10%;
+        left: 16%;
+    }
+    .product-item {
+        max-width: 538px;
+    }
+}
 @media screen and (max-width:1300px) {
     .card {
         display: block;
     }
     .card img {
-        width: 100%;
-    }
-    .card > div:nth-child(2) {
         width: 100%;
     }
     .effect-fixed-explain {
@@ -875,9 +889,6 @@ footer {
     }
 }
 @media screen and (max-width:959px) {
-    /* .effect-comment {
-        display: block;
-    } */
     .story-explain div, .about-explain div, .spec-explain div {
         flex-direction: column;
         align-items: flex-start;
@@ -902,7 +913,9 @@ footer {
         margin: 20px 0;
     }
     .target-area img {
-        width: 5% !important;
+        width: 100%;
+        max-width: 18px;
+        margin-top: 1%;
     }
     .article-area2 a {
         width: 80%;
@@ -963,9 +976,106 @@ footer {
     }
     
 }
-@media screen and (max-width:450px) {
-    .story-explain {
-        padding: 0;
+@media screen and (max-width:599px) {
+    .article-area {
+        display: none;
+    }
+    .article-area2 {
+        text-align: center;
+        display: block;
+        margin: 20px 0;
+    }
+    .article-area2 a {
+        width: 80%;
+    }
+    .article-area2-img {
+        width: 80%;
+    }
+    .article-detail h3, p {
+        line-height: 1.8;
+        margin-bottom: 25px;
+    }
+    .product-area {
+        padding: 0 33px;
+    }
+    .product-item {
+        flex: calc(100%/1);
+        height: auto;
+    }
+    button.more {
+        width: 45%;
+    }
+    .tab-area {
+        width: 88%;
+        margin-left: 6%;
+    }
+    .faq-area .ac-parent {
+        padding: 0 10px;
+    }
+    .f-feature {
+        display: block;
+    }
+    .f-feature img {
+        width: 100% !important;
+        margin: 0;
+    }
+    .ac-parent:before {
+        right: 3px;
+    }
+    
+    .ac-parent:after {
+        right: 8px;
+    }
+    .ac-child .card{
+        display: block;
+        margin-top: 25px;
+    }
+    section.effect-area > dl > dd > div > div:nth-child(2) > div:nth-child(1){
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    .buy-button {
+        width: 30%;
+    }
+    .use-item {
+        display: block;
+    }
+    .use-item > div:nth-child(2) {
+        padding: 0px;
+        font-size: 12px;
+        justify-content: flex-start;
+        margin-top: 10px;
+        width: 50%;
+        margin: 10px auto 0;
+    }
+    .use-item span {
+        font-size: 10px;
+        padding: 2px 2px;
+        display: inline-block;
+        margin-right: 10px !important;
+    }
+    .howto-use {
+        display: block;
+    }
+    .howto-use img {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:479px) {
+    .story-area, .about-area, .items-area, .howto-area, .spec-area {
+        width: 95%;
+        margin: 35px auto;
+    }
+    .story-explain h3, .about-explain h3, .spec-explain h3 {
+        font-size: 22px;
+    }
+    .story-explain, .about-explain, .spec-explain {
+        padding: 0 ;
+    }
+    .card > div:nth-child(2) > div:nth-child(1) {
+        margin-top: 20px;
+        font-size: 18px;
     }
     .desc-area {
         width: 95%;
@@ -990,13 +1100,15 @@ footer {
     }
     .target-area{
         width: 100%;
+        margin: 25px auto;
     }
     .target-area h2 {
         font-size: 18px;
     }
     .target-area ul li {
         font-size: 13px;
-        align-items: center;
+        align-items: flex-start;
+        line-height: 1.8;
     }
     .card > div:nth-child(2) {
         padding: 0;
