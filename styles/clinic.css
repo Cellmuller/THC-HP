@@ -255,6 +255,9 @@ h3 {
     .tab-body__item ul li a {
         width: 100% !important;
     }
+    .card > li > div {
+        text-align: left;
+    }
 }
 @media screen and (max-width:479px) {
     .category-btn {
