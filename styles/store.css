@@ -366,7 +366,7 @@ body > main > p {
         margin: 15px auto;
     }
     .tab-body__item ul li a{
-        font-size: 16px;
+        font-size: 14px;
     }
     .tab-body__item ul li:nth-child(2) a{
         width: 100%;
