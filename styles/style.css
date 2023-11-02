@@ -102,25 +102,25 @@ main {
 
 
 .sourou {
-    background-image: url(../images/category_sourou.png);
+    background-image: url(../image/category_sourou.png);
 }
 .chirou {
-    background-image: url(../images/category_chirou.png);
+    background-image: url(../image/category_chirou.png);
 }
 .katsuryoku {
-    background-image: url(../images/category_katsuryoku.png);
+    background-image: url(../image/category_katsuryoku.png);
 }
 .seikoutsu {
-    background-image: url(../images/category_seikoutsu.png);
+    background-image: url(../image/category_seikoutsu.png);
 }
 .ninkatsu {
-    background-image: url(../images/category_ninkatsu.png);
+    background-image: url(../image/category_ninkatsu.png);
 }
 .kotsubantei {
-    background-image: url(../images/category_kotsubantei.png);
+    background-image: url(../image/category_kotsubantei.png);
 }
 .chitsunaiflora {
-    background-image: url(../images/category_chitsunaiflora.png);
+    background-image: url(../image/category_chitsunaiflora.png);
 }
 .category-item:hover {
     transform: scale(1.2);
@@ -269,25 +269,25 @@ main {
         justify-content: center;
     }
     .sourou {
-        background-image: url(../images/category_sourou-sp.png);
+        background-image: url(../image/category_sourou-sp.png);
     }
     .chirou {
-        background-image: url(../images/category_chirou-sp.png);
+        background-image: url(../image/category_chirou-sp.png);
     }
     .katsuryoku {
-        background-image: url(../images/category_katsuryoku-sp.png);
+        background-image: url(../image/category_katsuryoku-sp.png);
     }
     .seikoutsu {
-        background-image: url(../images/category_seikoutsu-sp.png);
+        background-image: url(../image/category_seikoutsu-sp.png);
     }
     .ninkatsu {
-        background-image: url(../images/category_ninkatsu-sp.png);
+        background-image: url(../image/category_ninkatsu-sp.png);
     }
     .kotsubantei {
-        background-image: url(../images/category_kotsubantei-sp.png);
+        background-image: url(../image/category_kotsubantei-sp.png);
     }
     .chitsunaiflora {
-        background-image: url(../images/category_chitsunaiflora-sp.png);
+        background-image: url(../image/category_chitsunaiflora-sp.png);
     }
     .category-item {
         max-width: 530px;
@@ -393,25 +393,25 @@ main {
         width: 100%;
     }
     .sourou {
-        background-image: url(../images/category_sourou-sp.png);
+        background-image: url(../image/category_sourou-sp.png);
     }
     .chirou {
-        background-image: url(../images/category_chirou-sp.png);
+        background-image: url(../image/category_chirou-sp.png);
     }
     .katsuryoku {
-        background-image: url(../images/category_katsuryoku-sp.png);
+        background-image: url(../image/category_katsuryoku-sp.png);
     }
     .seikoutsu {
-        background-image: url(../images/category_seikoutsu-sp.png);
+        background-image: url(../image/category_seikoutsu-sp.png);
     }
     .ninkatsu {
-        background-image: url(../images/category_ninkatsu-sp.png);
+        background-image: url(../image/category_ninkatsu-sp.png);
     }
     .kotsubantei {
-        background-image: url(../images/category_kotsubantei-sp.png);
+        background-image: url(../image/category_kotsubantei-sp.png);
     }
     .chitsunaiflora {
-        background-image: url(../images/category_chitsunaiflora-sp.png);
+        background-image: url(../image/category_chitsunaiflora-sp.png);
     }
     .category-item {
         width: 100%;
