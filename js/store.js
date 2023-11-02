@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const aName = document.createElement('a');
             aName.href = store.url;
             const imgName = document.createElement('img');
-            imgName.src = './images/clinic-icon.png';
+            imgName.src = './image/clinic-icon.png';
             imgName.className = 'card-icon';
             aName.appendChild(imgName);
             aName.appendChild(document.createTextNode(store.name));
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const aLocation = document.createElement('a');
             aLocation.href = store.map_url;
             const imgLocation = document.createElement('img');
-            imgLocation.src = './images/location-icon.png';
+            imgLocation.src = './image/location-icon.png';
             imgLocation.className = 'card-icon card-icon-center';
             aLocation.appendChild(imgLocation);
             aLocation.appendChild(document.createTextNode(store.location));
