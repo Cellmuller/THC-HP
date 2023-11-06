@@ -1,13 +1,17 @@
 $(function () {
-  $(".ac-child").css("display", "none");
+  // 「さらに表示」ボタンのクリックイベント
+  $("#show-more").on("click", function () {
+    // 最初の3つ以外のFAQ項目の表示を切り替える
+    $(".faq-item:nth-of-type(n+4)").slideToggle();
+    // ボタンのテキストを切り替える
+    $(this).text($(this).text() === "さらに表示" ? "閉じる" : "さらに表示");
+  });
+
+  // アコーディオン機能
+  $(".ac-child").hide();
   $(".ac-parent").on("click", function () {
-    // openクラスをつける
-    $(this).toggleClass("open", 800);
-    // クリックされたac-parentの次のac-childを開閉する
+    $(this).toggleClass("open");
     $(this).next().slideToggle();
-    // 他のac-parentのopenクラスとac-childを閉じる
-    // $(".ac-parent").not($(this)).removeClass("open");
-    // $(".ac-parent").not($(this)).next(".ac-child").slideUp();
   });
 });
 
@@ -242,48 +246,49 @@ document
 // カート追加ボタンがクリックされた場合に年齢確認モーダルを表示
 var ignoreScrollEventUntil = 0;
 
-document.getElementById("addToCartButton").addEventListener("click", function() {
-  var ageConfirmed = getCookie("ageConfirmed");
-  var currentHref = $("#addToCartButton").attr("href");
+document
+  .getElementById("addToCartButton")
+  .addEventListener("click", function () {
+    var ageConfirmed = getCookie("ageConfirmed");
+    var currentHref = $("#addToCartButton").attr("href");
 
-  if (ageConfirmed && currentHref.startsWith("https://")) {
-    window.location.href = currentHref; // カートに移動
-  } else if (currentHref === "#product-area") {
-    console.log(addToCartButton);
-    var target = document.getElementById('product-area');
-    var topPos = target.offsetTop;
-    window.scrollTo({ top: topPos, behavior: 'smooth' });
-    document.getElementById('addToCartButton').textContent = 'ご購入手続きへ';    
-    // 1秒間スクロールイベントを無視する
-    ignoreScrollEventUntil = Date.now() + 2000;
-  } else if (!ageConfirmed && currentHref.startsWith("https://")) {
-    displayModal(); // モーダル表示
-    document.getElementById("addToCartButton").href = "#";
-  }
-});
+    if (ageConfirmed && currentHref.startsWith("https://")) {
+      window.location.href = currentHref; // カートに移動
+    } else if (currentHref === "#product-area") {
+      console.log(addToCartButton);
+      var target = document.getElementById("product-area");
+      var topPos = target.offsetTop;
+      window.scrollTo({ top: topPos, behavior: "smooth" });
+      document.getElementById("addToCartButton").textContent = "ご購入手続きへ";
+      // 1秒間スクロールイベントを無視する
+      ignoreScrollEventUntil = Date.now() + 2000;
+    } else if (!ageConfirmed && currentHref.startsWith("https://")) {
+      displayModal(); // モーダル表示
+      document.getElementById("addToCartButton").href = "#";
+    }
+  });
 
 // スクロールイベントリスナー
-window.addEventListener('scroll', checkScrollPosition);
+window.addEventListener("scroll", checkScrollPosition);
 
 // ページの特定のエリアを超えたかどうかをチェックする関数
 function checkScrollPosition() {
   // クリックイベントによって設定された期間中はスクロールイベントを無視
   if (Date.now() < ignoreScrollEventUntil) return;
 
-  const productArea = document.getElementById('product-area');
+  const productArea = document.getElementById("product-area");
   const currentScrollPosition = window.pageYOffset;
   const productAreaPosition = productArea.offsetTop;
-  const addToCartButton = document.getElementById('addToCartButton');
+  const addToCartButton = document.getElementById("addToCartButton");
 
   if (addToCartButton) {
     if (currentScrollPosition > productAreaPosition) {
-      addToCartButton.textContent = 'ご購入手続きへ';
+      addToCartButton.textContent = "ご購入手続きへ";
     } else {
-      addToCartButton.textContent = 'ご購入はこちら';
+      addToCartButton.textContent = "ご購入はこちら";
     }
   }
 }
-
 
 // モーダル内のYESボタンにリンクを付与
 document
@@ -343,22 +348,25 @@ $(document).ready(function () {
   });
 });
 
-$(document).on('click', 'a[href^="#product-area"]', function(e) {
+$(document).on("click", 'a[href^="#product-area"]', function (e) {
   // デフォルトのイベントを無効化
   e.preventDefault();
 
   // ヘッダーの高さを取得
-  var headerHeight = $('header').outerHeight(); // ヘッダー要素に合わせて適切に変更してください
+  var headerHeight = $("header").outerHeight(); // ヘッダー要素に合わせて適切に変更してください
 
   // アンカーの値を取得
   var target = $(this.hash);
-  if (target.length === 0) target = $('html');
+  if (target.length === 0) target = $("html");
 
   // スクロール位置にヘッダーの高さを反映
   var scrollToPosition = target.offset().top - headerHeight;
 
   // スクロールアニメーション
-  $('html, body').animate({
-    scrollTop: scrollToPosition
-  }, 1000);
+  $("html, body").animate(
+    {
+      scrollTop: scrollToPosition,
+    },
+    1000
+  );
 });

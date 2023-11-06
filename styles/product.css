@@ -303,6 +303,28 @@ body > main > div > section.carousel-area.slick-initialized.slick-slider.slick-d
     padding-left: 10px;
     margin-bottom: 15px;
 }
+.faq-item:nth-of-type(n+4) {
+    display: none;
+}
+
+/* 「さらに表示」ボタンのスタイル */
+.show-more {
+    border: 1px solid #01BBB4;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 10px;
+    border-radius: 25px;
+    transition: all .2s;
+    font-weight: bold;
+    transition: .5s;
+    background-color: #fff;
+    max-width: 20%;
+    width: 100%;
+    -erbkit-transition: .5s;
+    color: #01BBB4;
+    cursor: pointer;
+}
 .card{
     display: flex;
     align-items: center;
@@ -636,7 +658,7 @@ button.more {
     text-decoration: none;
     display: block;
     margin: 5px auto 0;
-    padding: 10px;
+    padding: 15px 10px;
     border-radius: 25px;
     transition: all .2s;
     font-weight: bold;
@@ -967,6 +989,13 @@ footer {
     .ac-parent:after {
         right: 8px;
     }
+    .show-more {
+        max-width: 187px;
+        padding: 10px;
+    }
+    button.more {
+        padding: 10px;
+    }
     .buy-button {
         width: 30%;
     }
@@ -1273,5 +1302,4 @@ footer {
     .slick-slide {
         margin: 0 10px;
     }
-    
 }

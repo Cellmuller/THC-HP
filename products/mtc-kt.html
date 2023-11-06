@@ -601,7 +601,8 @@
         </section>
         <section class="faq-area">
             <h2 class="faq-titile">よくある質問</h2>
-            <dl class="ac">
+            <!-- 最初の3つのFAQ項目 -->
+            <dl class="ac faq-item">
                 <dt class="ac-parent">
                     <span>Q.</span>繰り返し使用できますか？
                 </dt>
@@ -611,17 +612,17 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item">
                 <dt class="ac-parent">
                     <span>Q.</span>どのぐらいの頻度で、また、どのぐらいの期間トレーニングするのがよいですか？
                 </dt>
                 <dd class="ac-child">
                     <p>
-                        <span>A.</span>週4回の頻度で、7週間（合計28回）のトレーニングをお勧めしています。週4回が難しい場合は頻度を下げても構いませんが、トレーニングガイドに従って合計28回のトレーニングを実施しましょう。
+                        <span>A.</span>週4回の頻度で、7週間（合計28回）のトレーニングをお勧めしています。
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item">
                 <dt class="ac-parent">
                     <span>Q.</span>どのようにトレーニングを進めたら良いですか？
                 </dt>
@@ -631,27 +632,32 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+        
+            <!-- 「さらに表示」ボタン -->
+            <button id="show-more" class="show-more">さらに表示</button>
+
+            <!-- 残りのFAQ項目 -->
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>そもそも挿入時間は何分くらいが良いのでしょうか？
                 </dt>
                 <dd class="ac-child">
                     <p>
-                        <span>A.</span>女性449名に「理想の挿入時間」を調査したところ、理想の挿入時間の平均は9.7分でした（TENGAヘルスケア調べ、2017年）。しかし挿入時間の長短ではなく、2人の挿入時間について、あなたとパートナーがストレスを感じているかどうかが重要です。もし挿入時間についてパートナーと話したことがなければ、一度相談してみることをお勧めします。
+                        <span>A.</span>理想の挿入時間の平均は9.7分ですが、重要なのはお互いの満足度です。
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>あまり勃ちが良くなくてもトレーニングはできますか？
                 </dt>
                 <dd class="ac-child">
                     <p>
-                        <span>A.</span>挿入ができればトレーニングは可能です。トレーニングカップのLv.を上げると軟質素材が硬くなりますが、挿入が難しい場合は一段階刺激の低いCUP（軟質素材が軟らかくなり挿入しやすくなります）をご使用ください。
+                        <span>A.</span>挿入ができればトレーニングは可能です。Lvの調整が必要かもしれません。
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>トレーニング後、トレーニングカップの使用を中止するとまた元の状態に戻ってしまいますか？
                 </dt>
@@ -661,7 +667,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>挿入口の近くに小さい穴が開いていましたが、不良ですか？
                 </dt>
@@ -671,20 +677,20 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>挿入しづらい、挿入時に痛みを感じるのですが……
                 </dt>
                 <dd class="ac-child">
                     <p>
-                        <span>A.</span>.挿入が難しい場合は、下記の点をご確認ください。<br>
+                        <span>A.</span>挿入が難しい場合は、下記の点をご確認ください。<br>
                         ・製品上部のシールを剥がしているか、ご確認ください。このシールを貼ったままだと空気が抜けないため、挿入しづらくなります。<br>
                         ・挿入時に痛みが生じる場合は、ご自身の方にも少しローションを塗ると、挿入がスムーズになります。それでも痛みが生じる場合は、サイズが合っていない可能性があるので、一段階刺激の弱いCUP（内部のサイズが大きくなります）をお試しください。<br>
                         ・挿入時にご自身の方が曲がってしまい挿入できない場合は、硬さが足りない可能性があります。一段階刺激の低いCUP（ゲルが軟らかくなり挿入しやすくなります）をお試しください。
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>トレーニング中、ローションが乾いてしまいました。
                 </dt>
@@ -694,7 +700,8 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>使用していたら中からスポンジが出てきましたが、これは何ですか？
                 </dt>
@@ -704,7 +711,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>Lv.1でも刺激が強すぎて、トレーニングになりません。
                 </dt>
@@ -714,7 +721,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>STEP1を4回やらなくても骨盤底筋の動きをしっかり意識できるようになりました。STEP2に進んでも良いですか？
                 </dt>
@@ -724,7 +731,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>各STEPを余裕を持ってできるようにならなくても、次のSTEPに進んで良いですか？
                 </dt>
@@ -734,7 +741,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>STEP2,3,4で全然我慢ができません。
                 </dt>
@@ -744,17 +751,17 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>STEP4の腰振りトレーニングのやり方が、よくわかりません。
                 </dt>
                 <dd class="ac-child">
                     <p>
-                        <span>A.</span>クッションなどにCUPを固定する方法をお勧めしています。こちらを参考にトレーニングしてみましょう。
+                        <span>A.</span>はい。設定された回数に達したら次のSTEPに進みましょう。トレーニングでは我慢が難しくても、骨盤底筋の操作が上達していれば、実際の性交渉で挿入時間が伸びている可能性はあります。
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>STEP4までトレーニングをしましたが、もっと挿入時間を長くしたいです。
                 </dt>
@@ -764,7 +771,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>すべてのトレーニングを終えましたが、実際の性交渉ではなかなか我慢ができません。
                 </dt>
@@ -774,7 +781,7 @@
                     </p>
                 </dd>
             </dl>
-            <dl class="ac">
+            <dl class="ac faq-item additional-faq">
                 <dt class="ac-parent">
                     <span>Q.</span>使用後のカップはどのように処分すればよいですか？
                 </dt>
