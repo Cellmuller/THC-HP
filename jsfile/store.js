@@ -1,138 +1,258 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var $tab__link = $(".tab__link");
-  var $tab_body_item = $(".tab-body__item");
-  $tab__link.on("click", function (e) {
-    var target = $(e.currentTarget);
-    //タブの表示非表示
-    $tab__link.removeClass("on");
-    target.addClass("on");
-    //タブの中身の表示非表示
-    var num = target.data("tab-body");
-    $tab_body_item.removeClass("on");
-    $(".tab-body__item--" + num).addClass("on");
-    $(".sub-tab-body__item").addClass("on");
-  });
-
-  // サブタブ用のクリックリスナー
-  var $sub_tab__link = $(".sub-tab__link");
-  var $sub_tab_body_item = $(".sub-tab-body__item");
-  $sub_tab__link.on("click", function (e) {
-    var target = $(e.currentTarget);
-    //サブタブの表示非表示
-    $sub_tab__link.removeClass("on");
-    target.addClass("on");
-    //サブタブの中身の表示非表示
-    var num = target.data("sub-tab-body");
-    $sub_tab_body_item.removeClass("on");
-    $(".sub-tab-body__item--" + num).addClass("on");
-  });
-});
-
-// モーダル
 $(function(){
-  for (let i = 1; i <= 7; i++) {
-    (function(index) { // 即時実行関数でindexとしてiを受け取る
-      $(document).on('click', `.modal-open-${index}`, function() { 
-        $(`.modal-container-${index}`).addClass('active'); 
+    var open = $('.modal-open'),
+        container = $('.modal-container'),
+        close = $('.modal-close'),
+        search = $('.search-button');
+    open.on('click', function(){
+        container.addClass('active');
         return false;
-      });
-    })(i); // iを渡す
-  }
-
-  // 閉じるボタンをクリックしたらモーダルを閉じる
-  $(document).on('click', '.modal-close', function(){  
-    $('.modal-container').removeClass('active');
-  });
-
-  // モーダルの外側をクリックしたらモーダルを閉じる
-  $(document).on('click', function(e) {
-    if(!$(e.target).closest('.modal-body').length) {
-      $('.modal-container').removeClass('active');
-    }
-  });
+    });
+    close.on('click', function(){
+        container.removeClass('active');
+    });
+    search.on('click', function(){
+        container.removeClass('active');
+    });
+    $(document).on('click', function(e){
+        if(!$(e.target).closest('.modal-body').length) {
+            container.removeClass('active');
+        }
+    });
 });
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var jsonData; // JSONデータを格納する変数
+    var regionChoice = document.querySelectorAll(".modal-open");
+    var selectPrefecture = document.querySelector(".modal-content select.prefecture-select");
+    var selectCity = document.querySelector(".modal-content select.city-select");
+    var searchButton = document.querySelector(".search-button");
+    var resultsContainer = document.querySelector(".results-container");
 
-document.addEventListener("DOMContentLoaded", function() {
-  fetch('sample.json')
-    .then(response => response.json())
-    .then(jsonData => {
-      for (let index = 1; index <= 7; index++) { // 地方の数が8であると仮定
-        const regionDiv = document.querySelector(`.tab-body__item--${index}`);
-        if (!regionDiv) continue;
+    // JSONデータの取得
+    fetch("sample.json")
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            jsonData = data;
+            initializePage();
+        })
+        .catch(function (error) {
+            console.error("Fetch error:", error);
+        });
 
-        const matchingRegionData = jsonData.find(region => region.id === index);
+        
+    // ページの初期化
+    function initializePage() {
+        // 地域選択のイベントハンドラー
+        regionChoice.forEach(function (region) {
+            region.addEventListener("click", function () {
+                var regionName = this.textContent;
+                var regionData = jsonData.find(function (regionData) {
+                    return regionData.name === regionName;
+                });
 
+                selectPrefecture.innerHTML = '<option>選択してください</option>';
+                regionData.prefectures.forEach(function (prefectureData) {
+                    var option = document.createElement("option");
+                    option.value = prefectureData.prefecture;
+                    option.textContent = prefectureData.prefecture;
+                    selectPrefecture.appendChild(option);
+                });
 
-        if (!matchingRegionData) {
-          const noDataDiv = document.createElement('div');
-          noDataDiv.textContent = '0件';
-          regionDiv.appendChild(noDataDiv);
-          continue;
+                updateCities(regionData.prefectures[0]);
+            });
+        });
+
+        // 都道府県選択のイベントハンドラー
+        selectPrefecture.addEventListener("change", function () {
+            var selectedPrefecture = this.value;
+            var prefectureData = jsonData.flatMap(region => region.prefectures).find(prefecture => prefecture.prefecture === selectedPrefecture);
+            updateCities(prefectureData);
+        });
+
+        // 検索ボタンのイベントハンドラー
+        searchButton.addEventListener("click", function () {
+            var selectedCity = selectCity.value; // ユーザーが選択した市区町村
+            var selectedPrefecture = selectPrefecture.value; // ユーザーが選択した都道府県
+            var storesToDisplay = [];
+        
+            jsonData.forEach(function (region) {
+                region.prefectures.forEach(function (prefecture) {
+                    // 都道府県が選択されているか、または市区町村のみが選択されている場合にフィルタリング
+                    if (prefecture.prefecture === selectedPrefecture || selectedPrefecture === '選択してください') {
+                        prefecture.municipalities.forEach(function (municipality) {
+                            if (municipality.municipality === selectedCity || selectedCity === '選択してください') {
+                                storesToDisplay = storesToDisplay.concat(municipality.stores);
+                            }
+                        });
+                    }
+                });
+            });
+        
+            // 結果の表示
+            displayResults(storesToDisplay);
+        });
+        
+
+        // SP版の初期化コード
+        initializeSPVersion();
+    }
+
+    // 市区町村の更新関数
+    function updateCities(prefectureData) {
+        selectCity.innerHTML = '<option>選択してください</option>';
+        prefectureData.municipalities.forEach(function (municipalityData) {
+            var option = document.createElement("option");
+            option.value = municipalityData.municipality;
+            option.textContent = municipalityData.municipality;
+            selectCity.appendChild(option);
+        });
+    }
+
+    // 結果の表示関数
+    function displayResults(stores) {
+        resultsContainer.innerHTML = '';
+        stores.forEach(function(store) {
+            var cardElement = document.createElement("ul");
+            cardElement.className = "card";
+            // 店舗名とリンクを含むli要素を作成
+            var nameLi = document.createElement("li");
+            var nameLink = document.createElement("a");
+            nameLink.setAttribute("href", store.url);
+            nameLink.innerHTML = '<img src="./image/clinic-icon.png" class="card-icon">' + store.name;
+            nameLi.appendChild(nameLink);
+            cardElement.appendChild(nameLi);
+            // ボタンを含むdiv要素を作成
+            var buttonDiv = document.createElement("div");
+            store.tags.forEach(function(tag) {
+                var button = document.createElement("button");
+                button.className = "modal-open"; 
+                button.textContent = tag;
+                buttonDiv.appendChild(button);
+            });
+            nameLi.appendChild(buttonDiv);
+            // 位置情報とリンクを含むli要素を作成
+            var locationLi = document.createElement("li");
+            var locationLink = document.createElement("a");
+            locationLink.setAttribute("href", store.map_url);
+            locationLink.innerHTML = '<img src="./image/location-icon.png" class="card-icon card-icon-center">' + store.location;
+            locationLi.appendChild(locationLink);
+            cardElement.appendChild(locationLi);
+            // 最終的にcardをresultsContainerに追加
+            resultsContainer.appendChild(cardElement);
+        });
+        if (stores.length === 0) {
+            resultsContainer.innerHTML = '該当する店舗が見つかりません。';
+        }
+    }
+
+    // SP版の初期化関数
+    function initializeSPVersion() {
+        $(".ac-child").css("display", "none");
+        $(".ac-parent").on("click", function() {
+            $(".ac-parent").not(this).removeClass("open").next(".ac-child").slideUp();
+            $(this).toggleClass("open");
+            var regionName = $(this).data("region");
+            var $childElem = $('#region-' + regionName + ' .ac-child');
+            if (!$childElem.is(':visible')) {
+                $childElem.slideToggle(300);
+            }
+            displayPrefectureList(regionName, $childElem);
+        });
+
+        $(document).on('click', '.ac-child li', function(e) {
+            e.stopPropagation();
+            var prefectureName = $(this).text();
+            loadAndDisplayShops(prefectureName);
+        });
+
+        function displayPrefectureList(regionName, $childElem) {
+            var regionData = jsonData.find(function(d) {
+                return d.name === regionName;
+            });
+            if (regionData) {
+                var $prefecturesList = $('<ul></ul>');
+                regionData.prefectures.forEach(function(prefecture) {
+                    $prefecturesList.append($('<li></li>').text(prefecture.prefecture));
+                });
+                $childElem.empty().append($prefecturesList);
+            }
         }
 
-        const subTabBody = document.createElement('div');
-        subTabBody.className = 'sub-tab-body';
-        regionDiv.appendChild(subTabBody);
-        // 関東のタブをデフォルトで選択状態にする
-        const kantoSubTabBodies = document.querySelectorAll('.tab-body__item--3 .sub-tab-body__item');
-        kantoSubTabBodies.forEach(subTab => {
-          subTab.classList.add('on');
-        });
-
-        matchingRegionData.prefectures.forEach(prefData => {
-          const prefDiv = document.createElement('div');
-          prefDiv.className = 'sub-tab-body__item';
-
-          const h2 = document.createElement('h2');
-          h2.textContent = prefData.prefecture;
-          prefDiv.appendChild(h2);
-
-          prefData.stores.forEach(store => {
-            const ul = document.createElement('ul');
-            ul.className = 'card';
-
-            const liName = document.createElement('li');
-            const aName = document.createElement('a');
-            aName.href = store.url;
-            const imgName = document.createElement('img');
-            imgName.src = './image/clinic-icon.png';
-            imgName.className = 'card-icon';
-            aName.appendChild(imgName);
-            aName.appendChild(document.createTextNode(store.name));
-            liName.appendChild(aName);
-            ul.appendChild(liName);
-
-            const divTags = document.createElement('div');
-            store.tags.forEach((tag, index) => {
-              const button = document.createElement('button');
-              button.className = `modal-open-${index + 1}`;
-              button.textContent = tag;
-              divTags.appendChild(button);
+        function loadAndDisplayShops(prefectureName) {
+            var prefectureData = jsonData.flatMap(d => d.prefectures).find(p => p.prefecture === prefectureName);
+            if (prefectureData) {
+                $('#results').empty();
+                prefectureData.municipalities.forEach(function(municipality) {
+                    municipality.stores.forEach(function(store) {
+                        // カードの構造を作成
+                        var $card = $('<ul>').addClass('card');
+        
+                        // クリニック情報とタグボタンの生成
+                        var $clinicItem = $('<li>').append(
+                            $('<a>').attr('href', store.url).append(
+                                $('<img>').attr('src', './image/clinic-icon.png').addClass('card-icon'),
+                                store.name
+                            )
+                        );
+        
+                        var $tagsDiv = $('<div>');
+                        $.each(store.tags, function(k, tag) {
+                            var buttonClass = "modal-open-" + (k + 1);
+                            $tagsDiv.append($('<button>').addClass(buttonClass).text(tag));
+                        });
+                        $clinicItem.append($tagsDiv);
+                        $card.append($clinicItem);
+        
+                        // 位置情報
+                        var $locationItem = $('<li>').append(
+                            $('<a>').attr('href', store.map_url).append(
+                                $('<img>').attr('src', './image/location-icon.png').addClass('card-icon card-icon-center'),
+                                store.location
+                            )
+                        );
+                        $card.append($locationItem);
+        
+                        // カードを結果エリアに追加
+                        $('#results').append($card);
+                    });
+                });
+            }
+        }
+        
+    }
+    $(document).ready(function() {
+        $('.keyword-search-button').on('click', function() {
+            var keyword = $('.search-area-sp input[type="text"]').val().toLowerCase();
+    
+            // JSON ファイルを読み込み
+            $.getJSON('sample.json', function(data) {
+                var filteredStores = [];
+    
+                // JSON データをフィルタリング
+                $.each(data, function(i, region) {
+                    $.each(region.prefectures, function(j, prefecture) {
+                        $.each(prefecture.municipalities, function(k, municipality) {
+                            $.each(municipality.stores, function(l, store) {
+                                // キーワードが店舗名に含まれているかチェック
+                                if (store.location.toLowerCase().indexOf(keyword) !== -1) {
+                                    filteredStores.push(store);
+                                }
+                            });
+                        });
+                    });
+                });
+    
+                // 結果を表示
+                displayResults(filteredStores);
             });
-            liName.appendChild(divTags);
-
-            const liLocation = document.createElement('li');
-            const aLocation = document.createElement('a');
-            aLocation.href = store.map_url;
-            const imgLocation = document.createElement('img');
-            imgLocation.src = './image/location-icon.png';
-            imgLocation.className = 'card-icon card-icon-center';
-            aLocation.appendChild(imgLocation);
-            aLocation.appendChild(document.createTextNode(store.location));
-            liLocation.appendChild(aLocation);
-            ul.appendChild(liLocation);
-
-            prefDiv.appendChild(ul);
-          });
-
-          subTabBody.appendChild(prefDiv);
+             // ページ内リンクへのジャンプ
+            location.href = '#results';
         });
-      }
-    })
-    .catch(error => {
-      console.error('Error loading JSON:', error);
     });
+    
+    
 });

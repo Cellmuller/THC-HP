@@ -185,113 +185,162 @@
             <a>></a>
             <a href="#" class="current">ストア</a>
         </section>
-        <h3>
-            TENGAヘルスケア製品お取扱いのドラッグストア・販売店をご案内します。<br>
-        </h3>
-        <p>※未掲載の店舗もございます。<br>
-            ※取扱い商品や在庫状況は直接店舗へご連絡ください。</p>
+        <div class="attention">
+            <h3>
+                TENGAヘルスケア製品お取扱いのドラッグストア・販売店をご案内します。<br>
+            </h3>
+            <p>
+                ※未掲載の店舗もございます。<br>
+                ※取扱い商品や在庫状況は直接店舗へご連絡ください。
+            </p>
+        </div>
         <div class="container">
             <!-- 店舗リスト -->
-            <section class="store-lists-area">
-                <div>
-                    <div class="tab-content">
-                        <ul class="tab-items">
-                            <li class="tab__item on"><span class="tab__link" data-tab-body="1">北海道</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="2">東北</span></li>
-                            <li class="tab__item"><span class="tab__link on" data-tab-body="3">関東</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="4">中部</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="5">近畿</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="6">中国・四国</span></li>
-                            <li class="tab__item"><span class="tab__link" data-tab-body="7">九州・沖縄</span></li>
-                            
-                        </ul>
-                        <div class="tab-body" id="tab-body">
-                            <!-- 各地方 -->
-                            <div class="tab-body__item tab-body__item--1"></div>
-                            <div class="tab-body__item tab-body__item--2"></div>
-                            <div class="tab-body__item tab-body__item--3 on"></div>
-                            <div class="tab-body__item tab-body__item--4"></div>
-                            <div class="tab-body__item tab-body__item--5"></div>
-                            <div class="tab-body__item tab-body__item--6"></div>
-                            <div class="tab-body__item tab-body__item--7"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-container modal-container-1">
-                    <div class="modal-body">
-                        <div class="modal-close">x</div>
-                        <div class="modal-content">
-                            <div class="genre">
-                                <h3>■ 妊活カテゴリ商品一覧</h3>
-                                <ul>
-                                    <li><a href="./products/mensloupe.html">TENGA MEN’S LOUPE</a></li>
-                                    <li><a href="./products/tss.html">精育支援サプリメント</a></li>
-                                    <li><a href="./products/seedin.html">Seed in</a></li>
-                                    <li><a href="./products/seedpod.html">SEED POD</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-container modal-container-2">
-                    <div class="modal-body">
-                        <div class="modal-close">x</div>
-                        <div class="modal-content">
-                            <div class="genre">
-                                <h3>■ 性生活カテゴリ商品一覧</h3>
-                                <ul>
-                                    <li><a href="./products/tls.html">活力支援サプリメント</a></li>
-                                    <li><a href="./products/mcg.html">MOIST CARE GEL</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-container modal-container-3">
-                    <div class="modal-body">
-                        <div class="modal-close">x</div>
-                        <div class="modal-content">
-                            <div class="genre">
-                                <h3>■ 早漏カテゴリ商品一覧</h3>
-                                <ul>
-                                    <li><a href="./products/mtc-kt.html">MEN’S TRAINING CUP KEEP TRAINING</a></li>
-                                    <li><a href="./products/ttk.html">TIMING TRAINER -KEEP-</a></li>
-                                    <li><a href="./products/htl-01.html">TRAINER LOTION</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-container modal-container-4">
-                    <div class="modal-body">
-                        <div class="modal-close">x</div>
-                        <div class="modal-content">
-                            <div class="genre">
-                                <h3>■ 遅漏カテゴリ商品一覧</h3>
-                                <ul>
-                                    <li><a href="./products/mtc.html">MEN’S TRAINING CUP FINISH TRAINING</a></li>
-                                    <li><a href="./products/ttf.html">TIMING TRAINER -FINISH-</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-container modal-container-5">
-                    <div class="modal-body">
-                        <div class="modal-close">x</div>
-                        <div class="modal-content">
-                            <div class="genre">
-                                <h3>■ 女性性機能カテゴリ商品一覧</h3>
-                                <ul>
-                                    <li><a href="./products/kch.html">K-Gel CHECKER</a></li>
-                                    <li><a href="./products/tks.html">K-Gel SUPPORT SUPPLEMENT</a></li>
-                                    <li><a href="./products/tfs.html">YoniFlora</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <section class="map-area">
+                <div class="reagion-choice">
+                    <div id="hokkaido">北海道</div>
+                    <div id="tohoku">東北</div>
+                    <div class="modal-open" id="kanto">関東</div>
+                    <div class="modal-open" id="chubu">中部</div>
+                    <div class="modal-open" id="kinki">近畿</div>
+                    <div class="modal-open" id="shikoku">中国・四国</div>
+                    <div id="kyushu">九州・沖縄</div>
                 </div>
             </section>
+            <div class="modal-container">
+                <div class="modal-body">
+                    <div class="modal-content">
+                        <div class="select">
+                            <span>都道府県</span>
+                            <select class="prefecture-select">
+                                <option>選択してください</option>
+                            </select>
+                        </div>
+                        <div class="select">
+                            <span>市区町村</span>
+                            <select class="city-select">
+                                <option>選択してください</option>
+                            </select>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="search-button" onclick="location.href='#results'">検索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="search-area-sp">
+                <input type="text" id="search-input" placeholder="キーワード">
+                <div class="btn-wrapper">
+                    <button class="keyword-search-button" onclick="searchData()">検索</button>
+                </div>
+            </section>
+            <section class="map-area-sp">
+                <h2>エリアから探す</h2>
+                <dl class="ac" id="region-北海道">
+                    <dt class="ac-parent" data-region="北海道">北海道</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+                  <dl class="ac" id="region-東北">
+                    <dt class="ac-parent" data-region="東北">東北</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+                  <dl class="ac" id="region-関東">
+                    <dt class="ac-parent" data-region="関東">関東</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+                  <dl class="ac" id="region-中部">
+                    <dt class="ac-parent" data-region="中部">中部</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+                  <dl class="ac" id="region-近畿">
+                    <dt class="ac-parent" data-region="近畿">近畿</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+                  <dl class="ac" id="region-中国・四国">
+                    <dt class="ac-parent" data-region="中国・四国">中国・四国</dt>
+                    <dd class="ac-child">
+                    </dd>
+                  </dl>
+                  <dl class="ac" id="region-九州・沖縄">
+                    <dt class="ac-parent" data-region="九州・沖縄">九州・沖縄</dt>
+                    <dd class="ac-child"></dd>
+                  </dl>
+            </section>
+            <div class="results-container" id="results"></div>
+            <!-- <div class="tag-modal-container modal-container-1">
+                <div class="tag-modal-body">
+                    <div class="tag-modal-close">x</div>
+                    <div class="tag-modal-content">
+                        <div class="genre">
+                            <h3>■ 妊活カテゴリ商品一覧</h3>
+                            <ul>
+                                <li><a href="./products/mensloupe.html">TENGA MEN’S LOUPE</a></li>
+                                <li><a href="./products/tss.html">精育支援サプリメント</a></li>
+                                <li><a href="./products/seedin.html">Seed in</a></li>
+                                <li><a href="./products/seedpod.html">SEED POD</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-modal-container modal-container-2">
+                <div class="tag-modal-body">
+                    <div class="tag-modal-close">x</div>
+                    <div class="tag-modal-content">
+                        <div class="genre">
+                            <h3>■ 性生活カテゴリ商品一覧</h3>
+                            <ul>
+                                <li><a href="./products/tls.html">活力支援サプリメント</a></li>
+                                <li><a href="./products/mcg.html">MOIST CARE GEL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-modal-container modal-container-3">
+                <div class="tag-modal-body">
+                    <div class="tag-modal-close">x</div>
+                    <div class="tag-modal-content">
+                        <div class="genre">
+                            <h3>■ 早漏カテゴリ商品一覧</h3>
+                            <ul>
+                                <li><a href="./products/mtc-kt.html">MEN’S TRAINING CUP KEEP TRAINING</a></li>
+                                <li><a href="./products/ttk.html">TIMING TRAINER -KEEP-</a></li>
+                                <li><a href="./products/htl-01.html">TRAINER LOTION</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-modal-container modal-container-4">
+                <div class="tag-modal-body">
+                    <div class="tag-modal-close">x</div>
+                    <div class="tag-modal-content">
+                        <div class="genre">
+                            <h3>■ 遅漏カテゴリ商品一覧</h3>
+                            <ul>
+                                <li><a href="./products/mtc.html">MEN’S TRAINING CUP FINISH TRAINING</a></li>
+                                <li><a href="./products/ttf.html">TIMING TRAINER -FINISH-</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tag-modal-container modal-container-5">
+                <div class="tag-modal-body">
+                    <div class="tag-modal-close">x</div>
+                    <div class="tag-modal-content">
+                        <div class="genre">
+                            <h3>■ 女性性機能カテゴリ商品一覧</h3>
+                            <ul>
+                                <li><a href="./products/kch.html">K-Gel CHECKER</a></li>
+                                <li><a href="./products/tks.html">K-Gel SUPPORT SUPPLEMENT</a></li>
+                                <li><a href="./products/tfs.html">YoniFlora</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
         <section class="sns-area">
             <a href="https://twitter.com/TengaHealthcare">

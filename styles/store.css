@@ -1,125 +1,96 @@
 *{
     color: #3c3c3c;
 }
-
+.attention {
+    text-align: center;
+}
+.map-area-sp {
+    display: none;
+}
+.search-area-sp {
+    display: none;
+}
 /* 都道府県プルダウン非表示 */
-.map-sp {
-    display: none;
-}
-h3 {
-    text-align: center;
-}
-body > main > p {
-    text-align: center;
-    font-size: 13px;
-}
-.category-btn {
-    width: 85%;
-    margin: 44px auto;
-    text-align: center;
-}
-.category-btn button {
-    background-color: #FFFFFF;
-    border: solid 1px#65c6ba;
-    border-radius: 25px;
-    width: 94px;
-    margin: 7px 2px;
-    color: #65c6ba;
-}
-/* 店舗リスト */
-.tab-content{
-  width: 90%;
-  margin: 30px auto 0;
-}
-.tab-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 0 !important;
-    list-style: none;
-}
-.tab__item {
-    flex: 1;
-    flex-basis: 120px;
-    margin: 0 6px;
-}
-.tab__link {
-    display: block;
-    text-decoration: none;
-    color: #3c3c3c;
-    background-color: #f7f7f7;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 10px;
-}
-.tab__link.on {
-    background-color: #01BBB4;
-    color: #fff;
-}
-.tab-body__item {
-    margin: 30px 15px;
-    display: none;
-    text-align: center;
-}
-.tab-body__item.on {
-    display: block;
-}
-.tab-body__item ul{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #f7f7f7;
-    padding: 15px 20px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-.tab-body__item ul li{
-    text-align: left;
+.map-area {
+    background-image: url("../image/map.png");
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 }
-.tab-body__item ul li:first-child{
-    flex: 30%;
-}
-.tab-body__item ul li:first-child a{
-    width: 60%;
-    margin: 0 auto;
-}
-.tab-body__item ul li:nth-child(2){
-    flex: 40%;
-}
-.tab-body__item ul li:nth-child(2) a{
-    width: 60%;
-    margin: 0 auto;
-}
-.tab-body__item ul li:nth-child(3){
-    flex: 30%;
-}
-.tab-body__item ul li:nth-child(3) a{
-    width: 60%;
-    margin: 0 auto;
-}
-.tab-body__item ul li a{
-    text-decoration: none;
-    width: 100%;
-    display: block;
-}
-.tab-body__item ul li a:hover{
+.reagion-choice div {
+    border: 2px solid #96D9D1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    padding: 10px 25px 10px 20px;
+    background-color: #fff;
+    color: #96D9D1;
 }
-.tab-body__item ul li button {
-    background-color: #FFFFFF;
-    border: solid 1px#65c6ba;
-    border-radius: 25px;
-    width: 77px;
-    margin: 7px 2px;
-    color: #65c6ba;
+.reagion-choice div::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../image/map-pin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.card > li > div {
-    text-align: center;
+.reagion-choice #hokkaido {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    background-color: rgba(255, 255, 255, 0.342);
+    color: #96d9d175;
+    border: 2px solid #96d9d175;
 }
-/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.reagion-choice #tohoku {
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    background-color: rgba(255, 255, 255, 0.342);
+    color: #96d9d175;
+    border: 2px solid #96d9d175;
+}
+.reagion-choice #kanto {
+    position: absolute;
+    top: 69%;
+    left: 57%;
+}
+.reagion-choice #chubu {
+    position: absolute;
+    top: 60%;
+    left: 48%;
+}
+.reagion-choice #kinki {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+}
+.reagion-choice #shikoku {
+    position: absolute;
+    top: 77%;
+    left: 29%;
+}
+.reagion-choice #kyushu {
+    background-color: rgba(255, 255, 255, 0.342);
+    color: #96d9d175;
+    position: absolute;
+    top: 90%;
+    left: 19%;
+}
+
+.modal-container {
+    visibility: hidden;
+}
+.modal-container.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル本体の指定 + モーダル外側の背景の指定*/
 .modal-container{
     position: fixed;
     top: 0;
@@ -181,6 +152,300 @@ body > main > p {
     background: #fff;
     text-align: left;
     padding: 30px;
+    border-radius: 10px;
+  }
+  .modal-content div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+  }
+  .modal-content div span {
+      flex: 27%;
+  }
+  .modal-content div select {
+      width: 100%;
+      flex: 70%;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #ececec;
+      -webkit-appearance: none;
+  }
+  .select::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border: solid #6c6c6c;
+      padding: 3px;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      left: 93%;
+  }
+  .modal-content div:first-child {
+      margin-bottom: 20px;
+  }
+  .results-container {
+      width: 85%;
+      margin: 100px auto;
+  }
+  .btn-wrapper {
+      margin-top: 35px;
+  }
+  .btn-wrapper button {
+      width: 90%;
+      padding: 12px;
+      border-radius: 35px;
+      border: none;
+      background-color: #96D9D1;
+      color: #fff;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn-wrapper button::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 93%; 
+      border: solid 1px #fff;
+      border-width: 0 2px 2px 0;
+      padding: 3px;
+      transform: rotate(-45deg);
+  }
+  .card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #f7f7f7;
+      padding: 15px 20px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      list-style: none;
+  }
+  .card a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .card li:first-child {
+      flex: 30%;
+  }
+  .card li:nth-child(2) {
+      flex: 40%;
+  }
+  .card li div {
+      text-align: center;
+  }
+  .card-icon {
+      width: 3%;
+      vertical-align:middle;
+      margin-right: 10px;
+      margin-bottom: 2px;
+  }
+  .card li button {
+      background-color: #FFFFFF;
+      border: solid 1px#65c6ba;
+      border-radius: 25px;
+      width: 77px;
+      margin: 7px 2px;
+      color: #65c6ba;
+  }
+  @media screen and (max-width: 968px) {
+      .map-area {
+          display: none;
+      }
+      .search-area-sp {
+          display: block;
+          width: 95%;
+          margin: 30px auto;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+          padding: 20px;
+      }
+      .search-area-sp input {
+          width: 100%;
+          border: 1px solid #ECECEC;
+          padding: 5px;
+          margin-bottom: 0px;
+      }
+      .search-area-sp input::placeholder {
+          text-align: center;
+          color: #898484;
+      }
+      .search-button {
+          padding: 10px;
+          width: 70%;
+          margin: auto;
+      }
+      .map-area-sp {
+          display: block;
+          width: 95%;
+          margin: auto;
+          box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+          padding: 20px;
+      }
+      .map-area-sp h2 {
+          color: #01bbb4;
+          text-align: center;
+      }
+      .map-area-sp dt {
+          width: 95%;
+          margin: auto;
+          padding: 10px;
+          border-bottom: 1px solid #BEBEBE;
+          font-weight: bold;
+      }
+      .map-area-sp li {
+          width: 95%;
+          margin: auto;
+        background-color: #E5E5E5;
+        border-bottom: 1px solid #BEBEBE;
+        padding: 10px 20px;
+        list-style: none;
+        position: relative;
+        font-size: 13px;
+      }
+      .ac-parent {
+          position: relative;
+      }
+      .ac-parent::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 13px;
+        transition: translateY(-50%);
+        width: 12px;
+        height: 2px;
+        background: #01bbb4;
+      }
+      .ac-parent::after {
+          content: "";
+          position: absolute;
+          top: 41%;
+          right: 18px;
+          transition: translateY(-50%);
+          transition: all .3s;
+          width: 2px;
+          height: 12px;
+          background: #01bbb4;
+      }
+      .ac-parent.open:after {
+        top: 25%;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+      .map-area-sp li::after {
+          content: "";
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          border: solid #606060;
+          border-width: 0 1px 1px 0;
+          padding: 3px;
+          transform: rotate(-45deg) translateY(-50%);
+      }
+      .results-container {
+          width: 95%;
+      }
+      .card {
+          display: block;
+      }
+      .card a {
+          justify-content: left;
+      }
+      .card-icon {
+          width: 6%;
+          margin-right: 15px;
+      }
+      .card li:nth-child(2) {
+          margin: 0 0 15px 0;
+      }
+      .card > li > div {
+          text-align: left;
+      }
+      #results  ul  li:nth-child(3) {
+          position: relative;
+      }
+      #results  ul  li:nth-child(3)::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -9px;
+          bottom: 0;
+          width: 9px;
+          height: 9px;
+          margin: auto;
+          border-top: 2px solid #65c6ba;
+          border-right: 2px solid #65c6ba;
+          transform: rotate(45deg);
+          box-sizing: border-box;
+
+      }
+      /*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,50%);
+    padding: 40px 20px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  /*モーダル本体の擬似要素の指定*/
+  .modal-container:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+  }
+  /*モーダル本体に「active」クラス付与した時のスタイル*/
+  .modal-container.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  /*モーダル枠の指定*/
+  .modal-body{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 500px;
+    width: 90%;
+  }
+  /*モーダルを閉じるボタンの指定*/
+  .modal-close{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: -20px;
+    left: -12px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #65c6ba;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 2px 5px 5px #bebebe;
+    
+  }
+      /*モーダル内のコンテンツの指定*/
+  .modal-content{
+    background: #fff;
+    text-align: left;
+    padding: 30px;
   }
   .genre h3 {
       color: #65c6ba;
@@ -193,204 +458,4 @@ body > main > p {
    .genre li a:hover {
        opacity: 0.7;
    }
-/* サブタブ */
-.sub-tab-items{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    list-style: none;
-    width: 50%;
-    margin: 0 auto;
-}
-.sub-tab__item {
-    flex: 1;
-    margin: 0 20px;
-}
-.sub-tab__link {
-    display: block;
-    text-decoration: none;
-    color: #3c3c3c;
-    background-color: #f7f7f7;
-    cursor: pointer;
-    border-radius: 25px;
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 125px;
-}
-.sub-tab__link.on {
-    background-color: #01BBB4;
-    color: #fff;
-}
-.tab-body h2 {
-    text-align-last: left;
-}
-.sub-tab-body h2 {
-    text-align: left;
-}
-.sub-tab-body__item {
-    margin: 66px 15px;
-    display: none;
-    text-align: center;
-}
-.sub-tab-body__item.on {
-    display: block;
-}
-.card-icon{
-    width: 5%;
-    vertical-align: middle;
-    margin-right: 10px;
-    margin-bottom: 2px;
-}
-@media screen and (max-width:599px) {
-    .tab-items {
-        flex-wrap: wrap;
-    }
-    .tab__item {
-        margin: 10px 6px;
-        max-width: 150px;
-    }
-    .tab-body__item ul li {
-        flex: 100% !important;
-        padding: 10px 0;
-    }
-    .tab-body__item ul li a {
-        width: 100% !important;
-    }
-}
-@media screen and (max-width:479px) {
-    .category-btn {
-        display: none;
-    }
-    h3 {
-        font-size: 12px;
-        width: 60%;
-        margin: 25px auto 0;
-    }
-    .map-sp {
-        display: none;
-        background-color: rgb(255, 248, 234);
-        text-align: center;
-        padding: 10% 0;
-    }
-    .map-sp p {
-        color: #65c6ba;
-    }
-
-    .map-pull {
-        margin-bottom: 10%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .selectbox{
-        display: inline-flex;
-        align-items: center;
-        position: relative;
-        width: 42%;
-        margin: 0 2%;
-    }
-    
-    .selectbox::after {
-        position: absolute;
-        right: 15px;
-        width: 10px;
-        height: 7px;
-        background-color: #65c6ba;
-        clip-path: polygon(0 0, 100% 0, 50% 100%);
-        content: '';
-        pointer-events: none;
-    }
-    
-    .selectbox select {
-        appearance: none;
-        width: 170px;
-        height: 2.8em;
-        padding: .4em calc(.8em + 30px) .4em .8em;
-        border: 1px solid #65c6ba;
-        border-radius: 25px;
-        background-color: #fff;
-        color: #65c6ba;
-        font-size: 1em;
-        cursor: pointer;
-        margin: 5% 0;
-    }
-    .tab-content {
-        width: 100%;
-        margin-top: 0;
-    }
-    .tab-items {
-        flex-wrap: wrap;
-    }
-    .tab__item {
-        flex: calc(100%/3);
-        margin: 5px;
-    }
-    .tab-body__item {
-        margin: 25px 0 0;
-    }
-    .tab-body__item ul {
-        padding: 10px 20px;
-        width: 100%;
-        margin: 0 auto;
-    }
-    .tab-body__item ul li{
-        text-align: left;
-        margin: 10px 0;
-    }
-    .tab-body__item ul li:not(:nth-child(1))::after  {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -9px;
-        bottom: 0;
-        width: 9px;
-        height: 9px;
-        margin: auto;
-        border-top: 2px solid #65c6ba;
-        border-right: 2px solid #65c6ba;
-        transform: rotate(45deg);
-        box-sizing: border-box;
-    }
-    .genre h3 {
-        margin: 10px 0;
-        font-size: 15px;
-        width: 100%;
-    }
-    .tab-body__item ul{
-        display: block;
-        font-size: 12px;
-        margin: 15px auto;
-    }
-    .tab-body__item ul li a{
-        font-size: 14px;
-    }
-    .tab-body__item ul li:nth-child(2) a{
-        width: 100%;
-        margin: 0 auto;
-    }
-    .sub-tab-items {
-        width: 100%;
-    }
-    .sub-tab__item {
-        margin: 0 5px;
-    }
-    .sub-tab-body__item {
-        margin: 30px 0px;
-    }
-    .tab-body__item ul li:first-child a, .tab-body__item ul li:nth-child(3) a {
-        width: 100%;
-        font-size: 16px;
-    }
-    .card > li > div {
-        text-align: left;
-    }
-    .card-icon{
-        width: 6%;
-        margin-right: 15px;
-    }
-    
-}
+  }
