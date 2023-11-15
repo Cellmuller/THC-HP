@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var selectCity = document.querySelector(".modal-content select.city-select");
     var searchButton = document.querySelector(".search-button");
     var resultsContainer = document.querySelector(".results-container");
+    var regionName = null //グローバル変数に変更
 
     // JSONデータの取得
     fetch("sample.json")
@@ -43,13 +44,12 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Fetch error:", error);
         });
 
-        
     // ページの初期化
     function initializePage() {
         // 地域選択のイベントハンドラー
         regionChoice.forEach(function (region) {
             region.addEventListener("click", function () {
-                var regionName = this.textContent;
+                regionName = this.textContent;
                 var regionData = jsonData.find(function (regionData) {
                     return regionData.name === regionName;
                 });
@@ -78,23 +78,63 @@ document.addEventListener("DOMContentLoaded", function () {
             var selectedCity = selectCity.value; // ユーザーが選択した市区町村
             var selectedPrefecture = selectPrefecture.value; // ユーザーが選択した都道府県
             var storesToDisplay = [];
+
+            console.log('選択された地方:', regionName);
+            console.log('選択された都道府県:', selectedPrefecture);
+            console.log('選択された市区町村:', selectedCity);
         
-            jsonData.forEach(function (region) {
-                region.prefectures.forEach(function (prefecture) {
-                    // 都道府県が選択されているか、または市区町村のみが選択されている場合にフィルタリング
-                    if (prefecture.prefecture === selectedPrefecture || selectedPrefecture === '選択してください') {
-                        prefecture.municipalities.forEach(function (municipality) {
-                            if (municipality.municipality === selectedCity || selectedCity === '選択してください') {
+            if (selectedPrefecture === '選択してください' && selectedCity === '選択してください' && regionName) {
+                // 地方だけが選択されている場合の処理
+                jsonData.forEach(function (region) {
+                    if (region.name === regionName) {
+                        region.prefectures.forEach(function (prefecture) {
+                            prefecture.municipalities.forEach(function (municipality) {
                                 storesToDisplay = storesToDisplay.concat(municipality.stores);
-                            }
+                            });
                         });
                     }
                 });
-            });
+            } else if (selectedPrefecture !== '選択してください' && selectedCity === '選択してください') {
+                // 都道府県だけが選択されている場合
+                jsonData.forEach(function (region) {
+                    region.prefectures.forEach(function (prefecture) {
+                        if (prefecture.prefecture === selectedPrefecture) {
+                            prefecture.municipalities.forEach(function (municipality) {
+                                storesToDisplay = storesToDisplay.concat(municipality.stores);
+                            });
+                        }
+                    });
+                });
+            } else if (selectedPrefecture === '選択してください' && selectedCity !== '選択してください') {
+                // 市区町村だけが選択されている場合
+                jsonData.forEach(function (region) {
+                    region.prefectures.forEach(function (prefecture) {
+                        prefecture.municipalities.forEach(function (municipality) {
+                            if (municipality.municipality === selectedCity) {
+                                storesToDisplay = storesToDisplay.concat(municipality.stores);
+                            }
+                        });
+                    });
+                });
+            } else {
+                // 都道府県と市区町村が両方選択されている場合
+                jsonData.forEach(function (region) {
+                    region.prefectures.forEach(function (prefecture) {
+                        if (prefecture.prefecture === selectedPrefecture) {
+                            prefecture.municipalities.forEach(function (municipality) {
+                                if (municipality.municipality === selectedCity) {
+                                    storesToDisplay = storesToDisplay.concat(municipality.stores);
+                                }
+                            });
+                        }
+                    });
+                });
+            }
         
             // 結果の表示
             displayResults(storesToDisplay);
         });
+        
         
 
         // SP版の初期化コード
